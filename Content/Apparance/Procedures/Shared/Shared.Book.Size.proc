@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="137483A4">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="String">Example.Book</Constant>
+        <Constant id="-2" type="Frame"></Constant>
+        <Constant id="-3" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="36BD1471">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" constant="-3"/>
+        </Operator>
+        <Operator id="3" type="EE0DBC28">
+            <Connect in="100" to="1" out="101"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Vector3" name="Size" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

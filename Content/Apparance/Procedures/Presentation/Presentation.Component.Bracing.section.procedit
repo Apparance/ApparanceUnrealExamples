@@ -1,0 +1,183 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>247.0995,366.3</Centre>
+    <Zoom>0.909090936</Zoom>
+  </View>
+  <Procedure>
+    <Category>Presentation</Category>
+    <DisplayName>Component.Bracing.section</DisplayName>
+    <Description>repeated strut section</Description>
+    <TopLeft>-493.1,-27</TopLeft>
+    <BottomRight>1004.183,524.7798</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>987.0001,154.8</Location>
+      <Size>87.18333,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>6,86</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>370,218</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>255.8001,97.40001</Location>
+      <Size>73.09666,65.16</Size>
+      <NoteID>2</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>384.8,81.20004</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>2</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>373,238</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>545.5998,133.3</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>2</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>882.5001,148.8</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>-101.8,314.4002</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>30.6,358.7001</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>-298.1001,348.6002</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>1</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>-202.1,339.6002</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>750.5997,247.7999</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>thickness too</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Diameter</Name>
+      <Description>Strut size</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Flip</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="2">
+      <ID>2</ID>
+      <Location>
+        <X>226.400009</X>
+        <Y>38.3</Y>
+      </Location>
+      <Size>
+        <Width>432.553345</Width>
+        <Height>206.28</Height>
+      </Size>
+      <Title>Diagonal Fit</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="3">
+      <ID>3</ID>
+      <Location>
+        <X>-323.1</X>
+        <Y>276</Y>
+      </Location>
+      <Size>
+        <Width>469.253326</Width>
+        <Height>198.779846</Height>
+      </Size>
+      <Title>Inset</Title>
+      <Text>To bury ends in surrounding frame</Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

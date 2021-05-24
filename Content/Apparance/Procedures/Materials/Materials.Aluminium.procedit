@@ -1,0 +1,54 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>460,219</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Materials</Category>
+    <DisplayName>Aluminium</DisplayName>
+    <Description>Dull structural aluminium</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>737.1433,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>317,46</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>482,152</Location>
+      <Size>67.74667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>664,152</Location>
+      <Size>150.0233,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>Enxure always start with
+normal aluminium colouring</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>In</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+</ProcedureEditData>

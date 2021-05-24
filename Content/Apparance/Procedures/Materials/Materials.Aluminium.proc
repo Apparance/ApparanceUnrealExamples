@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="10B63349">
+    <Inputs>
+        <Input id="1" type="ModelSegment" name="In"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="String">Presentation.Material.Aluminium.Dull</Constant>
+        <Constant id="-2" type="Frame"></Constant>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-7" type="FColour">1.000000,1.000000,1.000000,1.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="36BD1471">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" constant="-3"/>
+        </Operator>
+        <Operator id="2" type="8564374F">
+            <Connect in="100" input="1"/>
+            <Connect in="101" to="1" out="100"/>
+        </Operator>
+        <Operator id="3" type="E1078DA9">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" constant="-7"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

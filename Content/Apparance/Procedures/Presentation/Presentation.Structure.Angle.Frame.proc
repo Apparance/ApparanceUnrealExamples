@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="1090F76B">
+    <Inputs>
+        <Input id="1" type="Frame" name="Bounds"/>
+        <Input id="2" type="Float" name="Width"/>
+        <Input id="3" type="Float" name="Thickness"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-37" type="Bool">False</Constant>
+        <Constant id="-38" type="Bool">False</Constant>
+        <Constant id="-39" type="Bool">False</Constant>
+        <Constant id="-40" type="Bool">False</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="3" type="108DE7CC">
+            <Connect in="1" to="11" out="4"/>
+            <Connect in="2" input="3"/>
+            <Connect in="3" constant="-37"/>
+        </Operator>
+        <Operator id="4" type="108DE7CC">
+            <Connect in="1" to="11" out="6"/>
+            <Connect in="2" input="3"/>
+            <Connect in="3" constant="-38"/>
+        </Operator>
+        <Operator id="5" type="108DE7CC">
+            <Connect in="1" to="11" out="8"/>
+            <Connect in="2" input="3"/>
+            <Connect in="3" constant="-39"/>
+        </Operator>
+        <Operator id="6" type="108DE7CC">
+            <Connect in="1" to="11" out="2"/>
+            <Connect in="2" input="3"/>
+            <Connect in="3" constant="-40"/>
+        </Operator>
+        <Operator id="7" type="B4A997AD">
+            <Connect in="100" to="6" out="1"/>
+            <Connect in="101" to="3" out="1"/>
+            <Connect in="102" to="4" out="1"/>
+            <Connect in="103" to="5" out="1"/>
+        </Operator>
+        <Operator id="11" type="102EBEAB">
+            <Connect in="1" input="1"/>
+            <Connect in="2" input="2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="7" out="100"/>
+    </Outputs>
+</Procedure>

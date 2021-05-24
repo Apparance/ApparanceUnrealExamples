@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="102EBEAB">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame"/>
+        <Input id="2" type="Float" name="Amount"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-4" type="Integer">1</Constant>
+        <Constant id="-5" type="Bool">True</Constant>
+        <Constant id="-8" type="Integer">0</Constant>
+        <Constant id="-9" type="Integer">0</Constant>
+        <Constant id="-10" type="Bool">True</Constant>
+        <Constant id="-13" type="Integer">0</Constant>
+        <Constant id="-14" type="Integer">0</Constant>
+        <Constant id="-15" type="Bool">True</Constant>
+        <Constant id="-18" type="Integer">0</Constant>
+        <Constant id="-19" type="Integer">0</Constant>
+        <Constant id="-20" type="Bool">True</Constant>
+        <Constant id="-22" type="Integer">-1</Constant>
+        <Constant id="-23" type="Integer">2</Constant>
+        <Constant id="-25" type="Integer">2</Constant>
+        <Constant id="-26" type="Integer">2</Constant>
+        <Constant id="-28" type="Integer">2</Constant>
+        <Constant id="-29" type="Integer">2</Constant>
+        <Constant id="-31" type="Integer">-1</Constant>
+        <Constant id="-32" type="Integer">2</Constant>
+        <Constant id="-34" type="Integer">1</Constant>
+        <Constant id="-35" type="Integer">2</Constant>
+        <Constant id="-37" type="Integer">1</Constant>
+        <Constant id="-38" type="Integer">2</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E853B53E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-3"/>
+            <Connect in="103" constant="-4"/>
+            <Connect in="104" constant="-5"/>
+        </Operator>
+        <Operator id="2" type="E853B53E">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-8"/>
+            <Connect in="103" constant="-9"/>
+            <Connect in="104" constant="-10"/>
+        </Operator>
+        <Operator id="3" type="E853B53E">
+            <Connect in="100" to="1" out="101"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-13"/>
+            <Connect in="103" constant="-14"/>
+            <Connect in="104" constant="-15"/>
+        </Operator>
+        <Operator id="4" type="E853B53E">
+            <Connect in="100" to="1" out="102"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-18"/>
+            <Connect in="103" constant="-19"/>
+            <Connect in="104" constant="-20"/>
+        </Operator>
+        <Operator id="5" type="EBC5C37C">
+            <Connect in="100" to="4" out="100"/>
+            <Connect in="101" constant="-22"/>
+            <Connect in="102" constant="-23"/>
+        </Operator>
+        <Operator id="6" type="EBC5C37C">
+            <Connect in="100" to="4" out="101"/>
+            <Connect in="101" constant="-25"/>
+            <Connect in="102" constant="-26"/>
+        </Operator>
+        <Operator id="7" type="EBC5C37C">
+            <Connect in="100" to="4" out="102"/>
+            <Connect in="101" constant="-28"/>
+            <Connect in="102" constant="-29"/>
+        </Operator>
+        <Operator id="8" type="EBC5C37C">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" constant="-31"/>
+            <Connect in="102" constant="-32"/>
+        </Operator>
+        <Operator id="9" type="EBC5C37C">
+            <Connect in="100" to="2" out="102"/>
+            <Connect in="101" constant="-34"/>
+            <Connect in="102" constant="-35"/>
+        </Operator>
+        <Operator id="10" type="EBC5C37C">
+            <Connect in="100" to="3" out="102"/>
+            <Connect in="101" constant="-37"/>
+            <Connect in="102" constant="-38"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Frame" name="NW" description="" to="5" out="100"/>
+        <Output id="2" type="Frame" name="N" description="" to="6" out="100"/>
+        <Output id="3" type="Frame" name="NE" description="" to="7" out="100"/>
+        <Output id="4" type="Frame" name="W" description="" to="8" out="100"/>
+        <Output id="5" type="Frame" name="Centre" description="" to="3" out="101"/>
+        <Output id="6" type="Frame" name="E" description="" to="10" out="100"/>
+        <Output id="7" type="Frame" name="SW" description="" to="2" out="100"/>
+        <Output id="8" type="Frame" name="S" description="" to="2" out="101"/>
+        <Output id="9" type="Frame" name="SE" description="" to="9" out="100"/>
+    </Outputs>
+</Procedure>

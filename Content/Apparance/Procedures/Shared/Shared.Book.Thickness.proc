@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="10A3E9B5">
+    <Inputs/>
+    <Constants/>
+    <Operators>
+        <Operator id="1" type="137483A4"/>
+        <Operator id="2" type="D233A94E">
+            <Connect in="100" to="1" out="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Z" description="" to="2" out="102"/>
+    </Outputs>
+</Procedure>

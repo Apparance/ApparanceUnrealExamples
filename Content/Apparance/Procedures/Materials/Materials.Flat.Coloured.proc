@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="10ADDF30">
+    <Inputs>
+        <Input id="1" type="ModelSegment" name="In"/>
+        <Input id="2" type="FColour" name="Colour"/>
+    </Inputs>
+    <Constants/>
+    <Operators>
+        <Operator id="2" type="10AD21FF">
+            <Connect in="1" input="1"/>
+        </Operator>
+        <Operator id="3" type="E1078DA9">
+            <Connect in="100" to="2" out="1"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>
