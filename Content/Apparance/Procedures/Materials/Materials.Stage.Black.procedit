@@ -1,47 +1,57 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>460,219</Centre>
+    <Centre>406,222</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Materials</Category>
-    <DisplayName>Aluminium</DisplayName>
-    <Description>Dull structural aluminium</Description>
+    <DisplayName>Stage.Black</DisplayName>
+    <Description>Black stage painted surfaces</Description>
     <TopLeft>-30,-20</TopLeft>
-    <BottomRight>737.1433,400</BottomRight>
+    <BottomRight>600,400</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>317,46</Location>
-      <Size>128.5367,69.28</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="2">
-      <Location>482,152</Location>
+      <Location>420,157</Location>
       <Size>67.74667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
-    <Object type="ProcedureOperatorState" id="3">
-      <Location>664,152</Location>
-      <Size>150.0233,52.2</Size>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>572,181</Location>
+      <Size>57.14333,52.2</Size>
       <NoteID>0</NoteID>
-      <Comment>Enxure always start with
-normal aluminium colouring</Comment>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>212,63</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>369,244</Location>
+      <Size>64.82333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>In</Name>
+      <Name>
+      </Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Out</Name>
+      <Name>
+      </Name>
       <Description>
       </Description>
     </Object>

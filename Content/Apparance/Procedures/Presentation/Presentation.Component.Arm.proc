@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="F1387EB6">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame"/>
+        <Input id="2" type="Float" name="Length"/>
+        <Input id="3" type="Float" name="Angle"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-27" type="ModelSegment"></Constant>
+        <Constant id="-28" type="ModelSegment"></Constant>
+        <Constant id="-29" type="ModelSegment"></Constant>
+        <Constant id="-32" type="Integer">0</Constant>
+        <Constant id="-33" type="Integer">2</Constant>
+        <Constant id="-34" type="Bool">False</Constant>
+        <Constant id="-39" type="Float">0.500000</Constant>
+        <Constant id="-42" type="Integer">0</Constant>
+        <Constant id="-43" type="Integer">2</Constant>
+        <Constant id="-44" type="Bool">False</Constant>
+        <Constant id="-51" type="Integer">0</Constant>
+        <Constant id="-52" type="Integer">1</Constant>
+        <Constant id="-53" type="Integer">1</Constant>
+        <Constant id="-54" type="Integer">0</Constant>
+        <Constant id="-57" type="Float">1.000000</Constant>
+        <Constant id="-58" type="Integer">0</Constant>
+        <Constant id="-59" type="Integer">2</Constant>
+        <Constant id="-63" type="Integer">1</Constant>
+        <Constant id="-64" type="Integer">1</Constant>
+        <Constant id="-65" type="Integer">1</Constant>
+        <Constant id="-72" type="Vector3">0.000000, 0.000000, -0.500000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="3" type="F145322C">
+            <Connect in="1" to="15" out="100"/>
+        </Operator>
+        <Operator id="5" type="F139CE8B">
+            <Connect in="1" to="13" out="100"/>
+            <Connect in="2" to="10" out="100"/>
+        </Operator>
+        <Operator id="6" type="EB4EAAA4">
+            <Connect in="100" to="3" out="1"/>
+            <Connect in="101" to="5" out="1"/>
+            <Connect in="102" constant="-27"/>
+            <Connect in="103" constant="-28"/>
+            <Connect in="104" constant="-29"/>
+        </Operator>
+        <Operator id="7" type="D729EF5D">
+            <Connect in="100" to="11" out="100"/>
+            <Connect in="101" to="8" out="100"/>
+            <Connect in="102" constant="-32"/>
+            <Connect in="103" constant="-33"/>
+            <Connect in="104" constant="-34"/>
+        </Operator>
+        <Operator id="8" type="EA5D30C6">
+            <Connect in="100" to="11" out="100"/>
+        </Operator>
+        <Operator id="10" type="971515D0">
+            <Connect in="100" to="8" out="100"/>
+            <Connect in="101" constant="-39"/>
+        </Operator>
+        <Operator id="11" type="D729EF5D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-42"/>
+            <Connect in="103" constant="-43"/>
+            <Connect in="104" constant="-44"/>
+        </Operator>
+        <Operator id="13" type="E9026D4E">
+            <Connect in="100" to="11" out="100"/>
+            <Connect in="101" input="3"/>
+            <Connect in="102" constant="-51"/>
+            <Connect in="103" constant="-52"/>
+            <Connect in="104" constant="-53"/>
+            <Connect in="105" constant="-54"/>
+        </Operator>
+        <Operator id="14" type="E82F5975">
+            <Connect in="100" to="13" out="100"/>
+            <Connect in="101" constant="-57"/>
+            <Connect in="102" constant="-58"/>
+            <Connect in="103" constant="-59"/>
+        </Operator>
+        <Operator id="15" type="EAE4856E">
+            <Connect in="100" to="7" out="100"/>
+            <Connect in="101" constant="-72"/>
+            <Connect in="102" constant="-63"/>
+            <Connect in="103" constant="-64"/>
+            <Connect in="104" constant="-65"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Output" description="" to="6" out="100"/>
+        <Output id="2" type="Frame" name="Next" description="" to="14" out="101"/>
+    </Outputs>
+</Procedure>

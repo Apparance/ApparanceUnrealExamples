@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>297.1044,239.711</Centre>
+    <Centre>287.7875,241.042</Centre>
     <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
     <DisplayName>Structure.Leg</DisplayName>
     <Description>Support leg in box socket</Description>
-    <TopLeft>-323.797,-151.3419</TopLeft>
+    <TopLeft>-355.8669,-151.3419</TopLeft>
     <BottomRight>805.6654,460.08</BottomRight>
   </Procedure>
   <Objects>
@@ -28,7 +28,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>447,94</Location>
+      <Location>373.7953,96.662</Location>
       <Size>87.18333,91.08</Size>
       <NoteID>5</NoteID>
       <Comment>
@@ -36,7 +36,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>-55.655,175.24</Location>
+      <Location>-136.846,167.254</Location>
       <Size>114.5133,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -60,7 +60,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>569.1052,114.697</Location>
+      <Location>611.6971,116.028</Location>
       <Size>86.66,39.28</Size>
       <NoteID>5</NoteID>
       <Comment>
@@ -68,7 +68,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>196,69</Location>
+      <Location>122.7951,71.662</Location>
       <Size>90.55334,91.08</Size>
       <NoteID>5</NoteID>
       <Comment>
@@ -76,7 +76,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="9">
-      <Location>323,68</Location>
+      <Location>249.7953,70.662</Location>
       <Size>90.55334,91.08</Size>
       <NoteID>5</NoteID>
       <Comment>
@@ -114,6 +114,22 @@
       <Comment>circular segments</Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>511.8934,102.016</Location>
+      <Size>77.99333,78.12</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>-124.641,300.683</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Frame</Name>
       <Description>
@@ -146,11 +162,11 @@
     <Object type="ProcedureNote" id="5">
       <ID>5</ID>
       <Location>
-        <X>171</X>
-        <Y>15.9159946</Y>
+        <X>97.7950058</X>
+        <Y>18.5779953</Y>
       </Location>
       <Size>
-        <Width>509.765167</Width>
+        <Width>638.872131</Width>
         <Height>194.164</Height>
       </Size>
       <Title>In-set Cylindrical Leg</Title>

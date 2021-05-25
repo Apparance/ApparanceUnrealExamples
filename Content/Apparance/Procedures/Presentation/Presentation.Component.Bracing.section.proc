@@ -33,6 +33,7 @@
         <Constant id="-56" type="Integer">0</Constant>
         <Constant id="-57" type="Integer">2</Constant>
         <Constant id="-58" type="Bool">False</Constant>
+        <Constant id="-62" type="Integer">0</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="84CB6650">
@@ -95,8 +96,17 @@
             <Connect in="103" constant="-57"/>
             <Connect in="104" constant="-58"/>
         </Operator>
+        <Operator id="14" type="82AE29F5">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="15" out="100"/>
+            <Connect in="102" to="15" out="102"/>
+            <Connect in="103" constant="-62"/>
+        </Operator>
+        <Operator id="15" type="EA5D30C6">
+            <Connect in="100" to="8" out="100"/>
+        </Operator>
     </Operators>
     <Outputs>
-        <Output id="1" type="ModelSegment" name="Out" description="" to="1" out="100"/>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="14" out="100"/>
     </Outputs>
 </Procedure>
