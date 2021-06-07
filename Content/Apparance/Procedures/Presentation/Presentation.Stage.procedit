@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>36.69989,297.3</Centre>
-    <Zoom>0.909090936</Zoom>
+    <Centre>552.7507,345.2127</Centre>
+    <Zoom>0.683013558</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
     <DisplayName>Stage</DisplayName>
     <Description>A Stage</Description>
     <TopLeft>-884.9999,-66.99999</TopLeft>
-    <BottomRight>697.9565,415.2599</BottomRight>
+    <BottomRight>697.9565,501.4464</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -142,6 +142,14 @@
     <Object type="ProcedureOperatorState" id="17">
       <Location>-487.2001,116.4999</Location>
       <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>110.6659,412.1664</Location>
+      <Size>186.5567,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

@@ -8,7 +8,6 @@
         <Constant id="-6" type="Integer">0</Constant>
         <Constant id="-7" type="Integer">1</Constant>
         <Constant id="-8" type="Bool">True</Constant>
-        <Constant id="-14" type="ModelSegment"></Constant>
         <Constant id="-19" type="Integer">2</Constant>
         <Constant id="-20" type="Integer">2</Constant>
         <Constant id="-23" type="Float">0.025000</Constant>
@@ -45,7 +44,7 @@
             <Connect in="102" to="7" out="1"/>
             <Connect in="103" to="10" out="1"/>
             <Connect in="104" to="11" out="1"/>
-            <Connect in="105" constant="-14"/>
+            <Connect in="105" to="18" out="1"/>
         </Operator>
         <Operator id="6" type="EBC5C37C">
             <Connect in="100" to="3" out="102"/>
@@ -101,6 +100,9 @@
             <Connect in="102" constant="-49"/>
             <Connect in="103" constant="-50"/>
             <Connect in="104" constant="-51"/>
+        </Operator>
+        <Operator id="18" type="9BE3A6B1">
+            <Connect in="1" input="1"/>
         </Operator>
     </Operators>
     <Outputs>

@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>458.3232,200.6906</Centre>
-    <Zoom>0.826446354</Zoom>
+    <Centre>612.4772,403.3656</Centre>
+    <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
     <DisplayName>Plinth</DisplayName>
     <Description>A raised rectangular staging area for presenting objects</Description>
     <TopLeft>-517.09,-112.21</TopLeft>
-    <BottomRight>909.9868,609.6301</BottomRight>
+    <BottomRight>909.9868,620.2939</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -216,6 +216,14 @@
     <Object type="ProcedureOperatorState" id="24">
       <Location>497,49</Location>
       <Size>178.2167,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>617.852,531.014</Location>
+      <Size>186.5567,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="98CCFE52">
+    <Inputs>
+        <Input id="1" type="Frame" name="Bounds"/>
+        <Input id="2" type="FColour" name="Colour"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-7" type="ModelSegment"></Constant>
+        <Constant id="-8" type="ModelSegment"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="F2BCC928">
+            <Connect in="1" input="1"/>
+        </Operator>
+        <Operator id="2" type="E1078DA9">
+            <Connect in="100" to="1" out="1"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="3" type="9BE3A6B1">
+            <Connect in="1" input="1"/>
+        </Operator>
+        <Operator id="4" type="B4A997AD">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" to="3" out="1"/>
+            <Connect in="102" constant="-7"/>
+            <Connect in="103" constant="-8"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="4" out="100"/>
+    </Outputs>
+</Procedure>
