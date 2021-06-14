@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="5666CC5E">
+    <Inputs>
+        <Input id="1" type="List" name="In"/>
+        <Input id="2" type="Frame" name="Reference"/>
+        <Input id="3" type="Vector3" name="Position"/>
+        <Input id="4" type="Vector3" name="Size"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-5" type="Integer">0</Constant>
+        <Constant id="-6" type="Integer">0</Constant>
+        <Constant id="-7" type="Integer">0</Constant>
+        <Constant id="-10" type="Integer">0</Constant>
+        <Constant id="-11" type="Integer">0</Constant>
+        <Constant id="-12" type="Integer">0</Constant>
+        <Constant id="-13" type="Integer">1</Constant>
+        <Constant id="-14" type="Integer">1</Constant>
+        <Constant id="-15" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="5420B650">
+            <Connect in="100" input="1"/>
+            <Connect in="101" to="3" out="100"/>
+        </Operator>
+        <Operator id="2" type="EAE4856E">
+            <Connect in="100" input="2"/>
+            <Connect in="101" input="3"/>
+            <Connect in="102" constant="-5"/>
+            <Connect in="103" constant="-6"/>
+            <Connect in="104" constant="-7"/>
+        </Operator>
+        <Operator id="3" type="E99E1179">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" input="4"/>
+            <Connect in="102" constant="-10"/>
+            <Connect in="103" constant="-11"/>
+            <Connect in="104" constant="-12"/>
+            <Connect in="105" constant="-13"/>
+            <Connect in="106" constant="-14"/>
+            <Connect in="107" constant="-15"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Out" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

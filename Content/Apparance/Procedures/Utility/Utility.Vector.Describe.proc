@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="3A642B50">
+    <Inputs>
+        <Input id="1" type="Vector3" name="Vector"/>
+        <Input id="2" type="String" name="(Separator)"/>
+        <Input id="3" type="Integer" name="Places"/>
+        <Input id="4" type="String" name="(Units)"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-14" type="Bool">False</Constant>
+        <Constant id="-15" type="String">, </Constant>
+        <Constant id="-23" type="Bool">False</Constant>
+        <Constant id="-24" type="String">m</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="00856C25">
+            <Connect in="100" to="4" out="100"/>
+            <Connect in="101" input="3"/>
+        </Operator>
+        <Operator id="2" type="00856C25">
+            <Connect in="100" to="4" out="101"/>
+            <Connect in="101" input="3"/>
+        </Operator>
+        <Operator id="3" type="00856C25">
+            <Connect in="100" to="4" out="102"/>
+            <Connect in="101" input="3"/>
+        </Operator>
+        <Operator id="4" type="D233A94E">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="5" type="C938CD5E">
+            <Connect in="100" to="7" out="100"/>
+            <Connect in="101" to="6" out="100"/>
+            <Connect in="102" to="8" out="100"/>
+            <Connect in="103" to="6" out="100"/>
+            <Connect in="104" to="9" out="100"/>
+        </Operator>
+        <Operator id="6" type="84B63DB4">
+            <Connect in="100" input="2"/>
+            <Connect in="101" constant="-14"/>
+            <Connect in="102" constant="-15"/>
+        </Operator>
+        <Operator id="7" type="C938CD2E">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="10" out="100"/>
+        </Operator>
+        <Operator id="8" type="C938CD2E">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" to="10" out="100"/>
+        </Operator>
+        <Operator id="9" type="C938CD2E">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" to="10" out="100"/>
+        </Operator>
+        <Operator id="10" type="84B63DB4">
+            <Connect in="100" input="4"/>
+            <Connect in="101" constant="-23"/>
+            <Connect in="102" constant="-24"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="String" name="Text" description="" to="5" out="100"/>
+    </Outputs>
+</Procedure>

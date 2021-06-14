@@ -1,0 +1,251 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>911.2401,207.99</Centre>
+    <Zoom>0.8264464</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Book.Placement.All</DisplayName>
+    <Description>Seeded book placement, varies all of orientation, offset, and size/thickness</Description>
+    <TopLeft>-49,-136.26</TopLeft>
+    <BottomRight>1446.06,430.8</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>1330,66</Location>
+      <Size>90,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>The original
+book procedure</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>265,89</Location>
+      <Size>86.38,104.04</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>145,211</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>646,74</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>4</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>456,132</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>4</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>455,204</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>4</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>553,182</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>4</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>1216.48,-26.18999</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>1079.64,107.97</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>866.21,38.07003</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>865.21,109.07</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>864.21,182.0699</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>1262,222</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>1186,241</Location>
+      <Size>116.9967,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>1018.4,152.8398</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>1390.6,19.39003</Location>
+      <Size>117.63,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>place book within
+the generated bounds</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>778.0399,261.48</Location>
+      <Size>77.31667,39.28</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>870.8398,265.8699</Location>
+      <Size>71.52666,50</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>1015.97,72.43002</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>1016.09,115.33</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>5</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Variation#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Next#</Name>
+      <Description>Next seed value</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Thickness</Name>
+      <Description>How thick was the book?</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="4">
+      <Name>Bounds</Name>
+      <Description>Volume for book to occupy</Description>
+    </Object>
+    <Object type="ProcedureNote" id="3">
+      <ID>3</ID>
+      <Location>
+        <X>121</X>
+        <Y>-64.7</Y>
+      </Location>
+      <Size>
+        <Width>251.38</Width>
+        <Height>400.949982</Height>
+      </Size>
+      <Title>Orientation</Title>
+      <Text>Vary the rotation of the book</Text>
+    </Object>
+    <Object type="ProcedureNote" id="4">
+      <ID>4</ID>
+      <Location>
+        <X>417</X>
+        <Y>-68.1199951</Y>
+      </Location>
+      <Size>
+        <Width>331.656677</Width>
+        <Height>406.79</Height>
+      </Size>
+      <Title>Offset</Title>
+      <Text>Vary the translation slightly</Text>
+    </Object>
+    <Object type="ProcedureNote" id="5">
+      <ID>5</ID>
+      <Location>
+        <X>766.349854</X>
+        <Y>-70.53</Y>
+      </Location>
+      <Size>
+        <Width>561.510437</Width>
+        <Height>411.399963</Height>
+      </Size>
+      <Title>Size</Title>
+      <Text>Generate a new book size relative to the origonal asset size</Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="C8727FB8">
+    <Inputs>
+        <Input id="1" type="List" name="In"/>
+        <Input id="2" type="Frame" name="Frame"/>
+        <Input id="3" type="Float" name="Start"/>
+        <Input id="4" type="Float" name="End"/>
+        <Input id="5" type="Float" name="Min Angle"/>
+        <Input id="6" type="Float" name="Min Segment"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="List"></Constant>
+        <Constant id="-21" type="Integer">1</Constant>
+        <Constant id="-23" type="Integer">100</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="4" type="A2AAB92C">
+            <Connect in="100" to="9" out="100"/>
+            <Connect in="101" to="8" out="100"/>
+        </Operator>
+        <Operator id="5" type="DED78D0E">
+            <Connect in="100" to="4" out="100"/>
+            <Connect in="101" to="11" out="100"/>
+        </Operator>
+        <Operator id="7" type="C805A8A7">
+            <Connect in="1" input="1"/>
+            <Connect in="2" input="2"/>
+            <Connect in="3" to="8" out="100"/>
+            <Connect in="4" to="10" out="100"/>
+            <Connect in="5" to="5" out="100"/>
+        </Operator>
+        <Operator id="8" type="DE8212AD">
+            <Connect in="100" input="3"/>
+        </Operator>
+        <Operator id="9" type="DE8212AD">
+            <Connect in="100" input="4"/>
+        </Operator>
+        <Operator id="10" type="87F5E2D0">
+            <Connect in="100" to="12" out="100"/>
+            <Connect in="101" constant="-21"/>
+        </Operator>
+        <Operator id="11" type="D0A6FC99">
+            <Connect in="100" to="12" out="100"/>
+        </Operator>
+        <Operator id="12" type="DA31C9EA">
+            <Connect in="100" constant="-23"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Out" description="" to="7" out="1"/>
+    </Outputs>
+</Procedure>

@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>498.3703,309.4102</Centre>
+    <Centre>687.1303,309.4102</Centre>
     <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
@@ -178,6 +178,10 @@
       <Metadata />
     </Input>
     <Input id="2">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
       <Value type="842221088" value="0" />
       <Metadata />
     </Input>

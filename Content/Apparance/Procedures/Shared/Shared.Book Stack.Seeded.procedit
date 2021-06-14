@@ -1,0 +1,149 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>536.6669,319.5529</Centre>
+    <Zoom>0.7513149</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Book Stack.Seeded</DisplayName>
+    <Description>Book stack with seed driven size/placement/adjustment</Description>
+    <TopLeft>-97,-20</TopLeft>
+    <BottomRight>937.3301,525.92</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>299,153</Location>
+      <Size>92.57667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>216.0799,61.37</Location>
+      <Size>99.82667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>place more books?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>933,52</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>223.6398,137.377</Location>
+      <Size>137.2067,84.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Generate book placement</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>867,168</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>645.61,347</Location>
+      <Size>143.0633,65.16</Size>
+      <NoteID>2</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>153,322</Location>
+      <Size>116.9967,39.28</Size>
+      <NoteID>2</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>273.8,318.58</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>2</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>396.96,296.05</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>2</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>145,418</Location>
+      <Size>178.7733,32.92</Size>
+      <NoteID>2</NoteID>
+      <Comment>next stack needs one fewer books</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>453.1888,161.599</Location>
+      <Size>126.4933,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Add a book to the stack</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>Where to place stack of books</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Quantity</Name>
+      <Description>How many books?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Variation#</Name>
+      <Description>Seed value to drive variation</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Books</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="2">
+      <ID>2</ID>
+      <Location>
+        <X>120</X>
+        <Y>254.900009</Y>
+      </Location>
+      <Size>
+        <Width>714.243347</Width>
+        <Height>221.019989</Height>
+      </Size>
+      <Title>Recursive Iteration</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

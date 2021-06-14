@@ -1,0 +1,80 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>401,184</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Bookcase.Multiparameter</DisplayName>
+    <Description>Bookcase with multiple design parameters</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>609.7567,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>218,46</Location>
+      <Size>139.8367,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>435,150</Location>
+      <Size>118.1367,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>217,222</Location>
+      <Size>147.1567,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>633,142</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Location</Name>
+      <Description>Where to put it</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Variation#</Name>
+      <Description>Variation seed</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Occupancy%</Name>
+      <Description>How full are the cases of books?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Chaotic%</Name>
+      <Description>How messy is the book stacking?</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

@@ -1,0 +1,100 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>406,210</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Example</Category>
+    <DisplayName>05.Seeded Object</DisplayName>
+    <Description>Variety driven by seed value</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,448.12</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>328,83</Location>
+      <Size>143.0633,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>584,213</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>419,295</Location>
+      <Size>86.78333,78.12</Size>
+      <NoteID>14</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>254,311</Location>
+      <Size>89.59666,39.28</Size>
+      <NoteID>14</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Quantity</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Seed</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Books</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="14">
+      <ID>14</ID>
+      <Location>
+        <X>229</X>
+        <Y>264</Y>
+      </Location>
+      <Size>
+        <Width>301.783325</Width>
+        <Height>134.12</Height>
+      </Size>
+      <Title>
+      </Title>
+      <Text>Seed label</Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

@@ -1,0 +1,146 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>663.7501,318.08</Centre>
+    <Zoom>0.826446354</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Book Stack.Palletised</DisplayName>
+    <Description>Stack of books from a specified resource list path</Description>
+    <TopLeft>-189,-20</TopLeft>
+    <BottomRight>940.3301,519.92</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>936,58</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>221.16,52.01001</Location>
+      <Size>78.75333,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>more to place?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>208.27,145.32</Location>
+      <Size>126.4933,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Add a book to the stack</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>862,171</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>334,319</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>452,294</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>623.79,361.52</Location>
+      <Size>157.16,78.12</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>144,412</Location>
+      <Size>178.7733,32.92</Size>
+      <NoteID>7</NoteID>
+      <Comment>next stack needs one fewer books</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>234.15,142.22</Location>
+      <Size>169.5933,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Quantity</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Variation#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Descriptor</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="7">
+      <ID>7</ID>
+      <Location>
+        <X>119</X>
+        <Y>258.13</Y>
+      </Location>
+      <Size>
+        <Width>688.160034</Width>
+        <Height>211.790009</Height>
+      </Size>
+      <Title>Recursive Iteration</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

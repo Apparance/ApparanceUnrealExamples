@@ -1,0 +1,133 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>323.34,296.6701</Centre>
+    <Zoom>0.826446354</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Book Stack.Straight</DisplayName>
+    <Description>Iterate up a stack of books</Description>
+    <TopLeft>-284.9,-42.09996</TopLeft>
+    <BottomRight>698.1564,532.82</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>-114.9,357.3001</Location>
+      <Size>77.31667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>227.4397,177.4101</Location>
+      <Size>126.4933,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Add a book to the stack</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>96.90005,71.70993</Location>
+      <Size>209.7267,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>do we need to place any further books?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>653.2399,61.70992</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>532.4196,201.1501</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>399.5597,357.7599</Location>
+      <Size>145.5,52.2</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>277.7,281.2003</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>134.1,312.4002</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>-38.29998,327.0003</Location>
+      <Size>116.9967,39.28</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>-46.59996,424.9001</Location>
+      <Size>196.3233,32.92</Size>
+      <NoteID>1</NoteID>
+      <Comment>next iteration needs one fewer books</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>Where to place the bottom of the stack</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Quantity</Name>
+      <Description>How many books?</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Books</Name>
+      <Description>The placed books</Description>
+    </Object>
+    <Object type="ProcedureNote" id="1">
+      <ID>1</ID>
+      <Location>
+        <X>-71.59999</X>
+        <Y>251.6002</Y>
+      </Location>
+      <Size>
+        <Width>663.756531</Width>
+        <Height>231.219788</Height>
+      </Size>
+      <Title>Recursive Iteration</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

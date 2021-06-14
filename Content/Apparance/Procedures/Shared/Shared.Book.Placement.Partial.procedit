@@ -1,0 +1,179 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>563.5367,157</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Book.Placement.Partial</DisplayName>
+    <Description>Varies book orientation and offset, but NOT size</Description>
+    <TopLeft>-30,-204</TopLeft>
+    <BottomRight>994.8134,475.28</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>227,121</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>457,19</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>454,91</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>254,-43</Location>
+      <Size>86.38,104.04</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>561,73</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>571,-76</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>412,333</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>956,46</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>792,-48</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>616,369</Location>
+      <Size>45.96667,39.28</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>450,247</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>764,361</Location>
+      <Size>71.52666,50</Size>
+      <NoteID>10</NoteID>
+      <Comment>thickness</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>Where to centre book</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Variation#</Name>
+      <Description>Seed to vary positioning</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Descriptor</Name>
+      <Description>Resource list descriptor for books</Description>
+    </Object>
+    <Object type="ProcedureNote" id="8">
+      <ID>8</ID>
+      <Location>
+        <X>195</X>
+        <Y>-154</Y>
+      </Location>
+      <Size>
+        <Width>180.38</Width>
+        <Height>365.16</Height>
+      </Size>
+      <Title>Orientation</Title>
+      <Text>Vary the rotation of the book</Text>
+    </Object>
+    <Object type="ProcedureNote" id="9">
+      <ID>9</ID>
+      <Location>
+        <X>428</X>
+        <Y>-152</Y>
+      </Location>
+      <Size>
+        <Width>247.656677</Width>
+        <Height>357.16</Height>
+      </Size>
+      <Title>Offset</Title>
+      <Text>Vary the translation slightly</Text>
+    </Object>
+    <Object type="ProcedureNote" id="10">
+      <ID>10</ID>
+      <Location>
+        <X>197</X>
+        <Y>224</Y>
+      </Location>
+      <Size>
+        <Width>654.5367</Width>
+        <Height>201.28</Height>
+      </Size>
+      <Title>Select Book</Title>
+      <Text>Based on provided path</Text>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Book</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Next#</Name>
+      <Description>Next variation seed</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Thickness</Name>
+      <Description>Thickness of chosen book</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+</ProcedureEditData>

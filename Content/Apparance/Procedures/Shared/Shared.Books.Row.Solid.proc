@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="561CDC3A">
+    <Inputs>
+        <Input id="1" type="Frame" name="In"/>
+        <Input id="2" type="Integer" name="Variation#"/>
+        <Input id="3" type="List" name="Design"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-17" type="ModelSegment"></Constant>
+        <Constant id="-18" type="Frame"></Constant>
+        <Constant id="-19" type="ModelSegment"></Constant>
+        <Constant id="-20" type="Frame"></Constant>
+        <Constant id="-23" type="ModelSegment"></Constant>
+        <Constant id="-24" type="ModelSegment"></Constant>
+        <Constant id="-25" type="ModelSegment"></Constant>
+        <Constant id="-35" type="ModelSegment"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="4" type="8F0444EE">
+            <Connect in="100" to="6" out="1"/>
+            <Connect in="101" constant="-25"/>
+            <Connect in="102" constant="-35"/>
+        </Operator>
+        <Operator id="6" type="560B22E1">
+            <Connect in="1" input="1"/>
+            <Connect in="2" input="2"/>
+            <Connect in="3" to="7" out="100"/>
+            <Connect in="4" to="8" out="100"/>
+            <Connect in="5" to="10" out="100"/>
+            <Connect in="6" input="3"/>
+        </Operator>
+        <Operator id="7" type="EA5D30C6">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="8" type="DED78D0E">
+            <Connect in="100" to="7" out="100"/>
+            <Connect in="101" to="9" out="100"/>
+        </Operator>
+        <Operator id="9" type="A2AAB92C">
+            <Connect in="100" to="7" out="100"/>
+            <Connect in="101" to="6" out="2"/>
+        </Operator>
+        <Operator id="10" type="EE0DBC28">
+            <Connect in="100" input="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Object" description="" to="4" out="100"/>
+    </Outputs>
+</Procedure>

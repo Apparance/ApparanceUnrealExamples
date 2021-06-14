@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="579D217E">
+    <Inputs>
+        <Input id="1" type="Integer" name="#"/>
+        <Input id="2" type="Float" name="%"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-2" type="Float">0.000000</Constant>
+        <Constant id="-3" type="Float">100.000000</Constant>
+        <Constant id="-10" type="Bool">False</Constant>
+        <Constant id="-12" type="Float">100.000000</Constant>
+        <Constant id="-15" type="Float">0.000000</Constant>
+        <Constant id="-17" type="Float">100.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="AD7C91EE">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" constant="-3"/>
+        </Operator>
+        <Operator id="3" type="B32758F6">
+            <Connect in="100" to="1" out="101"/>
+            <Connect in="101" to="6" out="100"/>
+        </Operator>
+        <Operator id="4" type="BCC45B69">
+            <Connect in="100" to="6" out="100"/>
+            <Connect in="101" constant="-12"/>
+        </Operator>
+        <Operator id="5" type="7C4C983A">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="6" type="F6E1E18D">
+            <Connect in="100" constant="-15"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-17"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Integer" name="#" description="" to="1" out="100"/>
+        <Output id="2" type="Bool" name="Out" description="" to="5" out="100"/>
+    </Outputs>
+</Procedure>

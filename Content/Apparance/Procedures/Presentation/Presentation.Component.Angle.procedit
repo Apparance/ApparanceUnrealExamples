@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>526.6899,278.8901</Centre>
-    <Zoom>0.8264464</Zoom>
+    <Centre>645.4255,491.1499</Centre>
+    <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
     <DisplayName>Component.Angle</DisplayName>
     <Description>Aluminium angle section</Description>
     <TopLeft>-43.3,-48.69999</TopLeft>
-    <BottomRight>1059.86,478.1601</BottomRight>
+    <BottomRight>1250.657,796.006</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -52,8 +52,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>1043.2,188</Location>
-      <Size>86.66,39.28</Size>
+      <Location>1064.496,191.993</Location>
+      <Size>154.6967,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -115,6 +115,85 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>1261.326,272.1122</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>922.7239,582.334</Location>
+      <Size>125.16,104.04</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>361.0452,602.9258</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>475.0454,609.9258</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>603.0455,613.9258</Location>
+      <Size>89.55666,78.12</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>775.0455,540.926</Location>
+      <Size>64.82333,65.16</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>737.0455,629.9258</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>366.2516,685.4598</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>322.963,514.5917</Location>
+      <Size>152.8533,52.2</Size>
+      <NoteID>16</NoteID>
+      <Comment>disable if not set</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>1054.951,496.8811</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Bounds</Name>
       <Description>
@@ -128,10 +207,29 @@
       <Name>Ends?</Name>
       <Description>Want end faces?</Description>
     </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Part No</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>
       <Description>
       </Description>
+    </Object>
+    <Object type="ProcedureNote" id="16">
+      <ID>16</ID>
+      <Location>
+        <X>297.96283</X>
+        <Y>458.1072</Y>
+      </Location>
+      <Size>
+        <Width>856.3192</Width>
+        <Height>287.898865</Height>
+      </Size>
+      <Title>
+      </Title>
+      <Text>Part number along side of section</Text>
     </Object>
   </Objects>
   <Camera>
@@ -150,6 +248,10 @@
     </Input>
     <Input id="3">
       <Value type="1819242306" value="True" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="1920226080" value="" />
       <Metadata />
     </Input>
   </DefaultInputs>

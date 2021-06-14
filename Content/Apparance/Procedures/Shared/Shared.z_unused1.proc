@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="BD01F035">
+    <Inputs>
+        <Input id="1" type="Frame" name="Where?"/>
+        <Input id="2" type="Integer" name="Variation#"/>
+        <Input id="3" type="String" name="Descriptor"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-4" type="Frame"></Constant>
+        <Constant id="-5" type="Integer">0</Constant>
+        <Constant id="-6" type="ModelSegment"></Constant>
+        <Constant id="-7" type="Integer">0</Constant>
+        <Constant id="-8" type="Float">0.000000</Constant>
+        <Constant id="-9" type="ModelSegment"></Constant>
+        <Constant id="-10" type="Integer">0</Constant>
+        <Constant id="-11" type="Float">0.000000</Constant>
+        <Constant id="-12" type="ModelSegment"></Constant>
+        <Constant id="-13" type="Integer">0</Constant>
+        <Constant id="-14" type="Float">0.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="2" type="36BD1471">
+            <Connect in="100" input="3"/>
+            <Connect in="101" constant="-4"/>
+            <Connect in="102" constant="-5"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Object" description="" constant="-12"/>
+        <Output id="2" type="Integer" name="Variation#" description="" constant="-13"/>
+        <Output id="3" type="Float" name="Thickness" description="" constant="-14"/>
+    </Outputs>
+</Procedure>

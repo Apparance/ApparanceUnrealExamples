@@ -1,0 +1,196 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>375,265</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Utility</Category>
+    <DisplayName>Poly.Arc</DisplayName>
+    <Description>Add an arc to a list of poly verts</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>380,141</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>302,188</Location>
+      <Size>122.3467,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>250,250</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>369,214</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>445,229</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>100</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>403,156</Location>
+      <Size>111.9633,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>524,128</Location>
+      <Size>114.7267,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="4">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221856">
+              <Int>100</Int>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>197,170</Location>
+      <Size>62.52667,28.10333</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>196,204</Location>
+      <Size>62.52667,28.10333</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>292,263</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>306,313</Location>
+      <Size>88.15667,28.10333</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>174,316</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="100">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221856">
+              <Int>100</Int>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>In</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Frame</Name>
+      <Description>Frame to build arc in</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Start</Name>
+      <Description>Start angle from +Y axis clockwise</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>End</Name>
+      <Description>End angle from +Y axis clockwise</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Min Angle</Name>
+      <Description>Smallest turn angle allowed</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Min Segment</Name>
+      <Description>Shortest length segments are allowed to be</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221088" value="360" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

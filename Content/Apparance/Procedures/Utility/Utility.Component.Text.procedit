@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>272.7137,433.8703</Centre>
-    <Zoom>0.826446354</Zoom>
+    <Centre>237.9936,310.1602</Centre>
+    <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Utility</Category>
     <DisplayName>Component.Text</DisplayName>
     <Description>Simple text box</Description>
     <TopLeft>-275.74,-87</TopLeft>
-    <BottomRight>855.9564,691.87</BottomRight>
+    <BottomRight>1004.94,691.87</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -163,6 +163,21 @@
       <Comment>meta char for linebreaks</Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>1000.61,135.46</Location>
+      <Size>114.5133,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>Don't bother if empty</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>823.8603,13.70002</Location>
+      <Size>152.8533,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Where?</Name>
       <Description>
@@ -234,48 +249,15 @@
     </Input>
     <Input id="4">
       <Value type="842221088" value="1" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221088" value="1" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221088" value="10" />
-        </Input>
-      </Metadata>
+      <Metadata />
     </Input>
     <Input id="5">
       <Value type="842221856" value="1" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221856" value="0" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221856" value="2" />
-        </Input>
-        <Input Name="MinLimit">
-          <Value type="842221856" value="0" />
-        </Input>
-        <Input Name="MaxLimit">
-          <Value type="842221856" value="2" />
-        </Input>
-      </Metadata>
+      <Metadata />
     </Input>
     <Input id="6">
       <Value type="842221856" value="1" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221856" value="0" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221856" value="2" />
-        </Input>
-        <Input Name="MinLimit">
-          <Value type="842221856" value="0" />
-        </Input>
-        <Input Name="MaxLimit">
-          <Value type="842221856" value="2" />
-        </Input>
-      </Metadata>
+      <Metadata />
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

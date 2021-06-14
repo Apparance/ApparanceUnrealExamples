@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="54E1CC5B">
+    <Inputs>
+        <Input id="1" type="Frame" name="Location"/>
+        <Input id="2" type="Integer" name="Variation#"/>
+        <Input id="3" type="Float" name="Occupancy%"/>
+        <Input id="4" type="Float" name="Chaotic%"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-7" type="Float">10.000000</Constant>
+        <Constant id="-8" type="String"></Constant>
+        <Constant id="-10" type="Integer">0</Constant>
+        <Constant id="-12" type="Integer">0</Constant>
+        <Constant id="-13" type="String">Occupancy: </Constant>
+        <Constant id="-15" type="String">%$0D$0AChaos: </Constant>
+        <Constant id="-17" type="String">%</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="549C901C">
+            <Connect in="1" input="1"/>
+            <Connect in="2" input="2"/>
+            <Connect in="3" input="3"/>
+            <Connect in="4" input="4"/>
+        </Operator>
+        <Operator id="2" type="3A70DB83">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="5" out="100"/>
+            <Connect in="3" constant="-7"/>
+            <Connect in="4" constant="-8"/>
+        </Operator>
+        <Operator id="3" type="00856C25">
+            <Connect in="100" input="3"/>
+            <Connect in="101" constant="-10"/>
+        </Operator>
+        <Operator id="4" type="00856C25">
+            <Connect in="100" input="4"/>
+            <Connect in="101" constant="-12"/>
+        </Operator>
+        <Operator id="5" type="C938CD5E">
+            <Connect in="100" constant="-13"/>
+            <Connect in="101" to="3" out="100"/>
+            <Connect in="102" constant="-15"/>
+            <Connect in="103" to="4" out="100"/>
+            <Connect in="104" constant="-17"/>
+        </Operator>
+        <Operator id="6" type="0F77F09B">
+            <Connect in="100" to="1" out="1"/>
+            <Connect in="101" to="2" out="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="6" out="100"/>
+    </Outputs>
+</Procedure>

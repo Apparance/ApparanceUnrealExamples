@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="579A37DF">
+    <Inputs>
+        <Input id="1" type="Frame" name="In"/>
+        <Input id="2" type="Integer" name="Variation#"/>
+        <Input id="3" type="List" name="Design"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-4" type="Float">0.050000</Constant>
+        <Constant id="-5" type="Float">0.950000</Constant>
+        <Constant id="-7" type="Float">50.000000</Constant>
+        <Constant id="-12" type="Integer">2</Constant>
+        <Constant id="-13" type="Integer">0</Constant>
+        <Constant id="-14" type="Bool">False</Constant>
+        <Constant id="-16" type="Float">0.200000</Constant>
+        <Constant id="-20" type="Float">50.000000</Constant>
+        <Constant id="-34" type="Float">0.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="EA5D30C6">
+            <Connect in="100" to="6" out="100"/>
+        </Operator>
+        <Operator id="2" type="57940412">
+            <Connect in="1" input="3"/>
+        </Operator>
+        <Operator id="3" type="AD7C91EE">
+            <Connect in="100" to="4" out="1"/>
+            <Connect in="101" constant="-4"/>
+            <Connect in="102" constant="-5"/>
+        </Operator>
+        <Operator id="4" type="579D217E">
+            <Connect in="1" input="2"/>
+            <Connect in="2" constant="-7"/>
+        </Operator>
+        <Operator id="6" type="D729EF5D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" to="2" out="1"/>
+            <Connect in="102" constant="-12"/>
+            <Connect in="103" constant="-13"/>
+            <Connect in="104" constant="-14"/>
+        </Operator>
+        <Operator id="7" type="B5029B60">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-16"/>
+        </Operator>
+        <Operator id="8" type="E6571016">
+            <Connect in="100" to="7" out="100"/>
+            <Connect in="101" to="4" out="2"/>
+        </Operator>
+        <Operator id="9" type="579D217E">
+            <Connect in="1" to="3" out="100"/>
+            <Connect in="2" constant="-20"/>
+        </Operator>
+        <Operator id="11" type="C0BB1E82">
+            <Connect in="100" to="9" out="2"/>
+            <Connect in="101" to="13" out="100"/>
+            <Connect in="102" to="14" out="100"/>
+        </Operator>
+        <Operator id="12" type="C0BB1E82">
+            <Connect in="100" to="9" out="2"/>
+            <Connect in="101" to="14" out="100"/>
+            <Connect in="102" to="13" out="100"/>
+        </Operator>
+        <Operator id="13" type="C0BB1E82">
+            <Connect in="100" to="8" out="100"/>
+            <Connect in="101" to="1" out="100"/>
+            <Connect in="102" to="15" out="100"/>
+        </Operator>
+        <Operator id="14" type="C0BB1E82">
+            <Connect in="100" to="8" out="100"/>
+            <Connect in="101" constant="-34"/>
+            <Connect in="102" to="16" out="100"/>
+        </Operator>
+        <Operator id="15" type="971515D0">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="3" out="101"/>
+        </Operator>
+        <Operator id="16" type="A2AAB92C">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="15" out="100"/>
+        </Operator>
+        <Operator id="17" type="A2AAB92C">
+            <Connect in="100" to="18" out="100"/>
+            <Connect in="101" to="1" out="100"/>
+        </Operator>
+        <Operator id="18" type="EA5D30C6">
+            <Connect in="100" input="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Left" description="" to="11" out="100"/>
+        <Output id="2" type="Float" name="Right" description="" to="12" out="100"/>
+        <Output id="3" type="Integer" name="#" description="" to="9" out="1"/>
+        <Output id="4" type="Float" name="Space" description="" to="17" out="100"/>
+    </Outputs>
+</Procedure>

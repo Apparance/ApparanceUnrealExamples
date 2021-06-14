@@ -1,0 +1,297 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>552.5,387.2999</Centre>
+    <Zoom>0.7513149</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Bookcase.Shelving</DisplayName>
+    <Description>The empty cupboard to hold the books</Description>
+    <TopLeft>-30,-191.4</TopLeft>
+    <BottomRight>864.4133,909.92</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>206.8,-83.19997</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>794,-29.79993</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>477.3001,-0.9000152</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>379.9999,-31.69998</Location>
+      <Size>45.96667,39.28</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>696.9,225.1</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>15</NoteID>
+      <Comment>scale</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>550.6001,310.9999</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>15</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>503.7001,758.6003</Location>
+      <Size>176.3967,78.12</Size>
+      <NoteID>17</NoteID>
+      <Comment>bottom shelf</Comment>
+      <InputMetadata>
+        <Input id="3">
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>1</Y>
+              <Z>1</Z>
+            </DataValue>
+          </Data>
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>-1</X>
+              <Y>-1</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+        </Input>
+        <Input id="4">
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>1</Y>
+              <Z>1</Z>
+            </DataValue>
+          </Data>
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>0</X>
+              <Y>0</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>505.1,496.1004</Location>
+      <Size>176.3967,78.12</Size>
+      <NoteID>17</NoteID>
+      <Comment>top shelf</Comment>
+      <InputMetadata>
+        <Input id="3">
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>-1</X>
+              <Y>-1</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>1</Y>
+              <Z>2</Z>
+            </DataValue>
+          </Data>
+        </Input>
+        <Input id="4">
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>1</Y>
+              <Z>1</Z>
+            </DataValue>
+          </Data>
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>0</X>
+              <Y>0</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>501.7001,574.4001</Location>
+      <Size>176.3967,78.12</Size>
+      <NoteID>17</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="3">
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>-1</X>
+              <Y>-1</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>1</Y>
+              <Z>2</Z>
+            </DataValue>
+          </Data>
+        </Input>
+        <Input id="4">
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>1</Y>
+              <Z>1</Z>
+            </DataValue>
+          </Data>
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>0</X>
+              <Y>0</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>505.2002,659.9996</Location>
+      <Size>176.3967,78.12</Size>
+      <NoteID>17</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="3">
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>-1</X>
+              <Y>-1</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>1</Y>
+              <Z>1</Z>
+            </DataValue>
+          </Data>
+        </Input>
+        <Input id="4">
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>1</Y>
+              <Z>1</Z>
+            </DataValue>
+          </Data>
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>0</X>
+              <Y>0</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Object</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Shelves</Name>
+      <Description>List of shelf spaces for storage</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>Where to put it?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Scale</Name>
+      <Description>scaling of cupboard</Description>
+    </Object>
+    <Object type="ProcedureNote" id="15">
+      <ID>15</ID>
+      <Location>
+        <X>525.6001</X>
+        <Y>193.300034</Y>
+      </Location>
+      <Size>
+        <Width>282.679871</Width>
+        <Height>188.579834</Height>
+      </Size>
+      <Title>
+      </Title>
+      <Text>Scale override</Text>
+    </Object>
+    <Object type="ProcedureNote" id="16">
+      <ID>16</ID>
+      <Location>
+        <X>181.799988</X>
+        <Y>-141.400009</Y>
+      </Location>
+      <Size>
+        <Width>746.013367</Width>
+        <Height>295.46</Height>
+      </Size>
+      <Title>Size/place asset</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="17">
+      <ID>17</ID>
+      <Location>
+        <X>417.1</X>
+        <Y>412.2002</Y>
+      </Location>
+      <Size>
+        <Width>343.2967</Width>
+        <Height>447.7198</Height>
+      </Size>
+      <Title>Shelf Spaces</Title>
+      <Text>Build list of spaces for placing content on shelves</Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="2">
+      <Value type="842221088" value="1" />
+      <Metadata />
+    </Input>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

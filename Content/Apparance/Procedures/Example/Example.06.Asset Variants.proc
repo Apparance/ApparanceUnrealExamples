@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="BCD60E3D">
+    <Inputs>
+        <Input id="1" type="Frame" name="Where?"/>
+        <Input id="2" type="Integer" name="Seed"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-5" type="Float">130.671951</Constant>
+        <Constant id="-6" type="Float">45.011860</Constant>
+        <Constant id="-7" type="Float">0.407642</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="2" type="BCD0C835">
+            <Connect in="1" input="1"/>
+            <Connect in="2" input="2"/>
+            <Connect in="3" constant="-5"/>
+            <Connect in="4" constant="-6"/>
+            <Connect in="5" constant="-7"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Object" description="" to="2" out="1"/>
+    </Outputs>
+</Procedure>

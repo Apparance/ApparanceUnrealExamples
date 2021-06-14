@@ -1,0 +1,231 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>781.3348,390.4584</Centre>
+    <Zoom>0.683013737</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Books.Row.Calc</DisplayName>
+    <Description>Calculate how to split up space on row</Description>
+    <TopLeft>-308.522,-72.077</TopLeft>
+    <BottomRight>1178.209,579.8799</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>234.4381,99.06497</Location>
+      <Size>179.88,69.28</Size>
+      <NoteID>23</NoteID>
+      <Comment>amount of space to fill with books</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>-113.522,67.27495</Location>
+      <Size>185.96,39.28</Size>
+      <NoteID>23</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>612.6973,340.3136</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>22</NoteID>
+      <Comment>split ratio</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>486.8891,252.9768</Location>
+      <Size>85.63667,54.28</Size>
+      <NoteID>22</NoteID>
+      <Comment>both ends?
+or just one?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>430,203</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>96.478,82.27493</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>23</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>555.3184,85.56814</Location>
+      <Size>110.8367,32.92</Size>
+      <NoteID>22</NoteID>
+      <Comment>only split if much left</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>699.4352,114.567</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>22</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>1030.584,94.77296</Location>
+      <Size>85.63667,54.28</Size>
+      <NoteID>21</NoteID>
+      <Comment>which side?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>744.9501,156.74</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>1148.879,231.55</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>21</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>1148.334,356.2121</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>21</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>870.1486,144.1121</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>22</NoteID>
+      <Comment>one or two</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>871.1415,277.7532</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>22</NoteID>
+      <Comment>two</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>736.3591,226.9701</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>22</NoteID>
+      <Comment>part</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>790.9158,316.671</Location>
+      <Size>54.10667,32.92</Size>
+      <NoteID>22</NoteID>
+      <Comment>remainder</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>397.8999,476.5999</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>spare</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>230.9999,460.5999</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>In</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Variation#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Design</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="21">
+      <ID>21</ID>
+      <Location>
+        <X>1005.58435</X>
+        <Y>-5.22702742</Y>
+      </Location>
+      <Size>
+        <Width>242.624191</Width>
+        <Height>451.599121</Height>
+      </Size>
+      <Title>Swap?</Title>
+      <Text>Randomise the side</Text>
+    </Object>
+    <Object type="ProcedureNote" id="22">
+      <ID>22</ID>
+      <Location>
+        <X>459.921356</X>
+        <Y>-1.14198065</Y>
+      </Location>
+      <Size>
+        <Width>510.550262</Width>
+        <Height>431.6154</Height>
+      </Size>
+      <Title>Split</Title>
+      <Text>Split between two sides, or just keep all on one?</Text>
+    </Object>
+    <Object type="ProcedureNote" id="23">
+      <ID>23</ID>
+      <Location>
+        <X>-138.522049</X>
+        <Y>-2.11200714</Y>
+      </Location>
+      <Size>
+        <Width>577.840149</Width>
+        <Height>200.46701</Height>
+      </Size>
+      <Title>Space</Title>
+      <Text>How much space to occupy</Text>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Left</Name>
+      <Description>Amount of space to left to fill with books</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Right</Name>
+      <Description>Amount of space to right to fill with books</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>#</Name>
+      <Description>Next seed</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="4">
+      <Name>Space</Name>
+      <Description>Unused space</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

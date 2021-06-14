@@ -1,14 +1,25 @@
 <?xml version="1.0"?>
 <Procedure Version="4" type="10A3E9B5">
     <Inputs/>
-    <Constants/>
+    <Constants>
+        <Constant id="-1" type="Float">0.015000</Constant>
+        <Constant id="-2" type="Float">0.080000</Constant>
+    </Constants>
     <Operators>
         <Operator id="1" type="137483A4"/>
         <Operator id="2" type="D233A94E">
             <Connect in="100" to="1" out="1"/>
         </Operator>
+        <Operator id="3" type="DA4FC7F9">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+        <Operator id="4" type="DA4FC7F9">
+            <Connect in="100" constant="-2"/>
+        </Operator>
     </Operators>
     <Outputs>
-        <Output id="1" type="Float" name="Z" description="" to="2" out="102"/>
+        <Output id="1" type="Float" name="Thickness" description="" to="2" out="102"/>
+        <Output id="2" type="Float" name="Min" description="" to="3" out="100"/>
+        <Output id="3" type="Float" name="Max" description="" to="4" out="100"/>
     </Outputs>
 </Procedure>

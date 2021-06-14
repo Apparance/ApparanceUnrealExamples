@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="57940412">
+    <Inputs>
+        <Input id="1" type="List" name="Design"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-2" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="81C10C38">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Occupancy%" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

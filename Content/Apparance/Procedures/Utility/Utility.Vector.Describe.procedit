@@ -1,0 +1,136 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>352,201</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Utility</Category>
+    <DisplayName>Vector.Describe</DisplayName>
+    <Description>Text description of a vector</Description>
+    <TopLeft>-131,-20</TopLeft>
+    <BottomRight>625.7567,485.16</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>309,44</Location>
+      <Size>89.59666,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>313,117</Location>
+      <Size>89.59666,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>311,189</Location>
+      <Size>89.59666,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>148,79</Location>
+      <Size>71.52666,50</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>649,127</Location>
+      <Size>46.75667,71.8</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>162,273</Location>
+      <Size>139.4233,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>default separator</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>523,64</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>526,145</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>525,241</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>165,370</Location>
+      <Size>139.4233,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>default suffix</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Vector</Name>
+      <Description>3D vector to describe</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>(Separator)</Name>
+      <Description>Optional separator override, default is comma</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Places</Name>
+      <Description>Number of decimal places to show</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>(Units)</Name>
+      <Description>Suffix for units, e.g. m</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Text</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="862152022" value="[0,0,0]" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221856" value="1" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221856" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221856" value="5" />
+        </Input>
+      </Metadata>
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

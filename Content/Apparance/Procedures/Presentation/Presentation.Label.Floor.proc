@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="3A70DB83">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame"/>
+        <Input id="2" type="String" name="Label"/>
+        <Input id="3" type="Float" name="(Size)"/>
+        <Input id="4" type="String" name="Prefix"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-2" type="Float">0.100000</Constant>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-4" type="Integer">1</Constant>
+        <Constant id="-6" type="Float">0.001000</Constant>
+        <Constant id="-7" type="Integer">0</Constant>
+        <Constant id="-8" type="Integer">2</Constant>
+        <Constant id="-9" type="Bool">False</Constant>
+        <Constant id="-12" type="FColour">0.146705,0.133368,0.280072,1.000000</Constant>
+        <Constant id="-14" type="Integer">1</Constant>
+        <Constant id="-15" type="Integer">0</Constant>
+        <Constant id="-17" type="Vector3">0.000000, -0.042869, 0.000000</Constant>
+        <Constant id="-18" type="Integer">0</Constant>
+        <Constant id="-19" type="Integer">0</Constant>
+        <Constant id="-20" type="Integer">0</Constant>
+        <Constant id="-22" type="Float">0.000000</Constant>
+        <Constant id="-24" type="Float">5.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E82F5975">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" constant="-3"/>
+            <Connect in="103" constant="-4"/>
+        </Operator>
+        <Operator id="2" type="D729EF5D">
+            <Connect in="100" to="4" out="100"/>
+            <Connect in="101" constant="-6"/>
+            <Connect in="102" constant="-7"/>
+            <Connect in="103" constant="-8"/>
+            <Connect in="104" constant="-9"/>
+        </Operator>
+        <Operator id="3" type="9BE4B581">
+            <Connect in="1" to="2" out="100"/>
+            <Connect in="2" to="8" out="100"/>
+            <Connect in="3" constant="-12"/>
+            <Connect in="4" to="6" out="100"/>
+            <Connect in="5" constant="-14"/>
+            <Connect in="6" constant="-15"/>
+        </Operator>
+        <Operator id="4" type="EAE4856E">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-17"/>
+            <Connect in="102" constant="-18"/>
+            <Connect in="103" constant="-19"/>
+            <Connect in="104" constant="-20"/>
+        </Operator>
+        <Operator id="5" type="B2DC8FDA">
+            <Connect in="100" input="3"/>
+            <Connect in="101" constant="-22"/>
+        </Operator>
+        <Operator id="6" type="C0BB1E82">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" constant="-24"/>
+            <Connect in="102" input="3"/>
+        </Operator>
+        <Operator id="8" type="C938CD2E">
+            <Connect in="100" input="4"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Text" description="" to="3" out="1"/>
+    </Outputs>
+</Procedure>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="577D2EB9">
+    <Inputs>
+        <Input id="1" type="Float" name="%"/>
+        <Input id="2" type="Float" name="A"/>
+        <Input id="3" type="Float" name="B"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-8" type="Float">100.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="A2AAB92C">
+            <Connect in="100" input="3"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="2" type="971515D0">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="3" type="85D4CBD8">
+            <Connect in="100" input="2"/>
+            <Connect in="101" to="2" out="100"/>
+        </Operator>
+        <Operator id="4" type="DED78D0E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-8"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

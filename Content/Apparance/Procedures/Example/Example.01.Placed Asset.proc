@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="954EC557">
+    <Inputs>
+        <Input id="1" type="Frame" name="Bounds"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="String">Example.Book</Constant>
+        <Constant id="-2" type="Frame"></Constant>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-6" type="Float">0.000000</Constant>
+        <Constant id="-7" type="List"></Constant>
+        <Constant id="-11" type="String"> x </Constant>
+        <Constant id="-12" type="Integer">1</Constant>
+        <Constant id="-16" type="Float">0.000000</Constant>
+        <Constant id="-17" type="String">Supplied bounds and book size = </Constant>
+        <Constant id="-18" type="String"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="36BD1471">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" constant="-3"/>
+        </Operator>
+        <Operator id="2" type="A58A93E3">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" constant="-6"/>
+            <Connect in="103" constant="-7"/>
+        </Operator>
+        <Operator id="3" type="0F77F09B">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" to="6" out="1"/>
+        </Operator>
+        <Operator id="4" type="3A642B50">
+            <Connect in="1" to="5" out="100"/>
+            <Connect in="2" constant="-11"/>
+            <Connect in="3" constant="-12"/>
+            <Connect in="4" constant="-18"/>
+        </Operator>
+        <Operator id="5" type="EE0DBC28">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="6" type="3A70DB83">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="4" out="1"/>
+            <Connect in="3" constant="-16"/>
+            <Connect in="4" constant="-17"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Object" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

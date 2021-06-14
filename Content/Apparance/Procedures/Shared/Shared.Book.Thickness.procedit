@@ -27,10 +27,33 @@
 are laid down</Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>455,268</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>451,317</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Z</Name>
-      <Description>
-      </Description>
+      <Name>Thickness</Name>
+      <Description>Typical book thickness</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Min</Name>
+      <Description>Minimum allowable book thickness</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Max</Name>
+      <Description>Maximum allowable book thickness</Description>
     </Object>
   </Objects>
   <Camera>
@@ -38,4 +61,5 @@ are laid down</Comment>
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs />
 </ProcedureEditData>

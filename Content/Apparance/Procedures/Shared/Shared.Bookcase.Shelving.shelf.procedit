@@ -1,0 +1,70 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>382,231</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Bookcase.Shelving.shelf</DisplayName>
+    <Description>Add an entry to a list of shelf positions</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,461.96</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>531,108</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>238,194</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>386,282</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>In</Name>
+      <Description>List of shelf spaces to add to</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Reference</Name>
+      <Description>Frame of reference for shelves</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Position</Name>
+      <Description>Position of shelf space</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Size</Name>
+      <Description>Size of shelf space</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>List of shelf spaces</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

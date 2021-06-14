@@ -1,0 +1,444 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>539.0834,191.8793</Centre>
+    <Zoom>0.751315057</Zoom>
+  </View>
+  <Procedure>
+    <Category>Shared</Category>
+    <DisplayName>Books.Row</DisplayName>
+    <Description>A row of books on a shelf (of a bookcase perhaps)
+Decides how to populate the row based on the design parameters passed in</Description>
+    <TopLeft>-71,-323.985</TopLeft>
+    <BottomRight>1024.768,744.7358</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>668.989,-151.2</Location>
+      <Size>124.6833,52.2</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>99,362</Location>
+      <Size>185.96,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>149,257</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>146.6563,146.5</Location>
+      <Size>118.95,84.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>461.0889,-169.491</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>912.4386,-260.6372</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>901.0723,460.1426</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>506.0091,-224.321</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>1048.011,144.335</Location>
+      <Size>46.75667,58.84</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>543.7448,473.3837</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>554.2729,521.2427</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>726.8628,516.4748</Location>
+      <Size>124.6833,52.2</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>480.9381,617.5354</Location>
+      <Size>58.81333,52.2</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>784.2168,178.744</Location>
+      <Size>104.7833,78.12</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>873.5848,105.739</Location>
+      <Size>46.75667,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>551.2778,189.5719</Location>
+      <Size>85.63667,54.28</Size>
+      <NoteID>26</NoteID>
+      <Comment>which side?</Comment>
+      <InputMetadata>
+        <Input id="2">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>100</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>682.0817,253.9949</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>463.8761,127.625</Location>
+      <Size>58.81333,52.2</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>619.3607,63.27599</Location>
+      <Size>85.63667,54.28</Size>
+      <NoteID>26</NoteID>
+      <Comment>add a book?</Comment>
+      <InputMetadata>
+        <Input id="2">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>100</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>906.0109,132.892</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>519.9969,255.743</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>137.9089,12.87117</Location>
+      <Size>185.96,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>528.5863,59.94783</Location>
+      <Size>59.94667,32.92</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>100</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>624.26,-193.9219</Location>
+      <Size>133.0133,91.08</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>709.2943,599.8892</Location>
+      <Size>133.0133,91.08</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>820.2401,-111.7</Location>
+      <Size>128.0467,32.92</Size>
+      <NoteID>24</NoteID>
+      <Comment>stack adjacent to space?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>792.1199,408.0301</Location>
+      <Size>128.0467,32.92</Size>
+      <NoteID>25</NoteID>
+      <Comment>stack adjacent to space?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>211.4501,429.28</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>698.16,399.49</Location>
+      <Size>45.43667,32.92</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>732.8897,511.778</Location>
+      <Size>83.93667,32.92</Size>
+      <NoteID>25</NoteID>
+      <Comment>no stack to left?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>824.3299,400.69</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>614.4898,443.698</Location>
+      <Size>59.15,31.92333</Size>
+      <NoteID>25</NoteID>
+      <Comment>no books</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>653.3298,-97.7699</Location>
+      <Size>59.15,31.92333</Size>
+      <NoteID>24</NoteID>
+      <Comment>no books</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>792.2897,442.088</Location>
+      <Size>105.4967,32.92</Size>
+      <NoteID>25</NoteID>
+      <Comment>allow leaning book?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="35">
+      <Location>827.28,-147.7699</Location>
+      <Size>49.26,32.92</Size>
+      <NoteID>24</NoteID>
+      <Comment>no stack?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="36">
+      <Location>882.9194,-90.74994</Location>
+      <Size>100.1167,32.92</Size>
+      <NoteID>24</NoteID>
+      <Comment>allow leaning book</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="37">
+      <Location>671.1498,138.26</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>26</NoteID>
+      <Comment>allowed?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="38">
+      <Location>773,120.8901</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="39">
+      <Location>780.6053,-148.303</Location>
+      <Size>91.93333,52.2</Size>
+      <NoteID>24</NoteID>
+      <Comment>no stack to right?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="40">
+      <Location>728.9922,524.2677</Location>
+      <Size>83.93667,52.2</Size>
+      <NoteID>25</NoteID>
+      <Comment>no stack to left?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="41">
+      <Location>195.233,59.08595</Location>
+      <Size>151.5933,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="42">
+      <Location>273.606,250.9841</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>In</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Variation#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Design</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Object</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="24">
+      <ID>24</ID>
+      <Location>
+        <X>401.4829</X>
+        <Y>-273.985</Y>
+      </Location>
+      <Size>
+        <Width>616.8198</Width>
+        <Height>226.604965</Height>
+      </Size>
+      <Title>Left Side</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="25">
+      <ID>25</ID>
+      <Location>
+        <X>455.938</X>
+        <Y>422.69986</Y>
+      </Location>
+      <Size>
+        <Width>544.4648</Width>
+        <Height>272.03598</Height>
+      </Size>
+      <Title>Right Side</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="26">
+      <ID>26</ID>
+      <Location>
+        <X>438.876068</X>
+        <Y>2.23796368</Y>
+      </Location>
+      <Size>
+        <Width>556.7848</Width>
+        <Height>365.874969</Height>
+      </Size>
+      <Title>Lean a book against one side</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

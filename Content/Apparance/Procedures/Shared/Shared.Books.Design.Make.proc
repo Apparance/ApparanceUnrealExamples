@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Procedure Version="4" type="57910D34">
+    <Inputs>
+        <Input id="1" type="Float" name="Occupancy%"/>
+        <Input id="2" type="Float" name="Chaotic%"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="List"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="6FAE9477">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" input="1"/>
+        </Operator>
+        <Operator id="2" type="6FAE9477">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Design" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>
