@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="F147C006">
+<Procedure Version="5" type="F147C006">
     <Inputs>
-        <Input id="1" type="Frame" name="Frame"/>
-        <Input id="2" type="Vector3" name="Angles"/>
-        <Input id="3" type="Vector3" name="Board"/>
-        <Input id="4" type="Integer" name="Number"/>
-        <Input id="5" type="String" name="Title"/>
-        <Input id="6" type="String" name="Text"/>
+        <Input id="1" type="Frame" name="Frame" description="|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]|Origin=1"/>
+        <Input id="2" type="Vector3" name="Angles" description=""/>
+        <Input id="3" type="Vector3" name="Board" description=""/>
+        <Input id="4" type="Integer" name="Number" description=""/>
+        <Input id="5" type="String" name="Title" description=""/>
+        <Input id="6" type="String" name="Text" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-7" type="Integer">63</Constant>
@@ -21,8 +21,8 @@
         <Constant id="-27" type="Integer">0</Constant>
         <Constant id="-28" type="Integer">2</Constant>
         <Constant id="-29" type="Bool">False</Constant>
-        <Constant id="-30" type="Frame"></Constant>
-        <Constant id="-31" type="Frame"></Constant>
+        <Constant id="-30" type="Frame">[-0.500000,-0.500000,-0.500000][1,0,0][0,1,1][0,0,0][1,1,1]</Constant>
+        <Constant id="-31" type="Frame">[-0.500000,-0.500000,-0.500000][1,0,0][0,1,1][0,0,0][1,1,1]</Constant>
         <Constant id="-34" type="Vector3">0.060000, 0.060000, 1.000000</Constant>
         <Constant id="-35" type="Integer">0</Constant>
         <Constant id="-36" type="Integer">0</Constant>

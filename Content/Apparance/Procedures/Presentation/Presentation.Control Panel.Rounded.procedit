@@ -1,18 +1,18 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>394.2507,154.4834</Centre>
-    <Zoom>1</Zoom>
+    <Centre>-37.0812,243.2871</Centre>
+    <Zoom>0.7513155</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
-    <DisplayName>Control Panel.Front</DisplayName>
-    <Description>Front-panel of control box</Description>
-    <TopLeft>-583.869,-224.0856</TopLeft>
+    <DisplayName>Control Panel.Rounded</DisplayName>
+    <Description>Rounded solid</Description>
+    <TopLeft>-583.869,-290.9333</TopLeft>
     <BottomRight>973.8964,489.8497</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>489.333,-133.1066</Location>
+      <Location>575.1328,-89.10663</Location>
       <Size>117.19,117</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -25,10 +25,17 @@
             </DataValue>
           </Data>
         </Input>
+        <Input id="106">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>90</Float>
+            </DataValue>
+          </Data>
+        </Input>
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>638.3964,-16.09962</Location>
+      <Location>734.0962,-10.59962</Location>
       <Size>46.75667,58.84</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -93,7 +100,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>150.8965,-94.69962</Location>
+      <Location>142.8965,-64.69962</Location>
       <Size>86.38,129.96</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -117,7 +124,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="11">
-      <Location>-174.3038,-57.30637</Location>
+      <Location>-181.6243,-140.76</Location>
       <Size>86.38,129.96</Size>
       <NoteID>1</NoteID>
       <Comment>
@@ -125,7 +132,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="12">
-      <Location>-283.4848,-57.47969</Location>
+      <Location>-290.8053,-140.9333</Location>
       <Size>74.89,39.28</Size>
       <NoteID>1</NoteID>
       <Comment>
@@ -141,7 +148,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="14">
-      <Location>-345,30</Location>
+      <Location>-352.3205,-53.45368</Location>
       <Size>45.96667,39.28</Size>
       <NoteID>1</NoteID>
       <Comment>
@@ -157,12 +164,20 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="16">
-      <Location>373.8721,51.08404</Location>
+      <Location>382.8721,58.08404</Location>
       <Size>105.85,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
-      <InputMetadata />
+      <InputMetadata>
+        <Input id="4">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>360</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="17">
       <Location>267,47</Location>
@@ -189,6 +204,85 @@
         </Input>
       </InputMetadata>
     </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>400,113</Location>
+      <Size>70.53,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>288,-223</Location>
+      <Size>100.43,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>-308.5026,-95.71475</Location>
+      <Size>109.8033,39.28</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>383.7996,-25.79989</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>-363.7251,100.1051</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>-370.669,183.1471</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>-176,248</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>-249.9229,155.0981</Location>
+      <Size>51.45,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>-176.5429,177.4851</Location>
+      <Size>51.45,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>add sides</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>-373.2608,261.0632</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
       </Name>
@@ -200,15 +294,32 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Holes</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Front?</Name>
+      <Description>Want front surface?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Back?</Name>
+      <Description>Want back surface?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Sides?</Name>
+      <Description>Want side surfaces?</Description>
+    </Object>
     <Object type="ProcedureNote" id="1">
       <ID>1</ID>
       <Location>
-        <X>-370</X>
-        <Y>-157.479691</Y>
+        <X>-377.3205</X>
+        <Y>-198.474472</Y>
       </Location>
       <Size>
-        <Width>307.0762</Width>
-        <Height>255.133331</Height>
+        <Width>255.832718</Width>
+        <Height>177.536057</Height>
       </Size>
       <Title>Build Frame</Title>
       <Text>Construct poly in XY plane.
@@ -223,6 +334,22 @@ Then Move into place.</Text>
   <DefaultInputs>
     <Input id="1">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="1819242306" value="False" />
       <Metadata />
     </Input>
   </DefaultInputs>

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="954EC557">
+<Procedure Version="5" type="954EC557">
     <Inputs>
-        <Input id="1" type="Frame" name="Bounds"/>
+        <Input id="1" type="Frame" name="Bounds" description="|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]"/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="String">Example.Book</Constant>
-        <Constant id="-2" type="Frame"></Constant>
+        <Constant id="-2" type="Frame">[-0.500000,-0.500000,-0.500000][1,0,0][0,1,1][0,0,0][1,1,1]</Constant>
         <Constant id="-3" type="Integer">0</Constant>
         <Constant id="-6" type="Float">0.000000</Constant>
         <Constant id="-7" type="List"></Constant>

@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>237.9936,310.1602</Centre>
+    <Centre>136.9936,351.1602</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Utility</Category>
     <DisplayName>Component.Text</DisplayName>
     <Description>Simple text box</Description>
-    <TopLeft>-275.74,-87</TopLeft>
+    <TopLeft>-315,-87</TopLeft>
     <BottomRight>1004.94,691.87</BottomRight>
   </Procedure>
   <Objects>
@@ -178,6 +178,22 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>91,227</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>-145,-25</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Where?</Name>
       <Description>
@@ -244,7 +260,7 @@
       <Metadata />
     </Input>
     <Input id="3">
-      <Value type="1919697734" value="[1,1,1]" />
+      <Value type="1919697734" value="[1,1,1,1]" />
       <Metadata />
     </Input>
     <Input id="4">

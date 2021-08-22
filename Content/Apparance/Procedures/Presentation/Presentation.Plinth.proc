@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="10A9F93C">
+<Procedure Version="5" type="10A9F93C">
     <Inputs>
-        <Input id="1" type="Frame" name="Bounds"/>
-        <Input id="2" type="String" name="Part No"/>
-        <Input id="3" type="String" name="(Label)"/>
+        <Input id="1" type="Frame" name="Bounds" description="Space for the plinth to occupy.|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]|Origin=0"/>
+        <Input id="2" type="String" name="Part No" description="Reference number/code for this plinth."/>
+        <Input id="3" type="String" name="(Label)" description="Optional label on the side of the plinth."/>
     </Inputs>
     <Constants>
         <Constant id="-13" type="Float">0.025000</Constant>

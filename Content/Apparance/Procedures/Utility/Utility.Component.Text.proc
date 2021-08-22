@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="9BE4B581">
+<Procedure Version="5" type="9BE4B581">
     <Inputs>
-        <Input id="1" type="Frame" name="Where?"/>
-        <Input id="2" type="String" name="Text"/>
-        <Input id="3" type="FColour" name="Colour"/>
-        <Input id="4" type="Float" name="Size"/>
-        <Input id="5" type="Integer" name="H-Align"/>
-        <Input id="6" type="Integer" name="V-Align"/>
+        <Input id="1" type="Frame" name="Where?" description=""/>
+        <Input id="2" type="String" name="Text" description=""/>
+        <Input id="3" type="FColour" name="Colour" description=""/>
+        <Input id="4" type="Float" name="Size" description=""/>
+        <Input id="5" type="Integer" name="H-Align" description=""/>
+        <Input id="6" type="Integer" name="V-Align" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Float">0.000000</Constant>
         <Constant id="-5" type="String">Presentation.Components.Text</Constant>
-        <Constant id="-6" type="Frame"></Constant>
+        <Constant id="-6" type="Frame">[-0.500000,-0.500000,-0.500000][1,0,0][0,1,1][0,0,0][1,1,1]</Constant>
         <Constant id="-7" type="Integer">0</Constant>
         <Constant id="-8" type="List"></Constant>
         <Constant id="-19" type="Integer">-1</Constant>
@@ -27,10 +27,10 @@
         <Constant id="-31" type="Integer">1</Constant>
         <Constant id="-34" type="ModelSegment"></Constant>
         <Constant id="-35" type="ModelSegment"></Constant>
-        <Constant id="-37" type="FColour">0.069761,0.000000,0.000000,1.000000</Constant>
-        <Constant id="-38" type="FColour">0.000000,0.113106,0.000000,1.000000</Constant>
-        <Constant id="-39" type="FColour">0.000000,0.000000,0.116440,1.000000</Constant>
-        <Constant id="-40" type="FColour">0.000000,0.000000,0.000000,1.000000</Constant>
+        <Constant id="-37" type="FColour">[0.069761,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-38" type="FColour">[0.000000,0.113106,0.000000,1.000000]</Constant>
+        <Constant id="-39" type="FColour">[0.000000,0.000000,0.116440,1.000000]</Constant>
+        <Constant id="-40" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
         <Constant id="-41" type="Integer">1</Constant>
         <Constant id="-42" type="Integer">1</Constant>
         <Constant id="-47" type="Float">-0.500000</Constant>
@@ -48,6 +48,13 @@
         <Constant id="-66" type="ModelSegment"></Constant>
         <Constant id="-72" type="ModelSegment"></Constant>
         <Constant id="-74" type="Bool">False</Constant>
+        <Constant id="-77" type="Vector3">10.000000, 10.000000, 1.000000</Constant>
+        <Constant id="-78" type="Integer">1</Constant>
+        <Constant id="-79" type="Integer">1</Constant>
+        <Constant id="-80" type="Integer">1</Constant>
+        <Constant id="-81" type="Integer">1</Constant>
+        <Constant id="-82" type="Integer">1</Constant>
+        <Constant id="-83" type="Integer">1</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="A58A93E3">
@@ -153,6 +160,16 @@
         <Operator id="21" type="771894D0">
             <Connect in="100" input="2"/>
             <Connect in="101" constant="-74"/>
+        </Operator>
+        <Operator id="22" type="E99E1179">
+            <Connect in="100" to="17" out="100"/>
+            <Connect in="101" constant="-77"/>
+            <Connect in="102" constant="-78"/>
+            <Connect in="103" constant="-79"/>
+            <Connect in="104" constant="-80"/>
+            <Connect in="105" constant="-81"/>
+            <Connect in="106" constant="-82"/>
+            <Connect in="107" constant="-83"/>
         </Operator>
     </Operators>
     <Outputs>

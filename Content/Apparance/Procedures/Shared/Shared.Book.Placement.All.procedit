@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>911.2401,207.99</Centre>
-    <Zoom>0.8264464</Zoom>
+    <Centre>360.04,226.47</Centre>
+    <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Shared</Category>
@@ -33,7 +33,32 @@ book procedure</Comment>
       <NoteID>3</NoteID>
       <Comment>
       </Comment>
-      <InputMetadata />
+      <InputMetadata>
+        <Input id="102">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>100</Float>
+            </DataValue>
+          </Data>
+          <Data name="MinimumValue">
+            <DataValue typeid="842221088">
+              <Float>-100</Float>
+            </DataValue>
+          </Data>
+        </Input>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>100</Float>
+            </DataValue>
+          </Data>
+          <Data name="MinimumValue">
+            <DataValue typeid="842221088">
+              <Float>-100</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="4">
       <Location>646,74</Location>

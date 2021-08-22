@@ -1,34 +1,34 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>440,290</Centre>
+    <Centre>271,285</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
-    <Category>Example</Category>
-    <DisplayName>01.Placed Asset</DisplayName>
-    <Description>Example of placing an asset</Description>
-    <TopLeft>-30,-20</TopLeft>
-    <BottomRight>676.7567,436.16</BottomRight>
+    <Category>Utility</Category>
+    <DisplayName>Taper.Units</DisplayName>
+    <Description>Taper in XY by a distance rather than a proportion</Description>
+    <TopLeft>-157,-20</TopLeft>
+    <BottomRight>600,403.28</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>244,61</Location>
-      <Size>128.5367,69.28</Size>
+      <Location>556,134</Location>
+      <Size>88.02,78.12</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>523,99</Location>
-      <Size>108.8133,78.12</Size>
+      <Location>55,254</Location>
+      <Size>92.17333,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>700,265</Location>
+      <Location>315,201</Location>
       <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -36,60 +36,57 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>281,285</Location>
-      <Size>119.4867,78.12</Size>
-      <NoteID>12</NoteID>
+      <Location>321,280</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>168,296</Location>
-      <Size>45.96667,39.28</Size>
-      <NoteID>12</NoteID>
+      <Location>21,205</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>512,302</Location>
-      <Size>86.78333,78.12</Size>
-      <NoteID>12</NoteID>
+      <Location>404,184</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>374,135</Location>
-      <Size>86.38,104.04</Size>
+      <Location>404,254</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Bounds</Name>
+      <Name>In</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>
+      </Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Object</Name>
+      <Name>Out</Name>
       <Description>
       </Description>
-    </Object>
-    <Object type="ProcedureNote" id="12">
-      <ID>12</ID>
-      <Location>
-        <X>143</X>
-        <Y>259</Y>
-      </Location>
-      <Size>
-        <Width>474.783325</Width>
-        <Height>127.16</Height>
-      </Size>
-      <Title>
-      </Title>
-      <Text>Size Label</Text>
     </Object>
   </Objects>
   <Camera>
@@ -99,6 +96,10 @@
   </Camera>
   <DefaultInputs>
     <Input id="1">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="F2B7A43F">
+<Procedure Version="5" type="F2B7A43F">
     <Inputs>
-        <Input id="1" type="Frame" name="Bounds"/>
+        <Input id="1" type="Frame" name="Bounds" description="|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]|Origin=0"/>
     </Inputs>
     <Constants>
         <Constant id="-5" type="Float">0.100000</Constant>

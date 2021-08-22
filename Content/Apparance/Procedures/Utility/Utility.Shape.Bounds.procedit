@@ -1,61 +1,47 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>407,173</Centre>
+    <Centre>404,259</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
-    <Category>Presentation</Category>
-    <DisplayName>Ground</DisplayName>
-    <Description>Main arena ground, floor</Description>
+    <Category>Utility</Category>
+    <DisplayName>Shape.Bounds</DisplayName>
+    <Description>Shape building bounds</Description>
     <TopLeft>-30,-20</TopLeft>
-    <BottomRight>663.7567,400</BottomRight>
+    <BottomRight>600,400</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>210,146</Location>
-      <Size>178.2167,39.28</Size>
+      <Location>409,142</Location>
+      <Size>86.38,129.96</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>517,170</Location>
-      <Size>57.14333,52.2</Size>
+      <Location>218,190</Location>
+      <Size>45.96667,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>248,251</Location>
-      <Size>186.5567,39.28</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="4">
-      <Location>687,201</Location>
-      <Size>46.75667,58.84</Size>
+      <Location>254,105</Location>
+      <Size>74.89,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Bounds</Name>
-      <Description>
-      </Description>
-    </Object>
-    <Object type="ProcedureInputState" id="2">
-      <Name>Colour</Name>
+      <Name>Size</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>
-      </Name>
+      <Name>Out</Name>
       <Description>
       </Description>
     </Object>
@@ -68,14 +54,6 @@
   <DefaultInputs>
     <Input id="1">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
-      <Metadata>
-        <Input Name="Origin">
-          <Value type="842221856" value="0" />
-        </Input>
-      </Metadata>
-    </Input>
-    <Input id="2">
-      <Value type="1919697734" value="[0,0,0,1]" />
       <Metadata />
     </Input>
   </DefaultInputs>

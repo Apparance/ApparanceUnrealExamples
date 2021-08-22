@@ -329,16 +329,15 @@
     </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Bounds</Name>
-      <Description>
-      </Description>
+      <Description>Space for the plinth to occupy.</Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
       <Name>Part No</Name>
-      <Description>Reference number/code for this plinth</Description>
+      <Description>Reference number/code for this plinth.</Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
       <Name>(Label)</Name>
-      <Description>Optional label on the side of the plinth</Description>
+      <Description>Optional label on the side of the plinth.</Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>
@@ -354,7 +353,11 @@
   <DefaultInputs>
     <Input id="1">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
-      <Metadata />
+      <Metadata>
+        <Input Name="Origin">
+          <Value type="842221856" value="0" />
+        </Input>
+      </Metadata>
     </Input>
     <Input id="2">
       <Value type="1920226080" value="" />

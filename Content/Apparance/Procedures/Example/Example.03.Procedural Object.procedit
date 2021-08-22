@@ -1,19 +1,19 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>337,330</Centre>
+    <Centre>400,121</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Example</Category>
     <DisplayName>03.Procedural Object</DisplayName>
     <Description>Several objects composed procedurally</Description>
-    <TopLeft>-121,-20</TopLeft>
-    <BottomRight>600,470.04</BottomRight>
+    <TopLeft>-121,-239</TopLeft>
+    <BottomRight>711.94,470.04</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
       <Location>320,76</Location>
-      <Size>90,39.28</Size>
+      <Size>102.0433,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -21,7 +21,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="2">
       <Location>327,202</Location>
-      <Size>90,39.28</Size>
+      <Size>102.0433,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -29,7 +29,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="3">
       <Location>327,346</Location>
-      <Size>90,39.28</Size>
+      <Size>102.0433,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -94,8 +94,24 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>306,316</Location>
-      <Size>86.38,104.04</Size>
+      <Location>67,-47</Location>
+      <Size>122.8767,159.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>374,-189</Location>
+      <Size>164.7867,219.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>666,-142</Location>
+      <Size>115.94,117</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

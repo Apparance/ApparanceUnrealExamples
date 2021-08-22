@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="8757D1E8">
+    <Inputs>
+        <Input id="1" type="Frame" name="Size" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-4" type="Integer">0</Constant>
+        <Constant id="-5" type="Integer">0</Constant>
+        <Constant id="-6" type="Integer">1</Constant>
+        <Constant id="-7" type="Integer">1</Constant>
+        <Constant id="-8" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E99E1179">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" to="2" out="100"/>
+            <Connect in="102" constant="-3"/>
+            <Connect in="103" constant="-4"/>
+            <Connect in="104" constant="-5"/>
+            <Connect in="105" constant="-6"/>
+            <Connect in="106" constant="-7"/>
+            <Connect in="107" constant="-8"/>
+        </Operator>
+        <Operator id="2" type="EE0DBC28">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="3" type="D7E6B945"/>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Frame" name="Out" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

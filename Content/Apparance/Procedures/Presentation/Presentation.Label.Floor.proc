@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="3A70DB83">
+<Procedure Version="5" type="3A70DB83">
     <Inputs>
-        <Input id="1" type="Frame" name="Frame"/>
-        <Input id="2" type="String" name="Label"/>
-        <Input id="3" type="Float" name="(Size)"/>
-        <Input id="4" type="String" name="Prefix"/>
+        <Input id="1" type="Frame" name="Frame" description=""/>
+        <Input id="2" type="String" name="Label" description=""/>
+        <Input id="3" type="Float" name="(Size)" description=""/>
+        <Input id="4" type="String" name="Prefix" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-2" type="Float">0.100000</Constant>
@@ -14,7 +14,7 @@
         <Constant id="-7" type="Integer">0</Constant>
         <Constant id="-8" type="Integer">2</Constant>
         <Constant id="-9" type="Bool">False</Constant>
-        <Constant id="-12" type="FColour">0.146705,0.133368,0.280072,1.000000</Constant>
+        <Constant id="-12" type="FColour">[0.243396,0.243396,0.496794,1.000000]</Constant>
         <Constant id="-14" type="Integer">1</Constant>
         <Constant id="-15" type="Integer">0</Constant>
         <Constant id="-17" type="Vector3">0.000000, -0.042869, 0.000000</Constant>

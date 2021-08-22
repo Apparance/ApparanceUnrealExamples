@@ -295,7 +295,11 @@
   <DefaultInputs>
     <Input id="1">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
-      <Metadata />
+      <Metadata>
+        <Input Name="Origin">
+          <Value type="842221856" value="1" />
+        </Input>
+      </Metadata>
     </Input>
     <Input id="2">
       <Value type="862152022" value="[0,0,0]" />
