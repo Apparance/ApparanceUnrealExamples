@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="19EB07FA">
+<Procedure Version="5" type="19EB07FA">
     <Inputs>
-        <Input id="1" type="Frame" name="Where?"/>
-        <Input id="2" type="Integer" name="Quantity"/>
+        <Input id="1" type="Frame" name="Where?" description="|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]"/>
+        <Input id="2" type="Integer" name="Quantity" description="|Default=1|Min=1|Max=100"/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Float">0.000000</Constant>
