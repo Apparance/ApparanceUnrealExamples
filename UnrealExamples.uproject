@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.25",
+	"EngineAssociation": "5.0EA",
 	"Category": "Procedural",
 	"Description": "Apparance Example Project",
 	"Plugins": [
@@ -15,6 +15,15 @@
 		{
 			"Name": "ApparanceUnreal",
 			"Enabled": true
+		},
+		{
+			"Name": "Bridge",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
 		}
 	]
 }
