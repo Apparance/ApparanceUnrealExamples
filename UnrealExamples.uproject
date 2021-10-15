@@ -1,37 +1,20 @@
 {
 	"FileVersion": 3,
 	"EngineAssociation": "4.25",
-	"Category": "",
-	"Description": "",
-	"Modules": [
-		{
-			"Name": "UnrealExamples",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
-		}
-	],
+	"Category": "Procedural",
+	"Description": "Apparance Example Project",
 	"Plugins": [
 		{
 			"Name": "OculusVR",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Android"
-			]
+			"Enabled": false
 		},
 		{
 			"Name": "SteamVR",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Linux",
-				"Mac"
-			]
+			"Enabled": false
+		},
+		{
+			"Name": "ApparanceUnreal",
+			"Enabled": true
 		}
 	]
 }
