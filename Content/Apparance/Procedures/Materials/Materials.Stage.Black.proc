@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="F2E96146">
+<Procedure Version="5" type="F2E96146">
     <Inputs>
-        <Input id="1" type="ModelSegment" name=""/>
+        <Input id="1" type="ModelSegment" name="" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-5" type="String">Presentation.Material.Stage.Black</Constant>
-        <Constant id="-6" type="Frame"></Constant>
+        <Constant id="-6" type="Frame">[-0.500000,-0.500000,-0.500000][1,0,0][0,1,1][0,0,0][1,1,1]</Constant>
         <Constant id="-7" type="Integer">0</Constant>
-        <Constant id="-8" type="Float">0.006851</Constant>
-        <Constant id="-9" type="FColour">0.000000,0.000000,0.000000,1.000000</Constant>
-        <Constant id="-10" type="FColour">1.000000,1.000000,1.000000,1.000000</Constant>
+        <Constant id="-8" type="Float">0.034155</Constant>
+        <Constant id="-9" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-10" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="8564374F">

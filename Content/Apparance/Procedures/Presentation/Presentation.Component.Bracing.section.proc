@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="10CCCE61">
+<Procedure Version="5" type="10CCCE61">
     <Inputs>
-        <Input id="1" type="Frame" name="Where?"/>
-        <Input id="2" type="Float" name="Diameter"/>
-        <Input id="3" type="Bool" name="Flip"/>
+        <Input id="1" type="Frame" name="Where?" description=""/>
+        <Input id="2" type="Float" name="Diameter" description=""/>
+        <Input id="3" type="Bool" name="Flip" description=""/>
     </Inputs>
     <Constants>
-        <Constant id="-2" type="Integer">12</Constant>
+        <Constant id="-2" type="Integer">8</Constant>
         <Constant id="-3" type="Integer">1</Constant>
         <Constant id="-4" type="Integer">1</Constant>
         <Constant id="-5" type="Integer">4</Constant>

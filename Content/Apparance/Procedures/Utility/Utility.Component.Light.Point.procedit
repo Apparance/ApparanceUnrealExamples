@@ -1,18 +1,18 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>381,344</Centre>
+    <Centre>453,326</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Utility</Category>
     <DisplayName>Component.Light.Point</DisplayName>
     <Description>Add a point light to the scene</Description>
-    <TopLeft>-30,-20</TopLeft>
+    <TopLeft>-73,-27</TopLeft>
     <BottomRight>600,428.2</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>303,50</Location>
+      <Location>301,44</Location>
       <Size>128.5367,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -67,4 +67,10 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
 </ProcedureEditData>

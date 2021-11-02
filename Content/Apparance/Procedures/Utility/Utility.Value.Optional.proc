@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="ECDD5C74">
+    <Inputs>
+        <Input id="1" type="Float" name="In" description=""/>
+        <Input id="2" type="Float" name="Null" description="Value input considered a non value"/>
+        <Input id="3" type="Float" name="Fallback" description="Fallback when input considered null"/>
+    </Inputs>
+    <Constants/>
+    <Operators>
+        <Operator id="1" type="BCC45B69">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="2" type="C0BB1E82">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" input="3"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Out" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

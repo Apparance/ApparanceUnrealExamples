@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="EC872070">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame" description=""/>
+        <Input id="2" type="Float" name="Gap" description=""/>
+        <Input id="3" type="Integer" name="#" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-4" type="Bool">False</Constant>
+        <Constant id="-5" type="Bool">False</Constant>
+        <Constant id="-6" type="Bool">True</Constant>
+        <Constant id="-7" type="Bool">False</Constant>
+        <Constant id="-8" type="Bool">False</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="EC87F421">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="2" out="1"/>
+            <Connect in="3" to="3" out="101"/>
+            <Connect in="4" input="2"/>
+            <Connect in="5" input="3"/>
+        </Operator>
+        <Operator id="2" type="0662B77B">
+            <Connect in="1" constant="-4"/>
+            <Connect in="2" constant="-5"/>
+            <Connect in="3" constant="-6"/>
+            <Connect in="4" constant="-7"/>
+            <Connect in="5" constant="-8"/>
+        </Operator>
+        <Operator id="3" type="EA5D30C6">
+            <Connect in="100" input="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="1" out="1"/>
+    </Outputs>
+</Procedure>

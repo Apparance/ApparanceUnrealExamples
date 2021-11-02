@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>386,368</Centre>
-    <Zoom>1</Zoom>
+    <Centre>426.7914,396.3807</Centre>
+    <Zoom>0.8264464</Zoom>
   </View>
   <Procedure>
     <Category>Example</Category>
     <DisplayName>02.Sized Asset</DisplayName>
     <Description>Placing an asset with it's original size</Description>
     <TopLeft>-122,-20</TopLeft>
-    <BottomRight>691.7567,703.16</BottomRight>
+    <BottomRight>691.7567,729.78</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -74,7 +74,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="9">
-      <Location>279,563</Location>
+      <Location>276.58,573.89</Location>
       <Size>119.4867,78.12</Size>
       <NoteID>15</NoteID>
       <Comment>
@@ -82,7 +82,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="10">
-      <Location>277,442</Location>
+      <Location>280.63,432.32</Location>
       <Size>119.4867,78.12</Size>
       <NoteID>15</NoteID>
       <Comment>
@@ -115,7 +115,7 @@
       </Location>
       <Size>
         <Width>492.783325</Width>
-        <Height>255.16</Height>
+        <Height>281.78</Height>
       </Size>
       <Title>
       </Title>
