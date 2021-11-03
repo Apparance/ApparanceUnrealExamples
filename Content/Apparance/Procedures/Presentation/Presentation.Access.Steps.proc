@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Procedure Version="5" type="BD332D8E">
     <Inputs>
-        <Input id="1" type="Frame" name="Frame" description="|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]|Origin=0"/>
+        <Input id="1" type="Frame" name="Frame" description="|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]|Origin=1"/>
     </Inputs>
     <Constants>
         <Constant id="-4" type="Bool">False</Constant>

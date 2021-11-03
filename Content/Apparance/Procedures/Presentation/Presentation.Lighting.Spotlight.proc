@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Procedure Version="5" type="BEFC8198">
     <Inputs>
-        <Input id="1" type="Frame" name="Bounds" description="Size of light assuming pointing straight down|Origin=1"/>
+        <Input id="1" type="Frame" name="Bounds" description="Size of light assuming pointing straight down|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]|Origin=0"/>
         <Input id="2" type="Float" name="Pan" description="|Min=-180|Max=180"/>
         <Input id="3" type="Float" name="Tilt" description="|Min=-175|Max=175"/>
         <Input id="4" type="Bool" name="Enable" description="Light on?"/>

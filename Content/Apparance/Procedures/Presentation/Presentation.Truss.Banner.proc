@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Procedure Version="5" type="BDBE2E28">
     <Inputs>
-        <Input id="1" type="Frame" name="Frame" description="|Origin=1"/>
+        <Input id="1" type="Frame" name="Frame" description="|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]|Origin=0"/>
         <Input id="2" type="Float" name="Height" description="|Default=1|Min=0|Max=2"/>
         <Input id="4" type="FColour" name="Background" description=""/>
         <Input id="5" type="String" name="Text" description=""/>

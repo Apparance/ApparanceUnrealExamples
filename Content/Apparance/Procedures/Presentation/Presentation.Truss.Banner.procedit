@@ -184,7 +184,7 @@
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata>
         <Input Name="Origin">
-          <Value type="842221856" value="1" />
+          <Value type="842221856" value="0" />
         </Input>
       </Metadata>
     </Input>
@@ -199,19 +199,21 @@
         </Input>
       </Metadata>
     </Input>
-    <Input id="3">
-      <Value type="842221088" value="0" />
+    <Input id="4">
+      <Value type="1919697734" value="[0,0,0,1]" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="1919697734" value="[0,0,0,1]" />
+      <Metadata />
     </Input>
     <Input id="7">
-      <Value type="842221088" value="1" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221088" value="0" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221088" value="2" />
-        </Input>
-      </Metadata>
+      <Value type="842221088" value="0" />
+      <Metadata />
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

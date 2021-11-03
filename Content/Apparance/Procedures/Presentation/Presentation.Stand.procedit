@@ -7,7 +7,7 @@
     <Category>Presentation</Category>
     <DisplayName>Stand</DisplayName>
     <Description>Information display stand</Description>
-    <TopLeft>-125.4,-58.00005</TopLeft>
+    <TopLeft>-125.4,-60.66205</TopLeft>
     <BottomRight>771.7567,825.5598</BottomRight>
   </Procedure>
   <Objects>
@@ -87,7 +87,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>253.8,-8.000053</Location>
+      <Location>208.546,-10.66205</Location>
       <Size>114.5133,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -297,7 +297,7 @@
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata>
         <Input Name="Origin">
-          <Value type="842221856" value="1" />
+          <Value type="842221856" value="0" />
         </Input>
       </Metadata>
     </Input>

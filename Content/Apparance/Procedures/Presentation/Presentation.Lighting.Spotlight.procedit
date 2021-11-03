@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>761.9935,1255.377</Centre>
-    <Zoom>0.9090913</Zoom>
+    <Centre>582.0109,786.7098</Centre>
+    <Zoom>0.466507673</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
@@ -557,7 +557,7 @@
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata>
         <Input Name="Origin">
-          <Value type="842221856" value="1" />
+          <Value type="842221856" value="0" />
         </Input>
       </Metadata>
     </Input>
