@@ -13,7 +13,6 @@
         <Constant id="-3" type="Integer">0</Constant>
         <Constant id="-6" type="Float">0.000000</Constant>
         <Constant id="-8" type="List"></Constant>
-        <Constant id="-13" type="Float">1000.000000</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="36BD1471">
@@ -33,11 +32,7 @@
         </Operator>
         <Operator id="4" type="6FAE9477">
             <Connect in="100" to="3" out="100"/>
-            <Connect in="101" to="5" out="100"/>
-        </Operator>
-        <Operator id="5" type="971515D0">
-            <Connect in="100" input="3"/>
-            <Connect in="101" constant="-13"/>
+            <Connect in="101" input="3"/>
         </Operator>
         <Operator id="6" type="6FAE9477">
             <Connect in="100" to="4" out="100"/>

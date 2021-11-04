@@ -5,6 +5,7 @@
         <Input id="2" type="Float" name="Curtain Position" description="Above 0 to show at that proportion|Min=0|Max=1|MinLimit=0|MaxLimit=1"/>
         <Input id="3" type="FColour" name="Curtain Colour" description=""/>
         <Input id="4" type="Float" name="Open" description="Amount the curtains are open|Min=0|Max=1|MinLimit=0|MaxLimit=1"/>
+        <Input id="5" type="Integer" name="Variation#" description="|Min=0|Max=1000"/>
     </Inputs>
     <Constants>
         <Constant id="-8" type="Integer">0</Constant>
@@ -28,9 +29,9 @@
         <Constant id="-44" type="Bool">True</Constant>
         <Constant id="-45" type="Bool">True</Constant>
         <Constant id="-46" type="Bool">True</Constant>
-        <Constant id="-47" type="Integer">548</Constant>
-        <Constant id="-48" type="Integer">536</Constant>
-        <Constant id="-49" type="Integer">709</Constant>
+        <Constant id="-52" type="Integer">0</Constant>
+        <Constant id="-54" type="Integer">1</Constant>
+        <Constant id="-56" type="Integer">2</Constant>
     </Constants>
     <Operators>
         <Operator id="2" type="E853B53E">
@@ -66,13 +67,13 @@
             <Connect in="1" to="2" out="100"/>
             <Connect in="2" constant="-41"/>
             <Connect in="3" constant="-44"/>
-            <Connect in="4" constant="-47"/>
+            <Connect in="4" input="5"/>
         </Operator>
         <Operator id="8" type="EC7066F2">
             <Connect in="1" to="2" out="102"/>
             <Connect in="2" constant="-42"/>
             <Connect in="3" constant="-45"/>
-            <Connect in="4" constant="-48"/>
+            <Connect in="4" to="16" out="100"/>
         </Operator>
         <Operator id="9" type="AF799635">
             <Connect in="100" to="7" out="1"/>
@@ -96,13 +97,26 @@
             <Connect in="1" to="6" out="100"/>
             <Connect in="2" constant="-43"/>
             <Connect in="3" constant="-46"/>
-            <Connect in="4" constant="-49"/>
+            <Connect in="4" to="17" out="100"/>
         </Operator>
         <Operator id="15" type="BDC1D7C7">
             <Connect in="1" to="2" out="101"/>
             <Connect in="2" input="4"/>
             <Connect in="3" input="2"/>
             <Connect in="4" input="3"/>
+            <Connect in="5" to="18" out="100"/>
+        </Operator>
+        <Operator id="16" type="0B64055F">
+            <Connect in="100" input="5"/>
+            <Connect in="101" constant="-52"/>
+        </Operator>
+        <Operator id="17" type="0B64055F">
+            <Connect in="100" input="5"/>
+            <Connect in="101" constant="-54"/>
+        </Operator>
+        <Operator id="18" type="0B64055F">
+            <Connect in="100" input="5"/>
+            <Connect in="101" constant="-56"/>
         </Operator>
     </Operators>
     <Outputs>

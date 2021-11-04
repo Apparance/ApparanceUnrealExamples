@@ -4,6 +4,7 @@
         <Input id="1" type="Frame" name="Frame" description=""/>
         <Input id="2" type="Float" name="Position" description="Proportional position in Y across frame"/>
         <Input id="3" type="FColour" name="Colour" description="Curtain colour"/>
+        <Input id="4" type="Integer" name="#" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Integer">6</Constant>
@@ -21,7 +22,6 @@
         <Constant id="-24" type="Integer">-1</Constant>
         <Constant id="-25" type="Integer">0</Constant>
         <Constant id="-27" type="Vector3">1.827872, 0.000000, 0.000000</Constant>
-        <Constant id="-28" type="Vector3">0.000000, 0.192825, 0.000000</Constant>
         <Constant id="-29" type="Integer">3</Constant>
         <Constant id="-30" type="Float">0.500000</Constant>
         <Constant id="-31" type="Float">2.000000</Constant>
@@ -61,6 +61,16 @@
         <Constant id="-108" type="Integer">1</Constant>
         <Constant id="-109" type="Float">0.000000</Constant>
         <Constant id="-111" type="Float">0.000000</Constant>
+        <Constant id="-114" type="Integer">0</Constant>
+        <Constant id="-115" type="Integer">0</Constant>
+        <Constant id="-116" type="Integer">0</Constant>
+        <Constant id="-118" type="Float">-1000.000000</Constant>
+        <Constant id="-119" type="Float">1000.000000</Constant>
+        <Constant id="-125" type="Float">0.000000</Constant>
+        <Constant id="-126" type="Float">0.000000</Constant>
+        <Constant id="-127" type="Float">0.000000</Constant>
+        <Constant id="-128" type="Float">0.192825</Constant>
+        <Constant id="-129" type="Float">0.000000</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="10DEC4B5">
@@ -69,7 +79,7 @@
             <Connect in="102" constant="-3"/>
         </Operator>
         <Operator id="2" type="D729EF5D">
-            <Connect in="100" to="15" out="100"/>
+            <Connect in="100" to="32" out="100"/>
             <Connect in="101" input="2"/>
             <Connect in="102" constant="-6"/>
             <Connect in="103" constant="-7"/>
@@ -105,7 +115,7 @@
         <Operator id="8" type="A340023C">
             <Connect in="100" to="22" out="100"/>
             <Connect in="101" constant="-27"/>
-            <Connect in="102" constant="-28"/>
+            <Connect in="102" to="35" out="100"/>
             <Connect in="103" constant="-29"/>
             <Connect in="104" constant="-30"/>
             <Connect in="105" constant="-31"/>
@@ -157,7 +167,7 @@
         </Operator>
         <Operator id="17" type="1F956AE2">
             <Connect in="100" to="13" out="100"/>
-            <Connect in="101" to="15" out="100"/>
+            <Connect in="101" to="32" out="100"/>
             <Connect in="102" input="1"/>
             <Connect in="103" constant="-64"/>
             <Connect in="104" constant="-65"/>
@@ -214,6 +224,28 @@
             <Connect in="100" constant="-109"/>
             <Connect in="101" input="2"/>
             <Connect in="102" constant="-111"/>
+        </Operator>
+        <Operator id="32" type="EAE4856E">
+            <Connect in="100" to="15" out="100"/>
+            <Connect in="101" to="34" out="100"/>
+            <Connect in="102" constant="-114"/>
+            <Connect in="103" constant="-115"/>
+            <Connect in="104" constant="-116"/>
+        </Operator>
+        <Operator id="33" type="AD7C91EE">
+            <Connect in="100" input="4"/>
+            <Connect in="101" constant="-118"/>
+            <Connect in="102" constant="-119"/>
+        </Operator>
+        <Operator id="34" type="D2698D20">
+            <Connect in="100" to="33" out="101"/>
+            <Connect in="101" constant="-125"/>
+            <Connect in="102" constant="-126"/>
+        </Operator>
+        <Operator id="35" type="D2698D20">
+            <Connect in="100" constant="-127"/>
+            <Connect in="101" constant="-128"/>
+            <Connect in="102" constant="-129"/>
         </Operator>
     </Operators>
     <Outputs>

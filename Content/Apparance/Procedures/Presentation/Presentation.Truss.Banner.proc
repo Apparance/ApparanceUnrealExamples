@@ -24,12 +24,14 @@
         <Constant id="-44" type="Integer">0</Constant>
         <Constant id="-45" type="Integer">0</Constant>
         <Constant id="-48" type="Float">72.000000</Constant>
+        <Constant id="-49" type="Integer">0</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="ECC9D2C6">
             <Connect in="1" to="2" out="101"/>
             <Connect in="2" constant="-19"/>
             <Connect in="3" input="4"/>
+            <Connect in="4" constant="-49"/>
         </Operator>
         <Operator id="2" type="D729EF5D">
             <Connect in="100" input="1"/>

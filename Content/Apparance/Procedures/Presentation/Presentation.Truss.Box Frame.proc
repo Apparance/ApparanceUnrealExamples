@@ -58,6 +58,10 @@
         <Constant id="-126" type="Integer">1</Constant>
         <Constant id="-128" type="Integer">2</Constant>
         <Constant id="-130" type="Integer">3</Constant>
+        <Constant id="-131" type="Integer">0</Constant>
+        <Constant id="-132" type="Integer">0</Constant>
+        <Constant id="-133" type="Integer">0</Constant>
+        <Constant id="-134" type="Integer">0</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="E853B53E">
@@ -72,12 +76,14 @@
             <Connect in="2" to="26" out="100"/>
             <Connect in="3" to="15" out="1"/>
             <Connect in="4" to="35" out="100"/>
+            <Connect in="5" constant="-133"/>
         </Operator>
         <Operator id="3" type="EC4FD5D1">
             <Connect in="1" to="1" out="102"/>
             <Connect in="2" to="27" out="100"/>
             <Connect in="3" to="15" out="1"/>
             <Connect in="4" to="33" out="100"/>
+            <Connect in="5" constant="-134"/>
         </Operator>
         <Operator id="5" type="D729EF5D">
             <Connect in="100" to="6" out="100"/>
@@ -234,12 +240,14 @@
             <Connect in="2" to="34" out="100"/>
             <Connect in="3" to="28" out="100"/>
             <Connect in="4" to="15" out="1"/>
+            <Connect in="5" constant="-131"/>
         </Operator>
         <Operator id="41" type="BDC1D7C7">
             <Connect in="1" to="14" out="100"/>
             <Connect in="2" to="32" out="100"/>
             <Connect in="3" to="28" out="100"/>
             <Connect in="4" to="15" out="1"/>
+            <Connect in="5" constant="-132"/>
         </Operator>
     </Operators>
     <Outputs>

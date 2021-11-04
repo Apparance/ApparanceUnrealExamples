@@ -8,7 +8,7 @@
     <DisplayName>Truss.Box Arch</DisplayName>
     <Description>Archway of truss</Description>
     <TopLeft>-224,-65.39999</TopLeft>
-    <BottomRight>925.1803,615.6201</BottomRight>
+    <BottomRight>925.1803,697.1201</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -149,23 +149,31 @@
     </Object>
     <Object type="ProcedureOperatorState" id="15">
       <Location>639.7798,407.64</Location>
-      <Size>129.1333,78.12</Size>
+      <Size>129.1333,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="16">
-      <Location>117,450</Location>
-      <Size>46.75667,32.92</Size>
+      <Location>364.1299,476.9201</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="17">
-      <Location>151,437</Location>
-      <Size>46.75667,32.92</Size>
+      <Location>362.8499,532.34</Location>
+      <Size>58.81333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>367.2099,593.7101</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -188,6 +196,11 @@
     <Object type="ProcedureInputState" id="4">
       <Name>Open</Name>
       <Description>Amount the curtains are open</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Variation#</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Mesh</Name>
@@ -248,6 +261,17 @@
         </Input>
         <Input Name="MaxLimit">
           <Value type="842221088" value="1" />
+        </Input>
+      </Metadata>
+    </Input>
+    <Input id="5">
+      <Value type="842221856" value="0" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221856" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221856" value="1000" />
         </Input>
       </Metadata>
     </Input>

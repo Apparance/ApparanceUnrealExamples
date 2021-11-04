@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>638.0679,493.039</Centre>
-    <Zoom>1</Zoom>
+    <Centre>605.3075,390.6813</Centre>
+    <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
     <DisplayName>Truss.Curtain</DisplayName>
     <Description>Curtain to hang from truss</Description>
-    <TopLeft>-249.62,-107</TopLeft>
+    <TopLeft>-706.153,-107</TopLeft>
     <BottomRight>2136.124,642.08</BottomRight>
   </Procedure>
   <Objects>
@@ -141,7 +141,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="15">
-      <Location>89,-8</Location>
+      <Location>-375.519,-42.606</Location>
       <Size>86.38,129.96</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -149,7 +149,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="16">
-      <Location>-5,34</Location>
+      <Location>-461.5329,23.352</Location>
       <Size>45.96667,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -205,7 +205,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="23">
-      <Location>-49.62,-28.035</Location>
+      <Location>-506.153,-38.683</Location>
       <Size>91.55334,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -276,6 +276,38 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>61.79302,-5.049004</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>-173.035,49.20296</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>-67.655,49.82298</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="35">
+      <Location>967.0562,373.7111</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Frame</Name>
       <Description>
@@ -288,6 +320,11 @@
     <Object type="ProcedureInputState" id="3">
       <Name>Colour</Name>
       <Description>Curtain colour</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>#</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
