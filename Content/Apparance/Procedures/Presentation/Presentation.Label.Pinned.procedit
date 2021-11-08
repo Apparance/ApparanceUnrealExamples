@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>-140.4428,297.698</Centre>
-    <Zoom>0.826446354</Zoom>
+    <Centre>561.3572,381.1879</Centre>
+    <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
@@ -28,7 +28,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>506.5865,166.2348</Location>
+      <Location>504.5865,155.2348</Location>
       <Size>125.16,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>

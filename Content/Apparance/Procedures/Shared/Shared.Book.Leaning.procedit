@@ -1,18 +1,18 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>283.3767,199.0612</Centre>
-    <Zoom>0.683013558</Zoom>
+    <Centre>203.6014,273.2904</Centre>
+    <Zoom>0.9090914</Zoom>
   </View>
   <Procedure>
     <Category>Shared</Category>
     <DisplayName>Book.Leaning</DisplayName>
     <Description>A book leaning over, if there's space</Description>
-    <TopLeft>-423.8502,-312.3</TopLeft>
+    <TopLeft>-423.8502,-313.631</TopLeft>
     <BottomRight>758.9702,692.1058</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>70.50002,-262.3</Location>
+      <Location>67.83802,-263.631</Location>
       <Size>92.17333,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>

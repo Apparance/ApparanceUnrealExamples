@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="54631E22">
+    <Inputs>
+        <Input id="1" type="Frame" name="Where?" description=""/>
+        <Input id="2" type="Float" name="Recess" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="Float">0.015000</Constant>
+        <Constant id="-4" type="Float">0.003000</Constant>
+        <Constant id="-5" type="Bool">False</Constant>
+        <Constant id="-6" type="Bool">False</Constant>
+        <Constant id="-7" type="Bool">True</Constant>
+        <Constant id="-8" type="Bool">False</Constant>
+        <Constant id="-9" type="Bool">False</Constant>
+        <Constant id="-12" type="Integer">0</Constant>
+        <Constant id="-13" type="Integer">1</Constant>
+        <Constant id="-14" type="Bool">True</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="5464DCDF">
+            <Connect in="1" to="3" out="100"/>
+            <Connect in="2" to="2" out="1"/>
+            <Connect in="3" constant="-3"/>
+            <Connect in="4" constant="-4"/>
+        </Operator>
+        <Operator id="2" type="0662B77B">
+            <Connect in="1" constant="-5"/>
+            <Connect in="2" constant="-6"/>
+            <Connect in="3" constant="-7"/>
+            <Connect in="4" constant="-8"/>
+            <Connect in="5" constant="-9"/>
+        </Operator>
+        <Operator id="3" type="D729EF5D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-12"/>
+            <Connect in="103" constant="-13"/>
+            <Connect in="104" constant="-14"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="1" out="1"/>
+    </Outputs>
+</Procedure>
