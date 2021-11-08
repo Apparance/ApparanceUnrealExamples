@@ -1,0 +1,56 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>446,248</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Presentation</Category>
+    <DisplayName>Design</DisplayName>
+    <Description>Design parameters for the presentation objects</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>450,118</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>curtain colour</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>430,208</Location>
+      <Size>86.67333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>barrier thickness</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>427,304</Location>
+      <Size>121.8033,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>standard barrier height</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Curtain Colour</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Barrier Thickness</Name>
+      <Description>thickness</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Barrier Height</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs />
+</ProcedureEditData>

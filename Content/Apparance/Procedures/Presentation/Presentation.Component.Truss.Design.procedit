@@ -1,0 +1,57 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>460,271</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Presentation</Category>
+    <DisplayName>Component.Truss.Design</DisplayName>
+    <Description>Design parameters</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,417.28</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>369,84</Location>
+      <Size>129.42,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>truss bar size proportion</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>366,159</Location>
+      <Size>123.2233,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>bracing size proportion</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>365,238</Location>
+      <Size>77.88667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Plate thickness</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Bar Proportion</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Bracing Proportion</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Plate Thickness</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs />
+</ProcedureEditData>

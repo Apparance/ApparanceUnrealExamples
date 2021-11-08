@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="ECA33847">
+    <Inputs>
+        <Input id="1" type="Frame" name="In" description=""/>
+        <Input id="2" type="Integer" name="Steps" description=""/>
+        <Input id="3" type="Integer" name="#" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="Integer">2</Constant>
+        <Constant id="-5" type="Float">0.950000</Constant>
+        <Constant id="-6" type="Integer">1</Constant>
+        <Constant id="-7" type="Integer">1</Constant>
+        <Constant id="-8" type="Bool">False</Constant>
+        <Constant id="-10" type="Float">0.900000</Constant>
+        <Constant id="-11" type="Integer">1</Constant>
+        <Constant id="-12" type="Integer">1</Constant>
+        <Constant id="-13" type="Bool">False</Constant>
+        <Constant id="-15" type="Float">0.500000</Constant>
+        <Constant id="-16" type="Integer">1</Constant>
+        <Constant id="-17" type="Integer">0</Constant>
+        <Constant id="-18" type="Bool">False</Constant>
+        <Constant id="-21" type="Float">0.042077</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="EBC5C37C">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-3"/>
+        </Operator>
+        <Operator id="2" type="D729EF5D">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-5"/>
+            <Connect in="102" constant="-6"/>
+            <Connect in="103" constant="-7"/>
+            <Connect in="104" constant="-8"/>
+        </Operator>
+        <Operator id="3" type="D729EF5D">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" constant="-10"/>
+            <Connect in="102" constant="-11"/>
+            <Connect in="103" constant="-12"/>
+            <Connect in="104" constant="-13"/>
+        </Operator>
+        <Operator id="4" type="E853B53E">
+            <Connect in="100" to="3" out="101"/>
+            <Connect in="101" constant="-15"/>
+            <Connect in="102" constant="-16"/>
+            <Connect in="103" constant="-17"/>
+            <Connect in="104" constant="-18"/>
+        </Operator>
+        <Operator id="6" type="EC872070">
+            <Connect in="1" to="4" out="101"/>
+            <Connect in="2" constant="-21"/>
+            <Connect in="3" to="7" out="100"/>
+        </Operator>
+        <Operator id="7" type="0B64055F">
+            <Connect in="100" input="3"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="6" out="1"/>
+    </Outputs>
+</Procedure>

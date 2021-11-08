@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="10C989BE">
+<Procedure Version="5" type="10C989BE">
     <Inputs>
-        <Input id="1" type="Frame" name="Bounds"/>
-        <Input id="2" type="Float" name="Aspect"/>
+        <Input id="1" type="Frame" name="Bounds" description=""/>
+        <Input id="2" type="Float" name="Aspect" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-8" type="Integer">0</Constant>
@@ -12,6 +12,7 @@
         <Constant id="-14" type="Float">0.005000</Constant>
         <Constant id="-28" type="Integer">0</Constant>
         <Constant id="-29" type="Integer">0</Constant>
+        <Constant id="-30" type="Float">0.000000</Constant>
     </Constants>
     <Operators>
         <Operator id="2" type="E853B53E">
@@ -36,6 +37,7 @@
         </Operator>
         <Operator id="6" type="10CBAC53">
             <Connect in="1" to="2" out="101"/>
+            <Connect in="2" constant="-30"/>
         </Operator>
         <Operator id="7" type="EA5D30C6">
             <Connect in="100" input="1"/>
