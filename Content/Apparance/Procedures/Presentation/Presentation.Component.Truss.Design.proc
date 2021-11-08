@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="ECC04A3C">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="Float">0.200000</Constant>
+        <Constant id="-2" type="Float">0.500000</Constant>
+        <Constant id="-3" type="Float">0.005000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="DA4FC7F9">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+        <Operator id="2" type="DA4FC7F9">
+            <Connect in="100" constant="-2"/>
+        </Operator>
+        <Operator id="3" type="DA4FC7F9">
+            <Connect in="100" constant="-3"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Bar Proportion" description="" to="1" out="100"/>
+        <Output id="2" type="Float" name="Bracing Proportion" description="" to="2" out="100"/>
+        <Output id="3" type="Float" name="Plate Thickness" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

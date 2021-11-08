@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="3ABA8B3C">
+<Procedure Version="5" type="3ABA8B3C">
     <Inputs>
-        <Input id="1" type="Frame" name="Bounds"/>
-        <Input id="2" type="String" name="Text"/>
+        <Input id="1" type="Frame" name="Bounds" description=""/>
+        <Input id="2" type="String" name="Text" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Float">0.001000</Constant>
         <Constant id="-4" type="Integer">0</Constant>
         <Constant id="-5" type="Integer">2</Constant>
-        <Constant id="-8" type="FColour">0.143370,0.173378,0.329828,1.000000</Constant>
+        <Constant id="-8" type="FColour">[0.203171,0.286335,0.442785,1.000000]</Constant>
         <Constant id="-9" type="Float">2.301713</Constant>
         <Constant id="-10" type="Integer">0</Constant>
         <Constant id="-11" type="Integer">0</Constant>
@@ -25,7 +25,7 @@
         <Constant id="-31" type="Bool">False</Constant>
         <Constant id="-32" type="Integer">0</Constant>
         <Constant id="-34" type="ModelSegment"></Constant>
-        <Constant id="-41" type="FColour">0.190049,0.219800,0.506540,1.000000</Constant>
+        <Constant id="-41" type="FColour">[0.190049,0.219800,0.506540,1.000000]</Constant>
         <Constant id="-43" type="Integer">0</Constant>
         <Constant id="-44" type="Integer">0</Constant>
         <Constant id="-47" type="Integer">0</Constant>

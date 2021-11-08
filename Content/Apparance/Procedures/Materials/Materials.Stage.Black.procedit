@@ -28,7 +28,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>212,63</Location>
+      <Location>196,82</Location>
       <Size>128.5367,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -61,4 +61,10 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
 </ProcedureEditData>
