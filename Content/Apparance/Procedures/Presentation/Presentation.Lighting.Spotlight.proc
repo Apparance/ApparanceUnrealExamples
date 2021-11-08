@@ -2,14 +2,14 @@
 <Procedure Version="5" type="BEFC8198">
     <Inputs>
         <Input id="1" type="Frame" name="Bounds" description="Size of light assuming pointing straight down|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]|Origin=0"/>
-        <Input id="2" type="Float" name="Pan" description="|Min=-180|Max=180"/>
-        <Input id="3" type="Float" name="Tilt" description="|Min=-175|Max=175"/>
-        <Input id="4" type="Bool" name="Enable" description="Light on?"/>
-        <Input id="5" type="Float" name="Intensity" description="|Default=1000|Min=0|Max=5000"/>
-        <Input id="6" type="Float" name="Spread" description="|Default=35|Min=0|Max=45"/>
-        <Input id="7" type="Float" name="Sharpness" description="|Default=0.75|Min=0|Max=1"/>
-        <Input id="8" type="FColour" name="Colour" description="|Default=[1,1,1,1]"/>
-        <Input id="9" type="Float" name="Beam" description="|Min=0|Max=100"/>
+        <Input id="2" type="Float" name="Pan" description="Yaw direction of light, pivots around mount|Min=-180|Max=180"/>
+        <Input id="3" type="Float" name="Tilt" description="Pitch direction of light, pivots on mount around light centre|Min=-175|Max=175"/>
+        <Input id="4" type="Bool" name="Enable" description="Should the light be on at all?"/>
+        <Input id="5" type="Float" name="Intensity" description="Master intensity control|Default=1000|Min=0|Max=5000"/>
+        <Input id="6" type="Float" name="Spread" description="Angle of beam|Default=35|Min=0|Max=45"/>
+        <Input id="7" type="Float" name="Sharpness" description="Proportion of main beam that inner cone occupies|Default=0.75|Min=0|Max=1"/>
+        <Input id="8" type="FColour" name="Colour" description="Light colour|Default=[1,1,1,1]"/>
+        <Input id="9" type="Float" name="Beam" description="Optional length of beam (leave at zero for default)|Min=0|Max=100"/>
     </Inputs>
     <Constants>
         <Constant id="-2" type="Vector3">1.060000, 0.223077, 0.800000</Constant>

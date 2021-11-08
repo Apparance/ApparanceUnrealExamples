@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>446.1454,1023.116</Centre>
+    <Centre>261.1367,927.2844</Centre>
     <Zoom>0.7513158</Zoom>
   </View>
   <Procedure>
@@ -657,42 +657,35 @@
     </Object>
     <Object type="ProcedureInputState" id="2">
       <Name>Pan</Name>
-      <Description>
-      </Description>
+      <Description>Yaw direction of light, pivots around mount</Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
       <Name>Tilt</Name>
-      <Description>
-      </Description>
+      <Description>Pitch direction of light, pivots on mount around light centre</Description>
     </Object>
     <Object type="ProcedureInputState" id="4">
       <Name>Enable</Name>
-      <Description>Light on?</Description>
+      <Description>Should the light be on at all?</Description>
     </Object>
     <Object type="ProcedureInputState" id="5">
       <Name>Intensity</Name>
-      <Description>
-      </Description>
+      <Description>Master intensity control</Description>
     </Object>
     <Object type="ProcedureInputState" id="6">
       <Name>Spread</Name>
-      <Description>
-      </Description>
+      <Description>Angle of beam</Description>
     </Object>
     <Object type="ProcedureInputState" id="7">
       <Name>Sharpness</Name>
-      <Description>
-      </Description>
+      <Description>Proportion of main beam that inner cone occupies</Description>
     </Object>
     <Object type="ProcedureInputState" id="8">
       <Name>Colour</Name>
-      <Description>
-      </Description>
+      <Description>Light colour</Description>
     </Object>
     <Object type="ProcedureInputState" id="9">
       <Name>Beam</Name>
-      <Description>
-      </Description>
+      <Description>Optional length of beam (leave at zero for default)</Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
