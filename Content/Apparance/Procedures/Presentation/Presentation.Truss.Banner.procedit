@@ -8,12 +8,12 @@
     <DisplayName>Truss.Banner</DisplayName>
     <Description>Banner to place along a truss</Description>
     <TopLeft>-175,-20</TopLeft>
-    <BottomRight>655.7567,446.04</BottomRight>
+    <BottomRight>655.7567,466</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
       <Location>470,173</Location>
-      <Size>99.67333,65.16</Size>
+      <Size>99.67333,78.12</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -60,8 +60,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>531,292</Location>
-      <Size>125.16,104.04</Size>
+      <Location>585,299</Location>
+      <Size>125.16,117</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -76,7 +76,7 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>339,310</Location>
+      <Location>298,280</Location>
       <Size>69.12,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -127,6 +127,14 @@
     <Object type="ProcedureOperatorState" id="11">
       <Location>25,363</Location>
       <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>444,286</Location>
+      <Size>69.12,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
