@@ -7,6 +7,7 @@
         <Input id="4" type="Float" name="Size" description=""/>
         <Input id="5" type="Integer" name="H-Align" description=""/>
         <Input id="6" type="Integer" name="V-Align" description=""/>
+        <Input id="7" type="Bool" name="Emissive?" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Float">0.000000</Constant>
@@ -48,13 +49,7 @@
         <Constant id="-66" type="ModelSegment"></Constant>
         <Constant id="-72" type="ModelSegment"></Constant>
         <Constant id="-74" type="Bool">False</Constant>
-        <Constant id="-77" type="Vector3">10.000000, 10.000000, 1.000000</Constant>
-        <Constant id="-78" type="Integer">1</Constant>
-        <Constant id="-79" type="Integer">1</Constant>
-        <Constant id="-80" type="Integer">1</Constant>
-        <Constant id="-81" type="Integer">1</Constant>
-        <Constant id="-82" type="Integer">1</Constant>
-        <Constant id="-83" type="Integer">1</Constant>
+        <Constant id="-81" type="Float">0.000000</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="A58A93E3">
@@ -74,7 +69,7 @@
         </Operator>
         <Operator id="4" type="9171F974">
             <Connect in="100" to="3" out="100"/>
-            <Connect in="101" input="3"/>
+            <Connect in="101" to="23" out="100"/>
         </Operator>
         <Operator id="5" type="6FAE9477">
             <Connect in="100" to="4" out="100"/>
@@ -161,15 +156,19 @@
             <Connect in="100" input="2"/>
             <Connect in="101" constant="-74"/>
         </Operator>
-        <Operator id="22" type="E99E1179">
-            <Connect in="100" to="17" out="100"/>
-            <Connect in="101" constant="-77"/>
-            <Connect in="102" constant="-78"/>
-            <Connect in="103" constant="-79"/>
-            <Connect in="104" constant="-80"/>
-            <Connect in="105" constant="-81"/>
-            <Connect in="106" constant="-82"/>
-            <Connect in="107" constant="-83"/>
+        <Operator id="22" type="A65770B2">
+            <Connect in="100" input="3"/>
+        </Operator>
+        <Operator id="23" type="A6ED6262">
+            <Connect in="100" to="22" out="100"/>
+            <Connect in="101" to="22" out="101"/>
+            <Connect in="102" to="22" out="102"/>
+            <Connect in="103" to="24" out="100"/>
+        </Operator>
+        <Operator id="24" type="C0BB1E82">
+            <Connect in="100" input="7"/>
+            <Connect in="101" constant="-81"/>
+            <Connect in="102" to="22" out="103"/>
         </Operator>
     </Operators>
     <Outputs>

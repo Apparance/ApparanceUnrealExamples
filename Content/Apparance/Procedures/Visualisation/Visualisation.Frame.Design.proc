@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="906A3ACC">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="FColour">[0.000000,0.257694,0.000000,1.000000]</Constant>
+        <Constant id="-2" type="FColour">[0.000000,0.000000,1.000000,1.000000]</Constant>
+        <Constant id="-3" type="FColour">[0.500000,0.169537,0.000000,1.000000]</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="DCA3CE9D">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+        <Operator id="2" type="DCA3CE9D">
+            <Connect in="100" constant="-2"/>
+        </Operator>
+        <Operator id="3" type="DCA3CE9D">
+            <Connect in="100" constant="-3"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="FColour" name="Part A" description="" to="1" out="100"/>
+        <Output id="2" type="FColour" name="Part B" description="" to="2" out="100"/>
+        <Output id="3" type="FColour" name="Part C" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

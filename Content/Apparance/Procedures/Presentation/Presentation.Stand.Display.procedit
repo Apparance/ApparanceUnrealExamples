@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>309.2633,335.3499</Centre>
+    <Centre>270.6645,223.5459</Centre>
     <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
     <DisplayName>Stand.Display</DisplayName>
     <Description>Display board</Description>
-    <TopLeft>-357.411,-312.7339</TopLeft>
+    <TopLeft>-529.4886,-312.7339</TopLeft>
     <BottomRight>709.7567,804.166</BottomRight>
   </Procedure>
   <Objects>
@@ -101,7 +101,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="12">
       <Location>490.2489,289.4278</Location>
-      <Size>125.16,104.04</Size>
+      <Size>125.16,117</Size>
       <NoteID>1</NoteID>
       <Comment>title</Comment>
       <InputMetadata>
@@ -186,7 +186,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="17">
       <Location>491.966,423.2928</Location>
-      <Size>125.16,104.04</Size>
+      <Size>125.16,117</Size>
       <NoteID>1</NoteID>
       <Comment>description</Comment>
       <InputMetadata />
@@ -200,7 +200,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="19">
-      <Location>-137.5041,294.3362</Location>
+      <Location>-150.8141,304.9842</Location>
       <Size>89.55666,78.12</Size>
       <NoteID>1</NoteID>
       <Comment>
@@ -209,7 +209,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="20">
       <Location>428.097,617.1694</Location>
-      <Size>125.16,104.04</Size>
+      <Size>125.16,117</Size>
       <NoteID>1</NoteID>
       <Comment>example #</Comment>
       <InputMetadata>
@@ -259,12 +259,20 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="25">
-      <Location>76.72327,318.6847</Location>
+      <Location>58.08926,276.0929</Location>
       <Size>90.22,65.16</Size>
       <NoteID>1</NoteID>
       <Comment>no space needed
 for title?</Comment>
-      <InputMetadata />
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>0.1</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="26">
       <Location>111.9822,480.0671</Location>
@@ -295,6 +303,46 @@ for title?</Comment>
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>-329.4886,459.5674</Location>
+      <Size>112.8767,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>399.6269,364.0717</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>390.9287,501.0248</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>341.8937,685.1976</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>99.50095,350.4958</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Bounds</Name>
       <Description>
@@ -312,11 +360,18 @@ for title?</Comment>
       <Name>Text</Name>
       <Description>Descriptive text</Description>
     </Object>
-    <Object type="ProcedureOutputState" id="1">
-      <Name>
-      </Name>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Text Scale</Name>
       <Description>
       </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Display</Name>
+      <Description>Display panel geometry</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Content</Name>
+      <Description>Space for content</Description>
     </Object>
     <Object type="ProcedureNote" id="1">
       <ID>1</ID>
@@ -360,6 +415,10 @@ for title?</Comment>
     </Input>
     <Input id="4">
       <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221088" value="0" />
       <Metadata />
     </Input>
   </DefaultInputs>

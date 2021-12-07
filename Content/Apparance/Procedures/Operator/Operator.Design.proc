@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="948AA606">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="Float">0.492750</Constant>
+        <Constant id="-2" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-3" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-4" type="Float">0.883552</Constant>
+        <Constant id="-5" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-6" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="A44B9ADA">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" constant="-3"/>
+        </Operator>
+        <Operator id="2" type="A44B9ADA">
+            <Connect in="100" constant="-4"/>
+            <Connect in="101" constant="-5"/>
+            <Connect in="102" constant="-6"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="FColour" name="Label Colour" description="" to="1" out="100"/>
+        <Output id="2" type="FColour" name="Value Colour" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

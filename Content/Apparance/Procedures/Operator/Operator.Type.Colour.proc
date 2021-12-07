@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="949172CE">
+    <Inputs>
+        <Input id="1" type="String" name="Type" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-4" type="FColour">[0.000000,0.000000,1.000000,1.000000]</Constant>
+        <Constant id="-6" type="String">Float</Constant>
+        <Constant id="-8" type="FColour">[1.000000,0.000000,1.000000,1.000000]</Constant>
+        <Constant id="-10" type="String">Bool</Constant>
+        <Constant id="-12" type="FColour">[0.000000,0.379280,0.000000,1.000000]</Constant>
+        <Constant id="-13" type="String">Integer</Constant>
+        <Constant id="-15" type="String">Colour</Constant>
+        <Constant id="-17" type="FColour">[0.140876,0.146294,0.140876,1.000000]</Constant>
+        <Constant id="-19" type="String">Vector3</Constant>
+        <Constant id="-21" type="FColour">[0.465973,0.135457,0.000000,1.000000]</Constant>
+        <Constant id="-23" type="String">String</Constant>
+        <Constant id="-25" type="FColour">[1.000000,1.000000,0.000000,1.000000]</Constant>
+        <Constant id="-27" type="String">Frame</Constant>
+        <Constant id="-29" type="FColour">[0.012837,0.012837,0.012837,1.000000]</Constant>
+        <Constant id="-31" type="String">ModelSegment</Constant>
+        <Constant id="-33" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-34" type="FColour">[1.000000,0.000000,0.000000,1.000000]</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="949098CD">
+            <Connect in="1" constant="-34"/>
+            <Connect in="2" constant="-13"/>
+            <Connect in="3" input="1"/>
+            <Connect in="4" constant="-4"/>
+        </Operator>
+        <Operator id="2" type="949098CD">
+            <Connect in="1" to="1" out="1"/>
+            <Connect in="2" constant="-6"/>
+            <Connect in="3" input="1"/>
+            <Connect in="4" constant="-8"/>
+        </Operator>
+        <Operator id="3" type="949098CD">
+            <Connect in="1" to="2" out="1"/>
+            <Connect in="2" constant="-10"/>
+            <Connect in="3" input="1"/>
+            <Connect in="4" constant="-12"/>
+        </Operator>
+        <Operator id="4" type="949098CD">
+            <Connect in="1" to="3" out="1"/>
+            <Connect in="2" constant="-15"/>
+            <Connect in="3" input="1"/>
+            <Connect in="4" constant="-17"/>
+        </Operator>
+        <Operator id="5" type="949098CD">
+            <Connect in="1" to="4" out="1"/>
+            <Connect in="2" constant="-19"/>
+            <Connect in="3" input="1"/>
+            <Connect in="4" constant="-21"/>
+        </Operator>
+        <Operator id="6" type="949098CD">
+            <Connect in="1" to="5" out="1"/>
+            <Connect in="2" constant="-23"/>
+            <Connect in="3" input="1"/>
+            <Connect in="4" constant="-25"/>
+        </Operator>
+        <Operator id="7" type="949098CD">
+            <Connect in="1" to="6" out="1"/>
+            <Connect in="2" constant="-27"/>
+            <Connect in="3" input="1"/>
+            <Connect in="4" constant="-29"/>
+        </Operator>
+        <Operator id="8" type="949098CD">
+            <Connect in="1" to="7" out="1"/>
+            <Connect in="2" constant="-31"/>
+            <Connect in="3" input="1"/>
+            <Connect in="4" constant="-33"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="FColour" name="Colour" description="" to="8" out="1"/>
+    </Outputs>
+</Procedure>

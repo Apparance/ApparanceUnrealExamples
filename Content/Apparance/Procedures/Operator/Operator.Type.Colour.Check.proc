@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="949098CD">
+    <Inputs>
+        <Input id="1" type="FColour" name="Prev" description="Colour from previous check"/>
+        <Input id="2" type="String" name="Name" description="Name of the type we are checking for"/>
+        <Input id="3" type="String" name="Type" description="Type name being tested"/>
+        <Input id="4" type="FColour" name="Colour" description="Colour for this type"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-6" type="Bool">False</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="C1B77AD8">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" input="4"/>
+        </Operator>
+        <Operator id="2" type="402FDA76">
+            <Connect in="100" input="2"/>
+            <Connect in="101" input="3"/>
+            <Connect in="102" constant="-6"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="FColour" name="Colour" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

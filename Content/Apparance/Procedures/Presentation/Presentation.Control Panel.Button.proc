@@ -50,6 +50,7 @@
         <Constant id="-84" type="FColour">[0.500000,0.500000,0.500000,1.000000]</Constant>
         <Constant id="-89" type="Float">0.000000</Constant>
         <Constant id="-90" type="Float">-0.010000</Constant>
+        <Constant id="-91" type="Bool">False</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="E99E1179">
@@ -128,6 +129,7 @@
             <Connect in="4" to="24" out="100"/>
             <Connect in="5" constant="-56"/>
             <Connect in="6" constant="-57"/>
+            <Connect in="7" constant="-91"/>
         </Operator>
         <Operator id="15" type="B4A997AD">
             <Connect in="100" to="13" out="100"/>

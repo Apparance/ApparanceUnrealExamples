@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="9524C83B">
+    <Inputs>
+        <Input id="1" type="Frame" name="Where?" description=""/>
+        <Input id="2" type="FColour" name="Colour" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-2" type="Integer">1</Constant>
+        <Constant id="-3" type="Integer">1</Constant>
+        <Constant id="-7" type="Float">0.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="10DEC4B5">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" constant="-3"/>
+        </Operator>
+        <Operator id="3" type="90FA2A0B">
+            <Connect in="1" to="1" out="100"/>
+            <Connect in="2" to="4" out="1"/>
+        </Operator>
+        <Operator id="4" type="90E49FD8">
+            <Connect in="1" input="2"/>
+            <Connect in="2" constant="-7"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="3" out="1"/>
+    </Outputs>
+</Procedure>

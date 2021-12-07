@@ -43,6 +43,8 @@
         <Constant id="-77" type="Bool">True</Constant>
         <Constant id="-79" type="Float">0.036825</Constant>
         <Constant id="-80" type="Float">0.059091</Constant>
+        <Constant id="-81" type="Bool">False</Constant>
+        <Constant id="-82" type="Bool">False</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="F2BCC928">
@@ -61,6 +63,7 @@
             <Connect in="4" constant="-9"/>
             <Connect in="5" constant="-10"/>
             <Connect in="6" constant="-11"/>
+            <Connect in="7" constant="-81"/>
         </Operator>
         <Operator id="4" type="B4A997AD">
             <Connect in="100" to="1" out="1"/>
@@ -110,6 +113,7 @@
             <Connect in="4" to="17" out="100"/>
             <Connect in="5" constant="-43"/>
             <Connect in="6" constant="-44"/>
+            <Connect in="7" constant="-82"/>
         </Operator>
         <Operator id="12" type="D729EF5D">
             <Connect in="100" to="5" out="101"/>

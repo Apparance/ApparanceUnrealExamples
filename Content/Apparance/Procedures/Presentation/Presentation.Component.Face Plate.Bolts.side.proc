@@ -19,7 +19,7 @@
         <Constant id="-16" type="Integer">1</Constant>
         <Constant id="-17" type="Integer">0</Constant>
         <Constant id="-18" type="Bool">False</Constant>
-        <Constant id="-21" type="Float">0.042077</Constant>
+        <Constant id="-21" type="Float">0.037971</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="EBC5C37C">

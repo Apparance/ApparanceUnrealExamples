@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="946EED65">
+    <Inputs>
+        <Input id="1" type="List" name="IO" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-2" type="Integer">0</Constant>
+        <Constant id="-4" type="Integer">3</Constant>
+        <Constant id="-6" type="Integer">4</Constant>
+        <Constant id="-9" type="Integer">1</Constant>
+        <Constant id="-11" type="Integer">2</Constant>
+        <Constant id="-17" type="Integer">5</Constant>
+        <Constant id="-19" type="Integer">6</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="20EF33CD">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-2"/>
+        </Operator>
+        <Operator id="2" type="D56CEA6D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-4"/>
+        </Operator>
+        <Operator id="3" type="D56CEA6D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-6"/>
+        </Operator>
+        <Operator id="5" type="20EF33CD">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-9"/>
+        </Operator>
+        <Operator id="6" type="20EF33CD">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-11"/>
+        </Operator>
+        <Operator id="7" type="5C4E98DC">
+            <Connect in="100" to="3" out="100"/>
+        </Operator>
+        <Operator id="8" type="5C4E98DC">
+            <Connect in="100" to="2" out="100"/>
+        </Operator>
+        <Operator id="9" type="54935A2B">
+            <Connect in="100" to="8" out="100"/>
+            <Connect in="101" to="7" out="100"/>
+        </Operator>
+        <Operator id="10" type="B33D6C3E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-17"/>
+        </Operator>
+        <Operator id="11" type="B33D6C3E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-19"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="String" name="Descriptor" description="" to="1" out="100"/>
+        <Output id="2" type="String" name="Name" description="" to="5" out="100"/>
+        <Output id="3" type="String" name="Description" description="" to="6" out="100"/>
+        <Output id="4" type="List" name="Inputs" description="" to="2" out="100"/>
+        <Output id="5" type="List" name="Outputs" description="" to="3" out="100"/>
+        <Output id="6" type="Integer" name="IO Count" description="" to="9" out="100"/>
+        <Output id="7" type="Integer" name="In Len" description="" to="10" out="100"/>
+        <Output id="8" type="Integer" name="Out Len" description="" to="11" out="100"/>
+    </Outputs>
+</Procedure>

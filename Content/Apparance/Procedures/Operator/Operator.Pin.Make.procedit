@@ -1,0 +1,71 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>457.1075,258.0579</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Operator</Category>
+    <DisplayName>Pin.Make</DisplayName>
+    <Description>Make an input or output pin info struct</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>381.9008,77.38843</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Type</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>382.4132,170.7768</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Name</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>381.8264,267.6115</Location>
+      <Size>77.25,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[2] Description</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Type</Name>
+      <Description>type name, e.g. Integer</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Name</Name>
+      <Description>Name of the pin</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Description</Name>
+      <Description>pin description</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>IO</Name>
+      <Description>IO info structure</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

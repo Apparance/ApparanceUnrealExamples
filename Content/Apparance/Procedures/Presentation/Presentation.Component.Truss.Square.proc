@@ -40,6 +40,8 @@
         <Constant id="-75" type="Bool">True</Constant>
         <Constant id="-87" type="Float">0.500000</Constant>
         <Constant id="-93" type="Integer">10</Constant>
+        <Constant id="-95" type="Integer">2</Constant>
+        <Constant id="-96" type="Integer">0</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="E853B53E">
@@ -154,7 +156,7 @@
             <Connect in="102" constant="-69"/>
         </Operator>
         <Operator id="24" type="EC54ACB3">
-            <Connect in="1" to="25" out="102"/>
+            <Connect in="1" to="35" out="100"/>
             <Connect in="2" to="29" out="100"/>
             <Connect in="3" input="3"/>
             <Connect in="4" to="30" out="100"/>
@@ -193,6 +195,11 @@
         </Operator>
         <Operator id="34" type="9BE3A6B1">
             <Connect in="1" input="1"/>
+        </Operator>
+        <Operator id="35" type="EBC5C37C">
+            <Connect in="100" to="25" out="102"/>
+            <Connect in="101" constant="-95"/>
+            <Connect in="102" constant="-96"/>
         </Operator>
     </Operators>
     <Outputs>

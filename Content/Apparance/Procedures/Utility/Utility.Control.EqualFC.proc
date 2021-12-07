@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="91F099BC">
+    <Inputs>
+        <Input id="1" type="FColour" name="A" description=""/>
+        <Input id="2" type="FColour" name="B" description=""/>
+        <Input id="3" type="Bool" name="Alpha?" description="Should comparison include alpha?"/>
+    </Inputs>
+    <Constants/>
+    <Operators>
+        <Operator id="1" type="A65770B2">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="2" type="A65770B2">
+            <Connect in="100" input="2"/>
+        </Operator>
+        <Operator id="3" type="BCC45B69">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="2" out="100"/>
+        </Operator>
+        <Operator id="4" type="BCC45B69">
+            <Connect in="100" to="1" out="101"/>
+            <Connect in="101" to="2" out="101"/>
+        </Operator>
+        <Operator id="5" type="BCC45B69">
+            <Connect in="100" to="1" out="102"/>
+            <Connect in="101" to="2" out="102"/>
+        </Operator>
+        <Operator id="6" type="BCC45B69">
+            <Connect in="100" to="1" out="103"/>
+            <Connect in="101" to="2" out="103"/>
+        </Operator>
+        <Operator id="7" type="7C4C983A">
+            <Connect in="100" to="6" out="100"/>
+            <Connect in="101" to="8" out="100"/>
+        </Operator>
+        <Operator id="8" type="12F2CDE2">
+            <Connect in="100" input="3"/>
+        </Operator>
+        <Operator id="9" type="E6571016">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="10" type="E6571016">
+            <Connect in="100" to="9" out="100"/>
+            <Connect in="101" to="11" out="100"/>
+        </Operator>
+        <Operator id="11" type="E6571016">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" to="7" out="100"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Bool" name="A==B" description="" to="10" out="100"/>
+    </Outputs>
+</Procedure>
