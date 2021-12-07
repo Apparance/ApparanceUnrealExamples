@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>479.972,411.9018</Centre>
-    <Zoom>0.7513149</Zoom>
+    <Centre>357,328</Centre>
+    <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
     <DisplayName>Truss.Banner</DisplayName>
     <Description>Banner to place along a truss</Description>
     <TopLeft>-175,-20</TopLeft>
-    <BottomRight>867.8311,515.96</BottomRight>
+    <BottomRight>655.7567,466</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -28,7 +28,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>872,188</Location>
+      <Location>709,189</Location>
       <Size>46.75667,45.88</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -60,8 +60,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>842.671,338.669</Location>
-      <Size>125.16,104.04</Size>
+      <Location>585,299</Location>
+      <Size>125.16,117</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -76,7 +76,7 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>334,273</Location>
+      <Location>298,280</Location>
       <Size>69.12,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -100,7 +100,7 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="10">
-      <Location>180,248</Location>
+      <Location>179,285</Location>
       <Size>77.65667,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -133,15 +133,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="12">
-      <Location>685.671,322.669</Location>
-      <Size>86.38,129.96</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="13">
-      <Location>482.2631,373.1121</Location>
+      <Location>444,286</Location>
       <Size>69.12,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
