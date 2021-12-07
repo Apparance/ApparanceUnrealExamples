@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="9064A377">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame" description=""/>
+        <Input id="2" type="Float" name="Amount" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-4" type="Integer">0</Constant>
+        <Constant id="-5" type="Bool">True</Constant>
+        <Constant id="-8" type="Integer">0</Constant>
+        <Constant id="-9" type="Integer">1</Constant>
+        <Constant id="-10" type="Bool">True</Constant>
+        <Constant id="-13" type="Integer">0</Constant>
+        <Constant id="-14" type="Integer">2</Constant>
+        <Constant id="-15" type="Bool">True</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E853B53E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-3"/>
+            <Connect in="103" constant="-4"/>
+            <Connect in="104" constant="-5"/>
+        </Operator>
+        <Operator id="2" type="E853B53E">
+            <Connect in="100" to="1" out="101"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-8"/>
+            <Connect in="103" constant="-9"/>
+            <Connect in="104" constant="-10"/>
+        </Operator>
+        <Operator id="3" type="E853B53E">
+            <Connect in="100" to="2" out="101"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-13"/>
+            <Connect in="103" constant="-14"/>
+            <Connect in="104" constant="-15"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Frame" name="Frame" description="" to="3" out="101"/>
+    </Outputs>
+</Procedure>

@@ -1,0 +1,61 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>410,225</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Materials</Category>
+    <DisplayName>Plastic.Shiny</DisplayName>
+    <Description>Polished plastic</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>554.9586,208.4959</Location>
+      <Size>57.14333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>430.9422,149.3719</Location>
+      <Size>67.74667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>253,82</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Colour</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+</ProcedureEditData>

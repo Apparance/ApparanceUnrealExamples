@@ -1,0 +1,171 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>521.7357,270.0414</Centre>
+    <Zoom>1.1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Operator</Category>
+    <DisplayName>Input</DisplayName>
+    <Description>Generate input visuals</Description>
+    <TopLeft>-255.4546,-101.4132</TopLeft>
+    <BottomRight>954.3322,441.5345</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>621.5699,138.3801</Location>
+      <Size>125.16,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>-55.45461,-42.14046</Location>
+      <Size>91.67,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>788.6776,259.843</Location>
+      <Size>89.55666,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>141.0744,286.9504</Location>
+      <Size>83.3,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>270.6611,-51.41323</Location>
+      <Size>104.5133,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>831.8171,79.90909</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>418.9505,138.3884</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>30,245</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>pad</Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>0.01</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>89.90912,39.90911</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>939.8188,300.4546</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>830.4546,357.5455</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>279.2728,295.4547</Location>
+      <Size>181,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Pin</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Text Size</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Space</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Visuals</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Space</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

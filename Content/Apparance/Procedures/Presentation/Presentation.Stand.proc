@@ -56,6 +56,7 @@
         <Constant id="-83" type="Float">0.025000</Constant>
         <Constant id="-85" type="Float">0.100000</Constant>
         <Constant id="-87" type="Float">0.100000</Constant>
+        <Constant id="-88" type="Float">0.000000</Constant>
     </Constants>
     <Operators>
         <Operator id="2" type="09FEED26">
@@ -149,6 +150,7 @@
             <Connect in="2" input="4"/>
             <Connect in="3" input="5"/>
             <Connect in="4" input="6"/>
+            <Connect in="5" constant="-88"/>
         </Operator>
         <Operator id="16" type="EA5D30C6">
             <Connect in="100" input="1"/>

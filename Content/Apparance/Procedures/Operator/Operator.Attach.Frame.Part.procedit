@@ -1,0 +1,77 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>410,225</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Operator</Category>
+    <DisplayName>Attach.Frame.Part</DisplayName>
+    <Description>Add a part to the frame</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>297.5372,99.62808</Location>
+      <Size>75.01,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>550,175</Location>
+      <Size>103.6533,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>579.4048,133.1405</Location>
+      <Size>97.06,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>298.0083,223.3223</Location>
+      <Size>181,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Colour</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1919697734" value="[0,0,0,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

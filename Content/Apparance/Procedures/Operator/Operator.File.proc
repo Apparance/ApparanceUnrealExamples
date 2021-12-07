@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="94EDF37A">
+    <Inputs/>
+    <Constants>
+        <Constant id="-2" type="Integer">0</Constant>
+        <Constant id="-8" type="String">\Operators.txt</Constant>
+        <Constant id="-11" type="String">Failed to find Operators.txt</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="74DCFEAA"/>
+        <Operator id="2" type="F774AB2D">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" constant="-2"/>
+        </Operator>
+        <Operator id="5" type="C938CD2E">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-8"/>
+        </Operator>
+        <Operator id="6" type="29222C69">
+            <Connect in="100" to="2" out="101"/>
+            <Connect in="101" to="2" out="100"/>
+            <Connect in="102" constant="-11"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="String" name="Text" description="" to="6" out="100"/>
+    </Outputs>
+</Procedure>

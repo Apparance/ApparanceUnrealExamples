@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="91AFA5C3">
+    <Inputs>
+        <Input id="1" type="List" name="Spaces" description=""/>
+        <Input id="2" type="Integer" name="Index" description=""/>
+        <Input id="3" type="Integer" name="Alignment" description="|Default=2|Min=0|Max=2|MinLimit=0|MaxLimit=2"/>
+        <Input id="4" type="Bool" name="True?" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-6" type="String">False</Constant>
+        <Constant id="-7" type="String">True</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="94C979F2">
+            <Connect in="1" input="1"/>
+            <Connect in="2" input="2"/>
+            <Connect in="3" to="2" out="100"/>
+            <Connect in="4" input="3"/>
+        </Operator>
+        <Operator id="2" type="ACF9F191">
+            <Connect in="100" input="4"/>
+            <Connect in="101" constant="-6"/>
+            <Connect in="102" constant="-7"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="1" out="1"/>
+    </Outputs>
+</Procedure>

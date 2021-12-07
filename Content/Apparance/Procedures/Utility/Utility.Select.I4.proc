@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="91A7D4DF">
+    <Inputs>
+        <Input id="1" type="Integer" name="Select" description=""/>
+        <Input id="2" type="Integer" name="0" description=""/>
+        <Input id="3" type="Integer" name="1" description=""/>
+        <Input id="4" type="Integer" name="2" description=""/>
+        <Input id="5" type="Integer" name="3" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-14" type="Integer">0</Constant>
+        <Constant id="-19" type="Integer">1</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="C0D4BFBD">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" input="3"/>
+        </Operator>
+        <Operator id="2" type="C0D4BFBD">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" input="4"/>
+            <Connect in="102" input="5"/>
+        </Operator>
+        <Operator id="3" type="C0D4BFBD">
+            <Connect in="100" to="7" out="100"/>
+            <Connect in="101" to="1" out="100"/>
+            <Connect in="102" to="2" out="100"/>
+        </Operator>
+        <Operator id="5" type="60628950">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-14"/>
+        </Operator>
+        <Operator id="7" type="60628950">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-19"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Integer" name="Out" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

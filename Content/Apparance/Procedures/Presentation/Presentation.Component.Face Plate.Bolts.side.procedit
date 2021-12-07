@@ -111,5 +111,9 @@
       <Value type="842221856" value="0" />
       <Metadata />
     </Input>
+    <Input id="3">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
   </DefaultInputs>
 </ProcedureEditData>

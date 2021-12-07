@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="94F94CDA">
+    <Inputs>
+        <Input id="1" type="String" name="" description=""/>
+    </Inputs>
+    <Constants/>
+    <Operators>
+        <Operator id="1" type="B7D8B974">
+            <Connect in="100" input="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="String" name="" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

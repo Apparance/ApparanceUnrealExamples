@@ -1,0 +1,46 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>410,272.9339</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Utility</Category>
+    <DisplayName>Component.Interaction.Zone</DisplayName>
+    <Description>Place looking for player to interact with</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>286.2892,58.28094</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>481,182</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Where?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Object</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+</ProcedureEditData>

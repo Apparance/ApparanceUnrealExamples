@@ -1,0 +1,151 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>715.7849,310.124</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Operator</Category>
+    <DisplayName>Lookup.Parse.IO</DisplayName>
+    <Description>Gather IO info</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>1151.602,754.2997</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>262.0414,74.61981</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>skip index</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>1177.272,171.438</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>265.3967,165.6115</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>986.8588,618.4788</Location>
+      <Size>123.2233,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>recurse to next</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>882.6108,257.3305</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>767.8915,308.7934</Location>
+      <Size>87.49333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>272.6528,288.6364</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>space after type</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>494.8513,177.4297</Location>
+      <Size>82.99,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>type</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>277.6611,412.1405</Location>
+      <Size>111.6567,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>name-desc separator</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>517,344</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>488.7192,326.562</Location>
+      <Size>82.99,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>name</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>617.0333,325.6033</Location>
+      <Size>71.63333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>281.2231,521.1487</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>eol</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>531.4136,462.562</Location>
+      <Size>82.99,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Text</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Start</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>(pins)</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

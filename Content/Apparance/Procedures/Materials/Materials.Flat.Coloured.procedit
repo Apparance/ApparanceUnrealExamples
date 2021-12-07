@@ -53,4 +53,14 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1919697734" value="[1,1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
 </ProcedureEditData>

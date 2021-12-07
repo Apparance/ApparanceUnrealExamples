@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="90AC13C6">
+    <Inputs>
+        <Input id="1" type="FColour" name="Colour" description=""/>
+        <Input id="2" type="Float" name="Opacity" description=""/>
+        <Input id="3" type="ModelSegment" name="" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-10" type="String">Presentation.Material.Glass</Constant>
+        <Constant id="-11" type="Frame">[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]</Constant>
+        <Constant id="-12" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="8564374F">
+            <Connect in="100" input="3"/>
+            <Connect in="101" to="5" out="100"/>
+        </Operator>
+        <Operator id="2" type="E1078DA9">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="3" type="A65770B2">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="4" type="A6ED6262">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" to="3" out="101"/>
+            <Connect in="102" to="3" out="102"/>
+            <Connect in="103" input="2"/>
+        </Operator>
+        <Operator id="5" type="36BD1471">
+            <Connect in="100" constant="-10"/>
+            <Connect in="101" constant="-11"/>
+            <Connect in="102" constant="-12"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

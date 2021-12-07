@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="5617928D">
+<Procedure Version="5" type="5617928D">
     <Inputs>
-        <Input id="1" type="Frame" name="In"/>
-        <Input id="2" type="Vector3" name="Offset"/>
-        <Input id="3" type="Float" name="Orientation"/>
-        <Input id="4" type="Vector3" name="Scale"/>
+        <Input id="1" type="Frame" name="In" description=""/>
+        <Input id="2" type="Vector3" name="Offset" description=""/>
+        <Input id="3" type="Float" name="Orientation" description=""/>
+        <Input id="4" type="Vector3" name="Scale" description="Adjust scaling|Default=[1,1,1]"/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Integer">0</Constant>

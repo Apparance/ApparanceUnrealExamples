@@ -1,0 +1,141 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>378.5951,278.719</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Materials</Category>
+    <DisplayName>Hologram</DisplayName>
+    <Description>Hologram display effects</Description>
+    <TopLeft>-120.6777,-29.23968</TopLeft>
+    <BottomRight>600,450.9365</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>484.7769,139.033</Location>
+      <Size>57.14333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>606.5862,151.3388</Location>
+      <Size>67.74667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>163.6199,192.2728</Location>
+      <Size>65.35,84.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>386.719,206.7355</Location>
+      <Size>65.35,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="103">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>1</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>252.7273,272.0743</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>285.9504,368.0165</Location>
+      <Size>87.79667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>global hologram
+brightness</Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>0.1</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>411.6034,20.76032</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Colour</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Brightness</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1919697734" value="[0,0,0,1]" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="1" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="1" />
+        </Input>
+        <Input Name="MinLimit">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="MaxLimit">
+          <Value type="842221088" value="1" />
+        </Input>
+      </Metadata>
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>
