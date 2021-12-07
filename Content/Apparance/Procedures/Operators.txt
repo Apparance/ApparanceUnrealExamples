@@ -1,0 +1,2307 @@
+Apparance Operator List
+--------------------------------------------------------------------------
+Bitwise.NotI  'NOT' - Bitwise integer NOT
+    INPUTS:
+	[0] Integer	 - Integer input
+    OUTPUTS:
+	[0] Integer	 - Bitwise NOT (inversion) input bits
+--------------------------------------------------------------------------
+Bitwise.AndI  'AND' - Bitwise integer AND
+    INPUTS:
+	[0] Integer	 - First integer
+	[1] Integer	 - Second integer
+    OUTPUTS:
+	[0] Integer	 - Bitwise AND of both inputs bits
+--------------------------------------------------------------------------
+Bitwise.OrI  'OR' - Bitwise integer OR
+    INPUTS:
+	[0] Integer	 - First integer
+	[1] Integer	 - Second integer
+    OUTPUTS:
+	[0] Integer	 - Bitwise OR of both inputs bits
+--------------------------------------------------------------------------
+Bitwise.XOrI  'XOR' - Bitwise integer Exclusive-OR
+    INPUTS:
+	[0] Integer	 - First integer
+	[1] Integer	 - Second integer
+    OUTPUTS:
+	[0] Integer	 - Bitwise XOR of both inputs bits
+--------------------------------------------------------------------------
+Bitwise.ShiftLeft  'ShiftLeft' - Shift left (toward MSB) by a number of bit positions, zeros shifted in on right (LSB)
+    INPUTS:
+	[0] Integer	 - Bits to shift
+	[1] Integer	num - Bit positions to shift left (negative shifts right, zero has no effect)
+    OUTPUTS:
+	[0] Integer	 - Shifted bits
+--------------------------------------------------------------------------
+Bitwise.ShiftRight  '>>' - Shift right (toward LSB) by a number of bit positions, zeros shifted in on left (MSB)
+    INPUTS:
+	[0] Integer	 - Bits to shift
+	[1] Integer	num - Bit positions to shift right (negative shifts left, zero has no effect)
+    OUTPUTS:
+	[0] Integer	 - Shifted bits
+--------------------------------------------------------------------------
+Bitwise.IsBitSet  'Bit Set?' - Test to see if a particular bit is set (1)
+    INPUTS:
+	[0] Integer	In - Bits to test
+	[1] Integer	Index - Bit positions to test against (0 for LSB up to 31 for MSB)
+    OUTPUTS:
+	[0] Bool	IsSet - True if tested bit is set (1)
+--------------------------------------------------------------------------
+Bitwise.IsBitClear  'Bit Clear?' - Test to see if a particular bit is clear (0)
+    INPUTS:
+	[0] Integer	In - Bits to test
+	[1] Integer	Index - Bit positions to test against (0 for LSB up to 31 for MSB)
+    OUTPUTS:
+	[0] Bool	IsClear - True if tested bit is clear (0)
+--------------------------------------------------------------------------
+Colour.Blend  'Blend' - Blends two colours together
+    INPUTS:
+	[0] Float	Blend - Blend factor, 0 for A, through to 1 for B
+	[1] FColour	A - Colour to blend from (blend value 0)
+	[2] FColour	B - Colour to blend to (blend value 1)
+    OUTPUTS:
+	[0] FColour	Out - Blended colour
+--------------------------------------------------------------------------
+Colour.Hue  'Hue' - Generates a pure colour with a given hue
+    INPUTS:
+	[0] Float	Hue - Hue value from 0 to 1 (0=red, 0.1=orangey, etc)
+    OUTPUTS:
+	[0] FColour	Colour - Generated pure hue
+--------------------------------------------------------------------------
+Colour.Pack  'Pack' - Packs a full precision colour into 32 bits
+    INPUTS:
+	[0] FColour	Colour - Colour value to pack (float per channel)
+    OUTPUTS:
+	[0] Integer	Int - Packed ARGB value (8 bits per channel)
+--------------------------------------------------------------------------
+Colour.UnPack  'UnPack' - Unpacks a 32 bit colour into a full precision colour
+    INPUTS:
+	[0] Integer	Int - Packed ARGB value (8 bits per channel)
+    OUTPUTS:
+	[0] FColour	Colour - Unpacked colour value (float per channel)
+--------------------------------------------------------------------------
+Constants.FloatConstant  'Constant' - A shared constant value
+    INPUTS:
+	[0] Float	Float - Constant floating point value
+    OUTPUTS:
+	[0] Float	 - Constant floating point value
+--------------------------------------------------------------------------
+Constants.IntegerConstant  'Constant' - A shared constant value
+    INPUTS:
+	[0] Integer	Integer - Constant integer value
+    OUTPUTS:
+	[0] Integer	 - Constant integer value
+--------------------------------------------------------------------------
+Constants.BoolConstant  'Constant' - A shared constant value
+    INPUTS:
+	[0] Bool	Bool - Constant bool value
+    OUTPUTS:
+	[0] Bool	 - Constant bool value
+--------------------------------------------------------------------------
+Constants.Vector3Constant  'Constant' - A shared constant value
+    INPUTS:
+	[0] Vector3	Vector3 - Constant vector value
+    OUTPUTS:
+	[0] Vector3	 - Constant vector value
+--------------------------------------------------------------------------
+Constants.FColourConstant  'Constant' - A shared constant value
+    INPUTS:
+	[0] FColour	Colour - Constant colour value
+    OUTPUTS:
+	[0] FColour	 - Constant colour value
+--------------------------------------------------------------------------
+Constants.StringConstant  'Constant' - A shared constant value
+    INPUTS:
+	[0] String	String - Constant string value
+    OUTPUTS:
+	[0] String	 - Constant string value
+--------------------------------------------------------------------------
+Construction.StackerSplitter  'Stacker.Splitter' - General stacking/packing utility.  Recursively split up space to contain a repeat series of objects with optional start/end caps, all separated with spacers.
+    INPUTS:
+	[0] Frame	Frame - Frame to stack objects within
+	[1] Integer	Select - Which end and spacing options are required?
+	[2] Integer	Axis - Axis along which we are stacking
+	[3] Float	Object Size - Ideal size of the main repeated object along the stack
+	[4] Float	Spacer Size - Size of the spacer repeated between objects (and end caps) along the stack
+	[5] Float	Lower Cap Size - Size we want the lower cap to have allocated on the stack
+	[6] Float	Upper Cap Size - Size we want the upper cap to have allocated on the stack
+	[7] Integer	Start Index - First index of objects in this sub-section.  (Leave as 0 on outer instance)
+	[8] Integer	Total Objects - Total number of objects.  (Leave as 0 on outer instance)
+    OUTPUTS:
+	[0] Integer	Control - What to do: Recurse? Select component parts? (bitfield, use Stacker.Options to specify)
+	[0] Frame	Lower Frame - Where lower recursively generated parts should go
+	[0] Integer	Lower Select - Selection instructions for lower recursion
+	[0] Frame	Upper Frame - Where upper recursively generated parts should go
+	[0] Integer	Upper Select - Selection instructions for upper recursion
+	[0] Frame	Lower Cap - Where capping part for lower end should go
+	[0] Frame	Spacer - Where spacer to appear between all parts should go
+	[0] Frame	Object - Where main object to repeat along stack should go
+	[0] Frame	Upper Cap - Where capping part for upper end should go
+	[0] Integer	Lower Index - First object index in lower recursion
+	[0] Integer	Upper Index - First object index in upper recursion
+	[0] Integer	Total Objects - Total number of objects fitted into stacking space, between end caps
+	[0] Integer	Object Index - Index of this object in the stack, zero based
+--------------------------------------------------------------------------
+Construction.StackerMerger  'Stacker.Merger' - Combine required elements from stacking process.
+    INPUTS:
+	[0] Integer	Control - Control over what to do: Recurse or instantiate component parts?
+	[1] ModelSegment	Lower Recurse - Recursion into lower part
+	[2] ModelSegment	Upper Recurse - Recursion into upper part
+	[3] ModelSegment	Lower Cap - The instantiated lower cap
+	[4] ModelSegment	Spacer - The instantiated spacer
+	[5] ModelSegment	Object - The instantiated object
+	[6] ModelSegment	Upper Cap - The instantiated upper cap
+    OUTPUTS:
+	[0] ModelSegment	Out - Resulting geometry from this stage of the stacking process.
+--------------------------------------------------------------------------
+Construction.StackerMergerL  'Stacker.MergerL' - Combine specific lists of items from stacking process into single list of items (currently only singly typed lists).
+    INPUTS:
+	[0] Integer	Control - Control over which items to collect together into a single list?
+	[1] List	Lower Recurse - The list of items collected from the lower part
+	[2] List	Upper Recurse - The list of items collected from the upper part
+	[3] List	Lower Cap - The list of items from the lower cap
+	[4] List	Spacer - The list of items from spacer
+	[5] List	Object - The list of items from object
+	[6] List	Upper Cap - The list of items from the upper cap
+    OUTPUTS:
+	[0] List	Out - Resulting concatenated lists from this stage of the stacking process.
+--------------------------------------------------------------------------
+Construction.StackerMergerI  'Stacker.MergerI' - Combine specific values from stacking process into single value.
+    INPUTS:
+	[0] Integer	Control - Control over which items to collect together into a single value?
+	[1] Integer	Mode - How to combine values into one?
+	[2] Integer	Lower Recurse - The values collected from the lower part
+	[3] Integer	Upper Recurse - The values collected from the upper part
+	[4] Integer	Lower Cap - The value from the lower cap
+	[5] Integer	Spacer - The value from the spacer
+	[6] Integer	Object - The value from the object
+	[7] Integer	Upper Cap - The value from the upper cap
+    OUTPUTS:
+	[0] Integer	Out - Resulting accumulated value from this stage of the stacking process.
+--------------------------------------------------------------------------
+Construction.StackerOptions  'Stacker.Options' - Helper to generate selection inputs to a stacker based object.
+    INPUTS:
+	[0] Bool	Lower Cap? - Want the lower end to be capped?
+	[1] Bool	Lower Spacer? - Want a spacer next to the lower end cap?
+	[2] Bool	Object Spacers? - Want spacers between all the arrayed objects?
+	[3] Bool	Upper Spacer? - Want a spacer next to the upper end cap?
+	[4] Bool	Upper Cap? - Want the upper end to be capped?
+    OUTPUTS:
+	[0] Integer	Select - Selection options for stacking utility
+--------------------------------------------------------------------------
+Control.EqualI  'Equal' - Test if two values are equal
+    INPUTS:
+	[0] Integer	 - First value
+	[1] Integer	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Are the two values equal?
+--------------------------------------------------------------------------
+Control.EqualF  'Equal' - Test if two values are equal
+    INPUTS:
+	[0] Float	 - First value
+	[1] Float	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Are the two values equal?
+--------------------------------------------------------------------------
+Control.EqualB  'Equal' - Test if two values are equal
+    INPUTS:
+	[0] Bool	 - First value
+	[1] Bool	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Are the two values equal?
+--------------------------------------------------------------------------
+Control.NotEqualI  'NotEqual' - Test if two values are not equal
+    INPUTS:
+	[0] Integer	 - First value
+	[1] Integer	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Are the two values not equal?
+--------------------------------------------------------------------------
+Control.NotEqualF  'NotEqual' - Test if two values are not equal
+    INPUTS:
+	[0] Float	 - First value
+	[1] Float	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Are the two values not equal?
+--------------------------------------------------------------------------
+Control.NotEqualB  'NotEqual' - Test if two values are not equal
+    INPUTS:
+	[0] Bool	 - First value
+	[1] Bool	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Are the two values not equal?
+--------------------------------------------------------------------------
+Control.LessThanI  'LessThan' - Test if a value is less than another
+    INPUTS:
+	[0] Integer	 - First value
+	[1] Integer	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Is A less than B?
+--------------------------------------------------------------------------
+Control.LessThanF  'LessThan' - Test if a value is less than another
+    INPUTS:
+	[0] Float	 - First value
+	[1] Float	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Is A less than B?
+--------------------------------------------------------------------------
+Control.LessThanOrEqualI  'LessThanOrEqual' - Test if a value is less than, or equal to, another
+    INPUTS:
+	[0] Integer	 - First value
+	[1] Integer	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Is A less than or equal to B?
+--------------------------------------------------------------------------
+Control.LessThanOrEqualF  'LessThanOrEqual' - Test if a value is less than, or equal to, another
+    INPUTS:
+	[0] Float	 - First value
+	[1] Float	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Is A less than or equal to B?
+--------------------------------------------------------------------------
+Control.GreaterThanI  'GreaterThan' - Test if a value is greater than another
+    INPUTS:
+	[0] Integer	 - First value
+	[1] Integer	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Is A greater than B?
+--------------------------------------------------------------------------
+Control.GreaterThanF  'GreaterThan' - Test if a value is greater than another
+    INPUTS:
+	[0] Float	 - First value
+	[1] Float	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Is A greater than B?
+--------------------------------------------------------------------------
+Control.GreaterThanOrEqualI  'GreaterThanOrEqual' - Test if a value is greater than, or equal to, another
+    INPUTS:
+	[0] Integer	 - First value
+	[1] Integer	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Is A greater than or equal to B?
+--------------------------------------------------------------------------
+Control.GreaterThanOrEqualF  'GreaterThanOrEqual' - Test if a value is greater than, or equal to, another
+    INPUTS:
+	[0] Float	 - First value
+	[1] Float	 - Second value
+    OUTPUTS:
+	[0] Bool	 - Is A greater than or equal to B?
+--------------------------------------------------------------------------
+Control.CompareI  'Compare' - General comparison of two values
+    INPUTS:
+	[0] Integer	A - First value
+	[1] Integer	B - Second value
+    OUTPUTS:
+	[0] Bool	A==B - Is A equal to B?
+	[0] Bool	A!=B - Is A not equal to B?
+	[0] Bool	A>B - Is A greater than B?
+	[0] Bool	A>=B - Is A greater than or equal to B?
+	[0] Bool	A<B - Is A less than B?
+	[0] Bool	A<=B - Is A less than or equal to B?
+--------------------------------------------------------------------------
+Control.CompareF  'Compare' - General comparison of two values
+    INPUTS:
+	[0] Float	A - First value
+	[1] Float	B - Second value
+    OUTPUTS:
+	[0] Bool	A==B - Is A equal to B?
+	[0] Bool	A!=B - Is A not equal to B?
+	[0] Bool	A>B - Is A greater than B?
+	[0] Bool	A>=B - Is A greater than or equal to B?
+	[0] Bool	A<B - Is A less than B?
+	[0] Bool	A<=B - Is A less than or equal to B?
+--------------------------------------------------------------------------
+Control.IfI  'If' - Choose one of two values
+    INPUTS:
+	[0] Bool	Control - Which value to select
+	[1] Integer	False - Value when control false
+	[2] Integer	True - Value when control true
+    OUTPUTS:
+	[0] Integer	Out - Chosen value
+--------------------------------------------------------------------------
+Control.IfF  'If' - Choose one of two values
+    INPUTS:
+	[0] Bool	Control - Which value to select
+	[1] Float	False - Value when control false
+	[2] Float	True - Value when control true
+    OUTPUTS:
+	[0] Float	Out - Chosen value
+--------------------------------------------------------------------------
+Control.IfSeg  'If' - Choose one of two bits of geometry
+    INPUTS:
+	[0] Bool	Control - Which bit to select
+	[1] ModelSegment	False - Geometry when control false
+	[2] ModelSegment	True - Geometry when control true
+    OUTPUTS:
+	[0] ModelSegment	Out - Chosen value
+--------------------------------------------------------------------------
+Control.IfFC  'If' - Choose one of two colours
+    INPUTS:
+	[0] Bool	Control - Which colour to select
+	[1] FColour	False - Colour when control false
+	[2] FColour	True - Colour when control true
+    OUTPUTS:
+	[0] FColour	Out - Chosen colour
+--------------------------------------------------------------------------
+Control.IfV3  'If' - Choose one of two vectors
+    INPUTS:
+	[0] Bool	Control - Which vector to select
+	[1] Vector3	False - Vector when control false
+	[2] Vector3	True - Vector when control true
+    OUTPUTS:
+	[0] Vector3	Out - Chosen vector
+--------------------------------------------------------------------------
+Control.IfFr  'If' - Choose one of two frames
+    INPUTS:
+	[0] Bool	Control - Which frame to select
+	[1] Frame	False - Frame when control false
+	[2] Frame	True - Frame when control true
+    OUTPUTS:
+	[0] Frame	Out - Chosen frame
+--------------------------------------------------------------------------
+Control.IfS  'If' - Choose one of two strings
+    INPUTS:
+	[0] Bool	Control - Which string to select
+	[1] String	False - String when control false
+	[2] String	True - String when control true
+    OUTPUTS:
+	[0] String	Out - Chosen string
+--------------------------------------------------------------------------
+Control.IfB  'If' - Choose one of two boolean values
+    INPUTS:
+	[0] Bool	Control - Which boolean to select
+	[1] Bool	False - Boolean when control false
+	[2] Bool	True - Boolean when control true
+    OUTPUTS:
+	[0] Bool	Out - Chosen boolean
+--------------------------------------------------------------------------
+Control.IfL  'If' - Choose one of two lists
+    INPUTS:
+	[0] Bool	Control - Which list to select
+	[1] List	False - List when control false
+	[2] List	True - List when control true
+    OUTPUTS:
+	[0] List	Out - Chosen list
+--------------------------------------------------------------------------
+Control.EqualS  'Equal' - Compares two strings to see if they are equal
+    INPUTS:
+	[0] String	 - First string
+	[1] String	 - Second string
+	[2] Bool	Case? - Do we care about case?
+    OUTPUTS:
+	[0] Bool	 - Are the two strings equal?
+--------------------------------------------------------------------------
+Conversion.FloatToFColour  'Convert' - Composes four floats into a FColour
+    INPUTS:
+	[0] Float	R - Red Component
+	[1] Float	G - Green Component
+	[2] Float	B - Blue Component
+	[3] Float	A - Alpha Component
+    OUTPUTS:
+	[0] FColour	Colour - Colour composed from input components
+--------------------------------------------------------------------------
+Conversion.FColourToFloat  'Convert' - Decomposes a FColour into four floats
+    INPUTS:
+	[0] FColour	Colour - Colour to decompose into components
+    OUTPUTS:
+	[0] Float	R - Red Component
+	[0] Float	G - Green Component
+	[0] Float	B - Blue Component
+	[0] Float	A - Alpha Component
+--------------------------------------------------------------------------
+Conversion.FloatToInteger  'Convert' - Convert a float to an integer (truncates fractional part)
+    INPUTS:
+	[0] Float	float - Input floating point value
+    OUTPUTS:
+	[0] Integer	int - Integer equivalent of input float
+--------------------------------------------------------------------------
+Conversion.IntegertoFloat  'Convert' - Convert an integer to a floating point value
+    INPUTS:
+	[0] Integer	int - Input integer value
+    OUTPUTS:
+	[0] Float	float - Floating point equivalent of input integer
+--------------------------------------------------------------------------
+Conversion.BoolToInteger  'Convert' - Convert a boolean flag to useful integer value, 0 for false, 1 for true.
+    INPUTS:
+	[0] Bool	bool - Input boolean value
+    OUTPUTS:
+	[0] Integer	int - Integer version of boolean input
+--------------------------------------------------------------------------
+Conversion.BoolToFloat  'Convert' - Convert a boolean flag to useful floating point value, 0.0 for false, 1.0 for true
+    INPUTS:
+	[0] Bool	bool - Input boolean value
+    OUTPUTS:
+	[0] Float	float - Floating point version boolean input
+--------------------------------------------------------------------------
+Conversion.FloatToVector3  'Convert' - Composes three floats into a Vector3
+    INPUTS:
+	[0] Float	X - X Component
+	[1] Float	Y - Y Component
+	[2] Float	Z - Z Component
+    OUTPUTS:
+	[0] Vector3	V3 - Vector composed from input components
+--------------------------------------------------------------------------
+Conversion.Vector3ToFloat  'Convert' - Decomposes a Vector3 into three floats
+    INPUTS:
+	[0] Vector3	V3 - Vector to decompose into components
+    OUTPUTS:
+	[0] Float	X - X Component
+	[0] Float	Y - Y Component
+	[0] Float	Z - Z Component
+--------------------------------------------------------------------------
+Data.OpenFile  'OpenFile' - Sets a file as a data source for subsequent reads
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Path - Path to data file
+    OUTPUTS:
+	[0] Bool	Success - Was file successfully opened?
+	[0] Integer	Length - Size of the data file in bytes
+	[0] Integer	Start - Offset to start of data
+--------------------------------------------------------------------------
+Data.Length  'Length' - Obtain length of currently open data file
+    FLAGS: Experimental
+    OUTPUTS:
+	[0] Integer	Length - Size of the data file in bytes
+--------------------------------------------------------------------------
+Data.ReadInt  'ReadInt' - Reads an integer value from somewhere in the data source (four bytes)
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	Offset - Where to read integer from in data source
+    OUTPUTS:
+	[0] Integer	Value - Value read from source
+	[0] Integer	Continue - Offset of next piece of data to read
+--------------------------------------------------------------------------
+Data.ReadFloat  'ReadFloat' - Reads a float value from somewhere in the data source (four bytes)
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	Offset - Where to read float from in data source
+    OUTPUTS:
+	[0] Float	Value - Value read from source
+	[0] Integer	Continue - Offset of next piece of data to read
+--------------------------------------------------------------------------
+Data.ReadFloatList  'ReadFloats' - Reads a list of floats from somewhere in the data source (four bytes each)
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	Offset - Where to read floats from in data source
+	[1] Integer	Count - How many floats to read
+    OUTPUTS:
+	[0] List	List - List of float values read from source
+	[0] Integer	Continue - Offset of next piece of data to read
+--------------------------------------------------------------------------
+Data.ReadFixedString  'ReadFixedString' - Reads a string from a fixed length block of data from somewhere in the data source
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	Offset - Where to read integer from in data source
+	[1] Integer	Count - How many characters the string takes up in the data source (zero padded)
+	[2] Integer	Encoding - What type of characters are they (size)
+    OUTPUTS:
+	[0] String	Value - String value read from source
+	[0] Integer	Continue - Offset of next piece of data to read
+--------------------------------------------------------------------------
+Data.ReadVectorXYZ  'ReadXYZ' - Reads three floats from somewhere in the data source (3 x four bytes)
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	Offset - Where to read vector from in data source
+    OUTPUTS:
+	[0] Vector3	Value - 3D vector value read from source
+	[0] Integer	Continue - Offset of next piece of data to read
+--------------------------------------------------------------------------
+Data.ReadVectorXY  'ReadXY' - Reads two floats from somewhere in the data source (2 x four bytes)
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	Offset - Where to read vector from in data source
+	[1] Float	Z - Z value to complete the 3D vector with
+    OUTPUTS:
+	[0] Vector3	Value - 2D vector value read from source (with z from input)
+	[0] Integer	Continue - Offset of next piece of data to read
+--------------------------------------------------------------------------
+Data.ReadVectorXYZList  'ReadListXYZ' - Reads a list of float triplets from somewhere in the data source (3 x four bytes each)
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	Offset - Where to read vector from in data source
+	[1] Integer	Count - How many vectors to read
+    OUTPUTS:
+	[0] List	List - List of 3D vector values read from source
+	[0] Integer	Continue - Offset of next piece of data to read
+--------------------------------------------------------------------------
+Data.ReadVectorXYList  'ReadListXY' - Reads a list of float pairs from somewhere in the data source (2 x four bytes each)
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	Offset - Where to read vector from in data source
+	[1] Integer	Count - How many vectors to read
+	[2] Float	Z - Z value to complete the 3D vector with
+    OUTPUTS:
+	[0] List	List - List of 3D vector values read from source (with z from input)
+	[0] Integer	Continue - Offset of next piece of data to read
+--------------------------------------------------------------------------
+File.Read  'Read' - Reads a text file into a string of lines
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Path - Path to text file
+	[1] Integer	Line Endings - How should line endings be handled?
+    OUTPUTS:
+	[0] Bool	Success - Was file successfully read?
+	[0] String	Text - All lines of text read in, as a string
+	[0] Integer	Chars - Number of characters read in
+	[0] Integer	Lines - Number of lines read in
+--------------------------------------------------------------------------
+File.Write  'Write' - Writes a text file from a string of lines
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Path - Path to text file
+	[1] String	Text - Lines of text to write to file, as string
+    OUTPUTS:
+	[0] Bool	Success - Was file successfully read?
+--------------------------------------------------------------------------
+File.Exists  'Exists?' - Does a file or directory exist on disk?
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Path - Path to file or directory
+    OUTPUTS:
+	[0] Bool	Exists? - Was the file or directory found on disk?
+--------------------------------------------------------------------------
+File.Time  'Time' - Obtain timestamp information about a file
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Path - Path to file
+    OUTPUTS:
+	[0] Bool	Success - Successfully obtained file information (false of file not found or other access error)
+	[0] Integer	Create - Timestamp when the file was created (zero if failed)
+	[0] Integer	Modify - Timestamp when the file was last modified, e.g. written to (zero if failed)
+	[0] Integer	Access - Timestamp when the file was last accessed, e.g. read from (zero if failed)
+--------------------------------------------------------------------------
+File.Copy  'Copy' - Copy a file from one location to another
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Source - Path to source file
+	[1] String	Desination - Path to destination file
+    OUTPUTS:
+	[0] Bool	Success - Successfully copied file
+--------------------------------------------------------------------------
+File.TempFile  'Temp File' - Generate path and filename for temporary storage of data
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Directory - Optional directory to create temporary file in, leave empty for current directory
+	[1] Integer	Unique ID - Optional number to use in the name generation, leave as zero if not required
+    OUTPUTS:
+	[0] String	Path - Path to temporary file
+--------------------------------------------------------------------------
+File.TempDir  'Temp Directory' - Obtain directory for temporary storage of data
+    FLAGS: Experimental
+    OUTPUTS:
+	[0] String	Path - Path to temporary directory
+--------------------------------------------------------------------------
+File.ProjectDir  'Project Directory' - Obtain project directory path
+    FLAGS: Experimental
+    OUTPUTS:
+	[0] String	Path - Path to directory of current project
+--------------------------------------------------------------------------
+File.PathDownDir  'Down' - Move a path to a sub-directory
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	In - Path to descend from into the subdirectory
+	[1] String	Directory - Sub-directory to add to the path string
+    OUTPUTS:
+	[0] String	Out - Path to sub-directory
+--------------------------------------------------------------------------
+File.PathUpDir  'Up' - Move a path to its parent directory
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	In - Path to ascend from to parent directory
+    OUTPUTS:
+	[0] String	Out - Path to parent directory
+--------------------------------------------------------------------------
+File.MakeDir  'Make Directory' - Ensure a directory exists on disk
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Path - Path of directory to create
+    OUTPUTS:
+	[0] Bool	Success - Did we succeed to make the directory or did it already exist?
+--------------------------------------------------------------------------
+File.ListDir  'List Directory' - Search a directory for files matching the given pattern
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Directory - Path of directory to search within
+	[1] String	Filter - Filename filter, wildcards * and ? are valid.  Leave empty to match all files.
+	[2] Integer	Flags - Search configuration options.
+    OUTPUTS:
+	[0] List	Filenames - List of filenames (strings) found in the supplied directory
+	[0] Bool	Success - Did we succeed in finding the files?
+--------------------------------------------------------------------------
+Frame.CornerFrame  'Unit Corner' - A new unit frame with lower corner on the origin (three sides aligned with origin)
+    OUTPUTS:
+	[0] Frame	Frame - A new origin cornered frame
+--------------------------------------------------------------------------
+Frame.CentreFrame  'Unit Centre' - A new unit frame centred on the origin (no sides aligned with origin)
+    OUTPUTS:
+	[0] Frame	Frame - A new origin centred frame
+--------------------------------------------------------------------------
+Frame.FaceFrame  'Unit Face' - A new unit frame with underneath face centred on the origin (one side aligned with origin)
+    OUTPUTS:
+	[0] Frame	Frame - A new origin placed frame
+--------------------------------------------------------------------------
+Frame.EmptyFrame  'Empty' - A new frame with zero size at the origin
+    OUTPUTS:
+	[0] Frame	Frame - A new empty frame
+--------------------------------------------------------------------------
+Frame.Split  'Split' - Split a frame into two
+    INPUTS:
+	[0] Frame	Frame - The frame to split up
+	[1] Float	Amount - How much of the frame to split up
+	[2] Integer	Units - What units to split in?
+	[3] Integer	Axis - Which way to split it?
+	[4] Bool	Invert - Apply the amount (to split by) to the remainder instead.
+    OUTPUTS:
+	[0] Frame	Frame - Requested portion of the frame
+	[0] Frame	Remainder - Remainder of the frame
+--------------------------------------------------------------------------
+Frame.Shrink  'Shrink' - Shrink a frame to a new size
+    INPUTS:
+	[0] Frame	Frame - The frame to split up
+	[1] Float	Amount - How much of the frame to shrink to
+	[2] Integer	Units - What units to shrink in?
+	[3] Integer	Axis - Which way to shrink it?
+	[4] Bool	Invert - Shrink BY an amount (applies to both the remainders) instead of TO an amount.
+    OUTPUTS:
+	[0] Frame	Lower - Lower remainder of the frame
+	[0] Frame	Frame - Requested portion of the frame
+	[0] Frame	Upper - Remainder of the frame
+--------------------------------------------------------------------------
+Frame.Extend  'Extend' - Create extensions from the sides of a frame
+    INPUTS:
+	[0] Frame	Frame - The frame to extend
+	[1] Float	Amount - How big an extension
+	[2] Integer	Units - What units to extend in?
+	[3] Integer	Axis - Which way to extend it?
+    OUTPUTS:
+	[0] Frame	Lower - Extension from lower side of the frame
+	[0] Frame	upper - Extension from upper side of the frame
+--------------------------------------------------------------------------
+Frame.Turn  'Turn' - Turn the frame relative to a corner, edge, face, or centre
+    INPUTS:
+	[0] Frame	In - The frame to turn
+	[1] Float	Amount - Amount to turn by in degrees
+	[2] Integer	Axis - Which axis to turn around?
+	[3] Integer	Relative X - Relative to where in the X axis?
+	[4] Integer	Relative Y - Relative to where in the Y axis?
+	[5] Integer	Relative Z - Relative to where in the Z axis?
+    OUTPUTS:
+	[0] Frame	Out - Frame of new orientation
+--------------------------------------------------------------------------
+Frame.Resize  'Resize' - Resize the frame relative to a corner, edge, face, or centre
+    INPUTS:
+	[0] Frame	In - The frame to extend
+	[1] Vector3	Amount - Amount to change size to/by in each axis
+	[2] Integer	Units X - What units to size in along X direction?
+	[3] Integer	Units Y - What units to size in along Y direction?
+	[4] Integer	Units Z - What units to size in along Z direction?
+	[5] Integer	Relative X - Relative to where in the X axis?
+	[6] Integer	Relative Y - Relative to where in the Y axis?
+	[7] Integer	Relative Z - Relative to where in the Z axis?
+    OUTPUTS:
+	[0] Frame	Out - Frame of new size
+--------------------------------------------------------------------------
+Frame.Offset  'Offset' - Offset the frame relative to is current position
+    INPUTS:
+	[0] Frame	In - The frame to offset
+	[1] Vector3	Amount - Amount to offset by in each axis
+	[2] Integer	Units X - What units to offset in along X direction?
+	[3] Integer	Units Y - What units to offset in along Y direction?
+	[4] Integer	Units Z - What units to offset in along Z direction?
+    OUTPUTS:
+	[0] Frame	Out - Offset frame
+--------------------------------------------------------------------------
+Frame.Rotate  'Rotate' - Rotate the frame around a world space point
+    INPUTS:
+	[0] Frame	In - The frame to rotate
+	[1] Float	Amount - Amount to rotate by in degrees
+	[2] Integer	Axis - Which axis to rotate around?
+	[3] Vector3	Centre - World space point around which to rotate
+    OUTPUTS:
+	[0] Frame	Out - Frame of new orientation (and location)
+--------------------------------------------------------------------------
+Frame.Scale  'Scale' - Uniformly scale the frame relative to a point in world space
+    INPUTS:
+	[0] Frame	In - The frame to scale
+	[1] Float	Scale - Amount to uniformly scale the frame by
+	[2] Vector3	Centre - World space point to scale around
+    OUTPUTS:
+	[0] Frame	Out - Scaled and offset frame
+--------------------------------------------------------------------------
+Frame.Translate  'Translate' - Move a frame by an amount in world space
+    INPUTS:
+	[0] Frame	In - The frame to translate
+	[1] Vector3	Offset - Amount to translate the frame by
+    OUTPUTS:
+	[0] Frame	Out - Translated frame
+--------------------------------------------------------------------------
+Frame.Dimensions  'Dimensions' - Find the size of a frame
+    INPUTS:
+	[0] Frame	In - The frame to query
+    OUTPUTS:
+	[0] Float	X Size - Width of frame (X direction)
+	[0] Float	Y Size - Depth of frame (Y direction)
+	[0] Float	Z Size - Height of frame (Z direction)
+--------------------------------------------------------------------------
+Frame.Size  'Size' - Find the size of a frame
+    INPUTS:
+	[0] Frame	In - The frame to query
+    OUTPUTS:
+	[0] Vector3	Size - Size of frame as 3D vector
+--------------------------------------------------------------------------
+Frame.Reorient  'Reorient' - Reorient the space inside a frame whilst leaving its bounds unchanged
+    INPUTS:
+	[0] Frame	In - The frame to reorient
+	[1] Integer	Steps - Quarter turns to rotate the space
+	[2] Integer	Axis - Which axis to reorient around
+    OUTPUTS:
+	[0] Frame	Out - Reoriented frame (looks the same but isn't really)
+--------------------------------------------------------------------------
+Frame.Diagonal  'Diagonal' - Move a frame to sit on one of the diagonals
+    INPUTS:
+	[0] Frame	In - The frame to transform
+	[1] Integer	Axis - Which axis to rotate around to reach the diagonal?
+	[2] Bool	Flip - Switch to slope on the other side?
+    OUTPUTS:
+	[0] Frame	Upper - Frame sitting on the diagonal
+	[0] Frame	Lower - Frame sitting under the diagonal
+--------------------------------------------------------------------------
+Frame.FrameToWorldV  'FrameToWorldV' - Convert a position relative to a frame to absolute world position
+    INPUTS:
+	[0] Frame	Frame - Frame of reference
+	[1] Vector3	Point - Point in frame space to convert to world space
+	[2] Integer	Units - What units is the point in frame-space?
+    OUTPUTS:
+	[0] Vector3	Out - Point in world space
+--------------------------------------------------------------------------
+Frame.WorldToFrameV  'WorldToFrameV' - Convert an absolute world position into one relative to a frame
+    INPUTS:
+	[0] Frame	Frame - Frame of reference
+	[1] Vector3	Point - Point in world space to convert to frame space
+	[2] Integer	Units - What units is the point in frame-space?
+    OUTPUTS:
+	[0] Vector3	Out - Point in frame space
+--------------------------------------------------------------------------
+Frame.CheckIntersection  'Intersects?' - Determine to what extent does a frame intersect another
+    INPUTS:
+	[0] Frame	Frame - Frame we are testing against
+	[1] Frame	Test - Is this frame partially or fully inside the frame?
+    OUTPUTS:
+	[0] Bool	Overlapped? - Does test frame partially intersect main frame (also true if fully enclosed)
+	[0] Bool	Enclosed? - Is test frame fully enclosed by main frame?
+--------------------------------------------------------------------------
+Frame.GetAxes  'Get Axes' - Extract the three axis vectors that describe a frames orientation
+    INPUTS:
+	[0] Frame	Frame - Frame to get axis vectors of
+    OUTPUTS:
+	[0] Vector3	X Axis - X axis vector
+	[0] Vector3	Y Axis - Y axis vector
+	[0] Vector3	Z Axis - Z axis vector
+--------------------------------------------------------------------------
+Frame.SetAxes  'Set Axes' - Change the three axis vectors of a frame to explicitly give it a new orientation
+    INPUTS:
+	[0] Frame	Frame - Frame to replace axis vectors of
+	[1] Vector3	X Axis - New X axis vector
+	[2] Vector3	Y Axis - New Y axis vector
+	[3] Vector3	Z Axis - New Z axis vector
+    OUTPUTS:
+	[0] Frame	Out - Frame with new axis vectors
+--------------------------------------------------------------------------
+Integrity.AssertValidF  'Valid?' - Check floating point number for valid numeric values.  Infinite, sub-normal, or NaN are considered bad.
+    FLAGS: Experimental
+    INPUTS:
+	[0] Float	-> - Value to check
+	[1] String	Message - Additional error information to display if check fails.  Useful to put containing procedure name here.
+    OUTPUTS:
+	[0] Float	-> - Value pass-through, ensure this is hooked up to perform check
+--------------------------------------------------------------------------
+Integrity.AssertTrue  'True?' - Asserts a condition is true, passing success out.  False fails synthesis with provided message.
+    FLAGS: Experimental
+    INPUTS:
+	[0] Bool	True? - Predicate to assert is true
+	[1] String	Message - Error message for failed test.  Useful to infer containing procedure here.
+    OUTPUTS:
+	[0] Bool	 - Success of assertion.  Test is performed before value can propagate.
+--------------------------------------------------------------------------
+Integrity.AssertFalse  'False?' - Asserts a condition is false, passing success out.  True fails synthesis with provided message.
+    FLAGS: Experimental
+    INPUTS:
+	[0] Bool	False? - Predicate to assert is false
+	[1] String	Message - Error message for failed test.  Useful to infer containing procedure here.
+    OUTPUTS:
+	[0] Bool	 - Success of assertion.  Test is performed before value can propagate.
+--------------------------------------------------------------------------
+Integrity.AssertS  'True?' - Asserts a condition is true before passing data through.  False fails synthesis with provided message.
+    FLAGS: Experimental
+    INPUTS:
+	[0] Bool	True? - Predicate to assert is true
+	[1] String	In - Data to pass through
+	[2] String	Message - Error message for failed test.  Useful to infer containing procedure here.
+    OUTPUTS:
+	[0] String	Out - Value pass-through.  Test is performed before value can propagate.
+--------------------------------------------------------------------------
+Integrity.LoggingS  'Log!' - Adds a text message to the log file when this operator is evaluated.
+    FLAGS: Experimental
+    INPUTS:
+	[0] String	Before - Message to log before the operator graph to the left is evaluated further. Beware of triggering evaluation in generating this message! An empty string doesn't log anything.
+	[1] String	 - Data to pass through
+	[2] String	After - Message to log after the operator graph to left has been evaluated.  An empty string doesn't log anything.
+    OUTPUTS:
+	[0] String	 - Value pass-through.
+--------------------------------------------------------------------------
+Integrity.LoggingI  'Log!' - Adds a text message to the log file when this operator is evaluated.
+    FLAGS: Experimental
+    INPUTS:
+	[0] Integer	 - Value to log and pass through.
+	[1] String	Message - Message to display with passing value.  Optionally specify %i to format with passing value.
+    OUTPUTS:
+	[0] Integer	 - Value pass-through.
+--------------------------------------------------------------------------
+Integrity.LoggingF  'Log!' - Adds a text message to the log file when this operator is evaluated.
+    FLAGS: Experimental
+    INPUTS:
+	[0] Float	 - Value to log and pass through.
+	[1] String	Message - Message to display with passing value.  Optionally specify %f to format with passing value.
+    OUTPUTS:
+	[0] Float	 - Value pass-through.
+--------------------------------------------------------------------------
+List.Count  'Count' - How many items in a list?
+    INPUTS:
+	[0] List	List - List to count items of
+    OUTPUTS:
+	[0] Integer	Count - Number of items in the list
+--------------------------------------------------------------------------
+List.AppendI  'Append' - Append an integer to a list
+    INPUTS:
+	[0] List	In - List to append to
+	[1] Integer	Value - Value to append to the list
+    OUTPUTS:
+	[0] List	Out - New list with appended value
+--------------------------------------------------------------------------
+List.AppendF  'Append' - Append a floating point number to a list
+    INPUTS:
+	[0] List	In - List to append to
+	[1] Float	Value - Value to append to the list
+    OUTPUTS:
+	[0] List	Out - New list with appended value
+--------------------------------------------------------------------------
+List.AppendB  'Append' - Append a boolean to a list
+    INPUTS:
+	[0] List	In - List to append to
+	[1] Bool	Value - Value to append to the list
+    OUTPUTS:
+	[0] List	Out - New list with appended value
+--------------------------------------------------------------------------
+List.AppendFC  'Append' - Append a colour to a list
+    INPUTS:
+	[0] List	In - List to append to
+	[1] FColour	Value - Value to append to the list
+    OUTPUTS:
+	[0] List	Out - New list with appended value
+--------------------------------------------------------------------------
+List.AppendV3  'Append' - Append a vector to a list
+    INPUTS:
+	[0] List	In - List to append to
+	[1] Vector3	Value - Value to append to the list
+    OUTPUTS:
+	[0] List	Out - New list with appended value
+--------------------------------------------------------------------------
+List.AppendS  'Append' - Append a string to a list
+    INPUTS:
+	[0] List	In - List to append to
+	[1] String	Value - Value to append to the list
+    OUTPUTS:
+	[0] List	Out - New list with appended value
+--------------------------------------------------------------------------
+List.AppendL  'Append' - Append a list to a list (NOTE: appended as a single item)
+    INPUTS:
+	[0] List	In - List to append to
+	[1] List	Value - Value to append to the list
+    OUTPUTS:
+	[0] List	Out - New list with appended value
+--------------------------------------------------------------------------
+List.AppendFr  'Append' - Append a frame to a list
+    INPUTS:
+	[0] List	In - List to append to
+	[1] Frame	Value - Value to append to the list
+    OUTPUTS:
+	[0] List	Out - New list with appended value
+--------------------------------------------------------------------------
+List.InsertI  'Insert' - Insert an integer into a list
+    INPUTS:
+	[0] List	In - List to insert into
+	[1] Integer	Value - Value to insert into the list
+	[2] Integer	Index - Index for inserted value (0 to N-1).  Negative values are relative to end of list (-1 to -N).  Index of -1 is equivalent to Append.
+    OUTPUTS:
+	[0] List	Out - New list with inserted value
+--------------------------------------------------------------------------
+List.InsertF  'Insert' - Insert a floating point number into a list
+    INPUTS:
+	[0] List	In - List to insert into
+	[1] Float	Value - Value to insert into the list
+	[2] Integer	Index - Index for inserted value (0 to N-1).  Negative values are relative to end of list (-1 to -N).  Index of -1 is equivalent to Append.
+    OUTPUTS:
+	[0] List	Out - New list with inserted value
+--------------------------------------------------------------------------
+List.InsertB  'Insert' - Insert a boolean into a list
+    INPUTS:
+	[0] List	In - List to insert into
+	[1] Bool	Value - Value to insert into the list
+	[2] Integer	Index - Index for inserted value (0 to N-1).  Negative values are relative to end of list (-1 to -N).  Index of -1 is equivalent to Append.
+    OUTPUTS:
+	[0] List	Out - New list with inserted value
+--------------------------------------------------------------------------
+List.InsertFC  'Insert' - Insert a colour into a list
+    INPUTS:
+	[0] List	In - List to insert into
+	[1] FColour	Value - Value to insert into the list
+	[2] Integer	Index - Index for inserted value (0 to N-1).  Negative values are relative to end of list (-1 to -N).  Index of -1 is equivalent to Append.
+    OUTPUTS:
+	[0] List	Out - New list with inserted value
+--------------------------------------------------------------------------
+List.InsertV3  'Insert' - Insert a vector into a list
+    INPUTS:
+	[0] List	In - List to insert into
+	[1] Vector3	Value - Value to insert into the list
+	[2] Integer	Index - Index for inserted value (0 to N-1).  Negative values are relative to end of list (-1 to -N).  Index of -1 is equivalent to Append.
+    OUTPUTS:
+	[0] List	Out - New list with inserted value
+--------------------------------------------------------------------------
+List.InsertS  'Insert' - Insert a string into a list
+    INPUTS:
+	[0] List	In - List to insert into
+	[1] String	Value - Value to insert into the list
+	[2] Integer	Index - Index for inserted value (0 to N-1).  Negative values are relative to end of list (-1 to -N).  Index of -1 is equivalent to Append.
+    OUTPUTS:
+	[0] List	Out - New list with inserted value
+--------------------------------------------------------------------------
+List.InsertL  'Insert' - Insert a list into a list (NOTE: inserted as a single item)
+    INPUTS:
+	[0] List	In - List to insert into
+	[1] List	Value - Value to insert into the list
+	[2] Integer	Index - Index for inserted value (0 to N-1).  Negative values are relative to end of list (-1 to -N).  Index of -1 is equivalent to Append.
+    OUTPUTS:
+	[0] List	Out - New list with inserted value
+--------------------------------------------------------------------------
+List.InsertFr  'Insert' - Insert a frame into a list
+    INPUTS:
+	[0] List	In - List to insert into
+	[1] Frame	Value - Value to insert into the list
+	[2] Integer	Index - Index for inserted value (0 to N-1).  Negative values are relative to end of list (-1 to -N).  Index of -1 is equivalent to Append.
+    OUTPUTS:
+	[0] List	Out - New list with inserted value
+--------------------------------------------------------------------------
+List.GetI  'Get' - Obtain the integer value at a given index in a list
+    INPUTS:
+	[0] List	In - List to index
+	[1] Integer	Index - Index of list entry to access
+    OUTPUTS:
+	[0] Integer	Out - Value at requested index in the list
+--------------------------------------------------------------------------
+List.GetF  'Get' - Obtain the floating point value at a given index in a list
+    INPUTS:
+	[0] List	In - List to index
+	[1] Integer	Index - Index of list entry to access
+    OUTPUTS:
+	[0] Float	Out - Value at requested index in the list
+--------------------------------------------------------------------------
+List.GetB  'Get' - Obtain the boolean value at a given index in a list
+    INPUTS:
+	[0] List	In - List to index
+	[1] Integer	Index - Index of list entry to access
+    OUTPUTS:
+	[0] Bool	Out - Value at requested index in the list
+--------------------------------------------------------------------------
+List.GetFC  'Get' - Obtain the colour at a given index in a list
+    INPUTS:
+	[0] List	In - List to index
+	[1] Integer	Index - Index of list entry to access
+    OUTPUTS:
+	[0] FColour	Out - Value at requested index in the list
+--------------------------------------------------------------------------
+List.GetV3  'Get' - Obtain the vector at a given index in a list
+    INPUTS:
+	[0] List	In - List to index
+	[1] Integer	Index - Index of list entry to access
+    OUTPUTS:
+	[0] Vector3	Out - Value at requested index in the list
+--------------------------------------------------------------------------
+List.GetS  'Get' - Obtain the string at a given index in a list
+    INPUTS:
+	[0] List	In - List to index
+	[1] Integer	Index - Index of list entry to access
+    OUTPUTS:
+	[0] String	Out - Value at requested index in the list
+--------------------------------------------------------------------------
+List.GetL  'Get' - Obtain the list value at a given index in a list (NOTE: references the list originally added)
+    INPUTS:
+	[0] List	In - List to index
+	[1] Integer	Index - Index of list entry to access
+    OUTPUTS:
+	[0] List	Out - Value at requested index in the list
+--------------------------------------------------------------------------
+List.GetFr  'Get' - Obtain the frame at a given index in a list
+    INPUTS:
+	[0] List	In - List to index
+	[1] Integer	Index - Index of list entry to access
+    OUTPUTS:
+	[0] Frame	Out - Value at requested index in the list
+--------------------------------------------------------------------------
+List.SetI  'Set' - Replace an integer in a list
+    INPUTS:
+	[0] List	In - List to set item of
+	[1] Integer	Index - Index of item to replace
+	[2] Integer	Value - Value to replace in the list
+    OUTPUTS:
+	[0] List	Out - New list with replaced value
+--------------------------------------------------------------------------
+List.SetF  'Set' - Replace a floating point number in a list
+    INPUTS:
+	[0] List	In - List to set item of
+	[1] Integer	Index - Index of item to replace
+	[2] Float	Value - Value to replace in the list
+    OUTPUTS:
+	[0] List	Out - New list with replaced value
+--------------------------------------------------------------------------
+List.SetB  'Set' - Replace a boolean in a list
+    INPUTS:
+	[0] List	In - List to set item of
+	[1] Integer	Index - Index of item to replace
+	[2] Bool	Value - Value to replace in the list
+    OUTPUTS:
+	[0] List	Out - New list with replaced value
+--------------------------------------------------------------------------
+List.SetFC  'Set' - Replace a colour in a list
+    INPUTS:
+	[0] List	In - List to set item of
+	[1] Integer	Index - Index of item to replace
+	[2] FColour	Value - Value to replace in the list
+    OUTPUTS:
+	[0] List	Out - New list with replaced value
+--------------------------------------------------------------------------
+List.SetV3  'Set' - Replace a vector in a list
+    INPUTS:
+	[0] List	In - List to set item of
+	[1] Integer	Index - Index of item to replace
+	[2] Vector3	Value - Value to replace in the list
+    OUTPUTS:
+	[0] List	Out - New list with replaced value
+--------------------------------------------------------------------------
+List.SetS  'Set' - Replace a string in a list
+    INPUTS:
+	[0] List	In - List to set item of
+	[1] Integer	Index - Index of item to replace
+	[2] String	Value - Value to replace in the list
+    OUTPUTS:
+	[0] List	Out - New list with replaced value
+--------------------------------------------------------------------------
+List.SetL  'Set' - Replace a list in a list (NOTE: set as a single item)
+    INPUTS:
+	[0] List	In - List to set item of
+	[1] Integer	Index - Index of item to replace
+	[2] List	Value - Value to replace in the list
+    OUTPUTS:
+	[0] List	Out - New list with replaced value
+--------------------------------------------------------------------------
+List.SetFr  'Set' - Replace a frame in a list
+    INPUTS:
+	[0] List	In - List to set item of
+	[1] Integer	Index - Index of item to replace
+	[2] Frame	Value - Value to replace in the list
+    OUTPUTS:
+	[0] List	Out - New list with replaced value
+--------------------------------------------------------------------------
+List.Concatenate2  'Concatenate' - Concatenate multiple lists of elements together into a single list of elements?
+    INPUTS:
+	[0] List	 - List of items to concatenate
+	[1] List	 - List of items to concatenate
+    OUTPUTS:
+	[0] List	 - List containing all the items in the input lists
+--------------------------------------------------------------------------
+Logic.AndB  'And' - Logical AND
+    INPUTS:
+	[0] Bool	 - First boolean
+	[1] Bool	 - Second boolean.  NOTE: Second input is not evaluated if first input is false.
+    OUTPUTS:
+	[0] Bool	 - True only if BOTH inputs are true
+--------------------------------------------------------------------------
+Logic.NotB  'Not' - Logical NOT
+    INPUTS:
+	[0] Bool	 - Boolean input
+    OUTPUTS:
+	[0] Bool	 - True only if input is false
+--------------------------------------------------------------------------
+Logic.OrB  'Or' - Logical OR
+    INPUTS:
+	[0] Bool	 - First boolean
+	[1] Bool	 - Second boolean.  NOTE: Second input is not evaluated if first input is true.
+    OUTPUTS:
+	[0] Bool	 - True if EITHER input or BOTH inputs are true
+--------------------------------------------------------------------------
+Materials.BuildMaterial  'Material' - Builds a material around particular vertex and pixel shaders
+    FLAGS: Hidden
+    INPUTS:
+	[0] Integer	VS - Vertex shader to render the material with
+	[1] Integer	PS - Pixel shader to render the material with
+    OUTPUTS:
+	[0] Integer	Material - Material handle
+--------------------------------------------------------------------------
+Materials.VertexShader  'Vertex Shader' - Compiles a text definition into a vertex shader
+    FLAGS: Hidden
+    INPUTS:
+	[0] String	Definition - Complete shader definition
+	[1] Integer	Optimisation - Level of optimisation to use (higher is slower, swith to low for faster iteration)
+    OUTPUTS:
+	[0] Integer	VS - Vertex shader handle for the compiled result
+--------------------------------------------------------------------------
+Materials.PixelShader  'Pixel Shader' - Compiles a text definition into a pixel shader
+    FLAGS: Hidden
+    INPUTS:
+	[0] String	Definition - Complete shader definition
+	[1] Integer	Optimisation - Level of optimisation to use (higher is slower, swith to low for faster iteration)
+    OUTPUTS:
+	[0] Integer	PS - Pixel shader handle for the compiled result
+--------------------------------------------------------------------------
+Maths.AddI2  'Add' - Adds two numbers together
+    INPUTS:
+	[0] Integer	 - Summand 1
+	[1] Integer	 - Summand 2
+    OUTPUTS:
+	[0] Integer	 - Sum of the inputs
+--------------------------------------------------------------------------
+Maths.AddF2  'Add' - Adds two numbers together
+    INPUTS:
+	[0] Float	 - Summand 1
+	[1] Float	 - Summand 2
+    OUTPUTS:
+	[0] Float	 - Sum of the inputs
+--------------------------------------------------------------------------
+Maths.AddV3  'Add' - Adds two vectors together
+    INPUTS:
+	[0] Vector3	 - Summand 1
+	[1] Vector3	 - Summand 2
+    OUTPUTS:
+	[0] Vector3	 - Sum of the inputs
+--------------------------------------------------------------------------
+Maths.DivI  'Div' - Divides one number by another
+    INPUTS:
+	[0] Integer	 - Dividend
+	[1] Integer	 - Divisor
+    OUTPUTS:
+	[0] Integer	 - Result of A divided by B (INT_MAX if B==0)
+--------------------------------------------------------------------------
+Maths.DivF  'Div' - Divides one number by another
+    INPUTS:
+	[0] Float	 - Dividend
+	[1] Float	 - Divisor
+    OUTPUTS:
+	[0] Float	 - Result of A divided by B (#INF if B==0)
+--------------------------------------------------------------------------
+Maths.LnF  'Ln' - Natural Logarithm
+    INPUTS:
+	[0] Float	 - Value to calculate natural logarithm of
+    OUTPUTS:
+	[0] Float	 - Exponent to raise e to to produce input value
+--------------------------------------------------------------------------
+Maths.Log10F  'Log10' - Common Logarithm (base 10)
+    INPUTS:
+	[0] Float	 - Value to calculate common logarithm of
+    OUTPUTS:
+	[0] Float	 - Exponent to raise 10 to to produce input value
+--------------------------------------------------------------------------
+Maths.Log2F  'Log2' - Binary Logarithm (base 2)
+    INPUTS:
+	[0] Float	 - Value to calculate common logarithm of
+    OUTPUTS:
+	[0] Float	 - Exponent to raise 2 to to produce input value
+--------------------------------------------------------------------------
+Maths.LogF  'Log' - Logarithm of specific base
+    INPUTS:
+	[0] Float	In - Value to calculate logarithm of
+	[1] Float	Base - Base to calculate logarithm with
+    OUTPUTS:
+	[0] Float	Out - Exponent to raise base to to produce input value
+--------------------------------------------------------------------------
+Maths.Pow10F  'Power10' - Raise 10 to a given power
+    INPUTS:
+	[0] Float	In - The power to raise the 10 to
+    OUTPUTS:
+	[0] Float	Out - 10 raised to the given power
+--------------------------------------------------------------------------
+Maths.Pow2F  'Power2' - Raise 2 to a given power
+    INPUTS:
+	[0] Float	In - The power to raise the 2 to
+    OUTPUTS:
+	[0] Float	Out - 2 raised to the given power
+--------------------------------------------------------------------------
+Maths.PownF  'PowerN' - Raise e to a given power
+    INPUTS:
+	[0] Float	In - The power to raise the e to
+    OUTPUTS:
+	[0] Float	Out - e raised to the given power
+--------------------------------------------------------------------------
+Maths.PowerF  'Power' - Raise a number to a power
+    INPUTS:
+	[0] Float	    Exp - The power to raise the base to
+	[1] Float	Base - Base to raise to a power
+    OUTPUTS:
+	[0] Float	 - Base raised to the given power
+--------------------------------------------------------------------------
+Maths.SqrtF  'Sqrt' - Take the square root of a value
+    INPUTS:
+	[0] Float	 - The value to take the square root of
+    OUTPUTS:
+	[0] Float	 - The square root of the value
+--------------------------------------------------------------------------
+Maths.SquareF  'Square' - Squares a number
+    INPUTS:
+	[0] Float	 - The value to square
+    OUTPUTS:
+	[0] Float	 - The square of the value
+--------------------------------------------------------------------------
+Maths.MultiplyI2  'Multiply' - Multiplies two numbers together
+    INPUTS:
+	[0] Integer	 - Factor 1
+	[1] Integer	 - Factor 2
+    OUTPUTS:
+	[0] Integer	 - Product of the inputs
+--------------------------------------------------------------------------
+Maths.MultiplyF2  'Multiply' - Multiplies two numbers together
+    INPUTS:
+	[0] Float	 - Factor 1
+	[1] Float	 - Factor 2
+    OUTPUTS:
+	[0] Float	 - Product of the inputs
+--------------------------------------------------------------------------
+Maths.MultiplyV3F  'Multiply' - Scales a vector by a float value
+    INPUTS:
+	[0] Vector3	 - Vector
+	[1] Float	 - Scale
+    OUTPUTS:
+	[0] Vector3	 - Scaled vector
+--------------------------------------------------------------------------
+Maths.SubI  'Subtract' - Subtracts one number from another
+    INPUTS:
+	[0] Integer	 - Minuend
+	[1] Integer	 - Subtrahend
+    OUTPUTS:
+	[0] Integer	 - Result of B subtracted from A
+--------------------------------------------------------------------------
+Maths.SubF  'Subtract' - Subtracts one number from another
+    INPUTS:
+	[0] Float	 - Minuend
+	[1] Float	 - Subtrahend
+    OUTPUTS:
+	[0] Float	 - Result of B subtracted from A
+--------------------------------------------------------------------------
+Maths.SubV3  'Subtract' - Subtracts one vector from another
+    INPUTS:
+	[0] Vector3	 - Minuend
+	[1] Vector3	 - Subtrahend
+    OUTPUTS:
+	[0] Vector3	 - Result of B subtracted from A
+--------------------------------------------------------------------------
+Maths.ModF  'Modf' - Modulo Division
+    INPUTS:
+	[0] Float	In - Value to calculate modulo of
+	[1] Float	Divisor - Value to divide by
+    OUTPUTS:
+	[0] Float	Out - Input divided by divisor using modulo arithmetic
+--------------------------------------------------------------------------
+Maths.ModI  'ModI' - Modulo Division
+    INPUTS:
+	[0] Integer	In - Value to calculate modulo of
+	[1] Integer	Divisor - Value to divide by
+    OUTPUTS:
+	[0] Integer	Out - Input divided by divisor using modulo arithmetic
+--------------------------------------------------------------------------
+Maths.FracF  'FracF' - Obtain fractional part of a number
+    INPUTS:
+	[0] Float	 - Value to extract fractional part of
+    OUTPUTS:
+	[0] Float	 - Fractional part of input (0 <= Out < 1)
+--------------------------------------------------------------------------
+Maths.FloorF  'FloorF' - Round down to integer value
+    INPUTS:
+	[0] Float	 - Value to find floor of
+    OUTPUTS:
+	[0] Float	 - Integer at or below input value
+--------------------------------------------------------------------------
+Maths.CeilingF  'CeilingF' - Round up to integer value
+    INPUTS:
+	[0] Float	 - Value to find ceiling of
+    OUTPUTS:
+	[0] Float	 - Integer at or above input value
+--------------------------------------------------------------------------
+Modelling.Merge2  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Merge3  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+	[2] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Merge4  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+	[2] ModelSegment	 - A piece of geometry
+	[3] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Merge5  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+	[2] ModelSegment	 - A piece of geometry
+	[3] ModelSegment	 - A piece of geometry
+	[4] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Merge6  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+	[2] ModelSegment	 - A piece of geometry
+	[3] ModelSegment	 - A piece of geometry
+	[4] ModelSegment	 - A piece of geometry
+	[5] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Merge7  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+	[2] ModelSegment	 - A piece of geometry
+	[3] ModelSegment	 - A piece of geometry
+	[4] ModelSegment	 - A piece of geometry
+	[5] ModelSegment	 - A piece of geometry
+	[6] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Merge8  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+	[2] ModelSegment	 - A piece of geometry
+	[3] ModelSegment	 - A piece of geometry
+	[4] ModelSegment	 - A piece of geometry
+	[5] ModelSegment	 - A piece of geometry
+	[6] ModelSegment	 - A piece of geometry
+	[7] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Merge9  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+	[2] ModelSegment	 - A piece of geometry
+	[3] ModelSegment	 - A piece of geometry
+	[4] ModelSegment	 - A piece of geometry
+	[5] ModelSegment	 - A piece of geometry
+	[6] ModelSegment	 - A piece of geometry
+	[7] ModelSegment	 - A piece of geometry
+	[8] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Merge10  'Merge' - Merge geometry together
+    INPUTS:
+	[0] ModelSegment	 - A piece of geometry
+	[1] ModelSegment	 - A piece of geometry
+	[2] ModelSegment	 - A piece of geometry
+	[3] ModelSegment	 - A piece of geometry
+	[4] ModelSegment	 - A piece of geometry
+	[5] ModelSegment	 - A piece of geometry
+	[6] ModelSegment	 - A piece of geometry
+	[7] ModelSegment	 - A piece of geometry
+	[8] ModelSegment	 - A piece of geometry
+	[9] ModelSegment	 - A piece of geometry
+    OUTPUTS:
+	[0] ModelSegment	 - Merged geometry
+--------------------------------------------------------------------------
+Modelling.Colour  'Colour' - Paints geometry vertices with a particular solid colour
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	 - Geometry to paint
+	[1] FColour	Value - Colour to apply to all vertices
+    OUTPUTS:
+	[0] ModelSegment	 - Pass-through of geometry painted
+--------------------------------------------------------------------------
+Modelling.Material  'Material' - Applied a particular material to the specified geometry
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	 - Geometry to decorate
+	[1] Integer	ID - Material to decorate the mesh with
+    OUTPUTS:
+	[0] ModelSegment	 - Pass-through of geometry decorated
+--------------------------------------------------------------------------
+Modelling.NormalBlend  'Blend Normals' - Blend a meshes normals towards a particular value. (NOTE: Effect can be destroyed by later renormalisation as a result of surface modifiers like Noise Distort and Taper)
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to modify
+	[1] Vector3	Normal - Value to blend geometry normals towards
+	[2] Float	Amount - Amount to blend by (0 leaves normal unaffected, 1 completely overrides the normal)
+	[3] Bool	Normalise? - Ensure the resulting normal is still unit length?
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of modified geometry
+--------------------------------------------------------------------------
+Modelling.TranslateV  'Translate' - Translates geometry to a new position
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to transform
+	[1] Vector3	Translation - Translation vector to apply
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry transformed
+--------------------------------------------------------------------------
+Modelling.RotateVDeg  'Rotate' - Rotates geometry (about the origin) to a new orientation (degrees)
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to transform
+	[1] Vector3	Rotation - Rotations to apply (pitch,,roll in degrees)
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry transformed
+--------------------------------------------------------------------------
+Modelling.ScaleV  'Scale' - Scale geometry to a new size
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to transform
+	[1] Vector3	Scale - Scaling to apply in each axis
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry transformed
+--------------------------------------------------------------------------
+Modelling.Move  'Move' - Move geometry from one frame of reference to another
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	 - In
+	[1] Frame	From - source frame of reference
+	[2] Frame	To - source frame of reference
+	[3] Integer	Alignment X - How to align the source to the destination frame in the X axis
+	[4] Integer	Alignment Y - How to align the source to the destination frame in the Y axis
+	[5] Integer	Alignment Z - How to align the source to the destination frame in the Z axis
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of moved geometry
+--------------------------------------------------------------------------
+Modelling.Hide  'Hide' - Hides previously generated geometry
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to hide
+    OUTPUTS:
+	[0] ModelSegment	Out - Hidden geometry
+--------------------------------------------------------------------------
+Modelling.Taper  'Taper' - Tapers the geometry towards the top (+Z) of a frame
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to taper
+	[1] Frame	Frame - Frame of reference for taper operation
+	[2] Float	Amount X - Amount to taper (proportional) geometry at top of frame by in X direction
+	[3] Float	Amount Y - Amount to taper (proportional) geometry at top of frame by in Y direction
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry tapered
+--------------------------------------------------------------------------
+Modelling.NoiseDistort  'Noise Distort' - Distorts a mesh using a 3D noise function
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to distort
+	[1] Vector3	Scale - Scale of noise function in each axis
+	[2] Vector3	Amount - Amount of distortion in each axis
+	[3] Integer	Octaves - Number of octaves to superimpose
+	[4] Float	Persistance - Scale of each octave relative to previous
+	[5] Float	Factor - Change of scale of each octave relative to previous
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry distorted
+--------------------------------------------------------------------------
+Modelling.NoiseSample  'Noise Sample' - Sample a 3D noise function for a single point in space
+    FLAGS: Experimental
+    INPUTS:
+	[0] Vector3	Position - Position to distort by noise function
+	[1] Vector3	Scale - Scale of noise function in each axis
+	[2] Vector3	Amount - Amount of distortion in each axis
+	[3] Integer	Octaves - Number of octaves to superimpose
+	[4] Float	Persistance - Scale of each octave relative to previous
+	[5] Float	Factor - Change of scale of each octave relative to previous
+    OUTPUTS:
+	[0] Vector3	Offset - Position distorted by noise function
+--------------------------------------------------------------------------
+Modelling.NoiseExtents  'Noise Extents' - Find the min/max extents of a line segment distorted by a noise function
+    FLAGS: Experimental
+    INPUTS:
+	[0] Vector3	Start - Start of line to distort
+	[1] Vector3	End - End of line to distort
+	[2] Integer	Steps - Number of steps along line to take samples (one less than points sampled)
+	[3] Vector3	Scale - Scale of noise function in each axis
+	[4] Vector3	Amount - Amount of distortion in each axis
+	[5] Integer	Octaves - Number of octaves to superimpose
+	[6] Float	Persistance - Scale of each octave relative to previous
+	[7] Float	Factor - Change of scale of each octave relative to previous
+    OUTPUTS:
+	[0] Vector3	Min - Minimum extent of the line distorted by the noise function
+	[0] Vector3	Max - Maximum extent of the line distorted by the noise function
+--------------------------------------------------------------------------
+Modelling.NoiseStitch  'Noise Stitch' - Distorts a mesh using a 3D noise function according to where in a reference frame it is
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to distort
+	[1] Frame	Frame - Reference frame, no stitch at +X, full stitch at -X
+	[2] Float	Smooth - Smoothing factor, 0 for linear to 1 for smoothed
+	[3] Vector3	Scale - Scale of noise function in each axis
+	[4] Vector3	Amount - Amount of distortion in each axis
+	[5] Integer	Octaves - Number of octaves to superimpose
+	[6] Float	Persistance - Scale of each octave relative to previous
+	[7] Float	Factor - Change of scale of each octave relative to previous
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry distorted
+--------------------------------------------------------------------------
+Modelling.Spherize  'Spherize' - Maps a mesh to a spherical surface
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to spherize
+	[1] Vector3	Centre - Centre of sphere
+	[2] Float	Radius - Radius of sphere
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry
+--------------------------------------------------------------------------
+Modelling.BlockInfo  'Block' - Information about current block we should be modelling in
+    FLAGS: Hidden
+    OUTPUTS:
+	[0] Frame	Frame - Frame for the current block
+	[0] Float	Size - Size of the current block
+--------------------------------------------------------------------------
+Modelling.DetailSwitch  'DetailSwitch' - Choose one of two bits of geometry depending on current block size
+    FLAGS: Hidden
+    INPUTS:
+	[0] ModelSegment	Low Detail - Geometry to use when block is larger (or equal to) than threshold size
+	[1] Float	Threshold - Size to compare with block size at which detail switches over
+	[2] ModelSegment	High Detail - Geometry to use when block is smaller than threshold size
+    OUTPUTS:
+	[0] ModelSegment	Out - Chosen value
+--------------------------------------------------------------------------
+Modelling.Wireframe  'Wireframe' - Generates a wireframe representation of some geometry
+    FLAGS: Hidden
+    INPUTS:
+	[0] ModelSegment	In - Geometry to generate wireframe from
+	[1] Bool	Show Edges? - Do we want to see triangle edges?
+	[2] Bool	Show Normals? - Do we want to see vertex normals?
+	[3] Bool	Show Topology? - Do we want to see topology links?
+	[4] Bool	Corrected Normals? - Do we want to see normals as they would be when recalculated?
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated wireframe geometry
+--------------------------------------------------------------------------
+Modelling.MappingConstant  'Set UV' - Set all UV coordinates on some geometry to the same value
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to adjust mapping of
+	[1] Float	U - Value to apply horizontally
+	[2] Float	V - Value to apply vertically
+	[3] Integer	Channel - Vertex texture channel to modify (needs to be enabled on entity)
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry afected
+--------------------------------------------------------------------------
+Modelling.MappingScale  'UV Scale' - Scale UV coordinates on some geometry (multiply all values)
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to adjust mapping of
+	[1] Float	Scale U - Scaling to apply horizontally
+	[2] Float	Scale V - Scaling to apply vertically
+	[3] Integer	Channel - Vertex texture channel to modify (needs to be enabled on entity)
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry transformed
+--------------------------------------------------------------------------
+Modelling.MappingTranslate  'UV Translate' - Translate UV coordinates on some geometry (add to all values)
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to adjust mapping of
+	[1] Float	Translation U - Translation to apply horizontally
+	[2] Float	Translation V - Translation to apply vertically
+	[3] Integer	Channel - Vertex texture channel to modify (needs to be enabled on entity)
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry transformed
+--------------------------------------------------------------------------
+Modelling.MappingFrame  'UV Frame' - Use a world space frame to project UV mapping onto geometry (XY across frame is 0 to 1 in UV)
+    FLAGS: Experimental
+    INPUTS:
+	[0] ModelSegment	In - Geometry to apply mapping to
+	[1] Frame	Frame - Mapping space to apply
+	[2] Integer	Channel - Vertex texture channel to map (needs to be enabled on entity)
+	[3] Integer	Components - Which components to affect with mapping
+    OUTPUTS:
+	[0] ModelSegment	Out - Pass-through of geometry mapping applied to
+--------------------------------------------------------------------------
+Numerical.AbsI  'Abs' - Absolute integer value
+    INPUTS:
+	[0] Integer	 - Integer to calculate the absolute value of
+    OUTPUTS:
+	[0] Integer	 - Absolute value of the input integer
+--------------------------------------------------------------------------
+Numerical.AbsF  'Abs' - Absolute floating-point value
+    INPUTS:
+	[0] Float	 - Floating-point value to calculate the absolute value of
+    OUTPUTS:
+	[0] Float	 - Absolute value of the input floating-point value
+--------------------------------------------------------------------------
+Numerical.MinF  'Min' - Minimum of two floating point values
+    INPUTS:
+	[0] Float	 - First value
+	[1] Float	 - Second value
+    OUTPUTS:
+	[0] Float	 - Minimum of the two input values
+--------------------------------------------------------------------------
+Numerical.MaxF  'Max' - Maximum of two floating point values
+    INPUTS:
+	[0] Float	 - First value
+	[1] Float	 - Second value
+    OUTPUTS:
+	[0] Float	 - Maximum of the two input values
+--------------------------------------------------------------------------
+Numerical.MinI  'Min' - Minimum of two integer values
+    INPUTS:
+	[0] Integer	 - First value
+	[1] Integer	 - Second value
+    OUTPUTS:
+	[0] Integer	 - Minimum of the two input values
+--------------------------------------------------------------------------
+Numerical.MaxI  'Max' - Maximum of two integer values
+    INPUTS:
+	[0] Integer	 - First value
+	[1] Integer	 - Second value
+    OUTPUTS:
+	[0] Integer	 - Maximum of the two input values
+--------------------------------------------------------------------------
+Numerical.ClampF  'Clamp' - Clamp a value to be within a given range
+    INPUTS:
+	[0] Float	Min - Lower end of range to clamp to
+	[1] Float	In - Value to clamp
+	[2] Float	Max - Upper end of range to clamp to
+    OUTPUTS:
+	[0] Float	Out - Clamped value
+--------------------------------------------------------------------------
+Numerical.SpreadF  'Spread' - Produce values either side of the input value by a given amount
+    INPUTS:
+	[0] Float	In - Value to centre output values on
+	[1] Float	± - Amount to subtract from and add to input value
+    OUTPUTS:
+	[0] Float	- - Lower value of spread range (input less amount)
+	[0] Float	+ - Upper value of spread range (input plus amount)
+--------------------------------------------------------------------------
+Numerical.SpreadI  'Spread' - Produce values either side of the input value by a given amount
+    INPUTS:
+	[0] Integer	In - Value to centre output values on
+	[1] Integer	± - Amount to subtract from and add to input value
+    OUTPUTS:
+	[0] Integer	- - Lower value of spread range (input less amount)
+	[0] Integer	+ - Upper value of spread range (input plus amount)
+--------------------------------------------------------------------------
+Numerical.MergeRanges  'Merge Ranges' - Combine arbitrary list of numerical ranges into a list of non-overlapping ordered ranges
+    FLAGS: Experimental
+    INPUTS:
+	[0] List	In - Arbitrary list of float pairs of numerical ranges alternating min and max values for each range
+    OUTPUTS:
+	[0] List	Out - Sorted, non-overlapping list of float pairs of numerical ranges alternating min and max values for each range
+--------------------------------------------------------------------------
+Numerical.RandRangeI  'Random' - Generate a random number in a given range
+    INPUTS:
+	[0] Integer	# - Seed for generator
+	[1] Integer	Min - Bottom of output value range (inclusive)
+	[2] Integer	Max - Top of output value range (inclusive)
+    OUTPUTS:
+	[0] Integer	# - New seed for chaining generators together
+	[0] Integer	Value - Random number (>= Min and <= Max)
+--------------------------------------------------------------------------
+Numerical.RandRangeF  'Random' - Generate a random number in a given range
+    INPUTS:
+	[0] Integer	# - Seed for generator
+	[1] Float	Min - Bottom of output value range (inclusive)
+	[2] Float	Max - Top of output value range (inclusive)
+    OUTPUTS:
+	[0] Integer	# - New seed for chaining generators together
+	[0] Float	Value - Random number (>= Min and <= Max)
+--------------------------------------------------------------------------
+Numerical.RandTwist  'Twist' - Switches the random stream sequence to avoid duplication when sub-dividing procedures with similar content
+    INPUTS:
+	[0] Integer	# - Input seed
+	[1] Integer	Variant - Variant, use if you need more than one twist in a single procedure
+    OUTPUTS:
+	[0] Integer	# - New seed for generating numbers
+--------------------------------------------------------------------------
+Primitives.Cube1  'Cube' - Builds a cube (the old way)
+    FLAGS: Obsolete
+    INPUTS:
+	[0] Bool	Uniform - Uniform sizing (X used for all axes)
+	[1] Bool	Centred - Centre on origin? (otherwise corner)
+	[2] Bool	Normals - Generate surface normal
+	[3] Bool	Faceted - Faces have own normals and appear properly flat
+	[4] Bool	Topology - Generate surface connectivity information
+	[5] Vector3	Size - Dimensions of cube
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.FCube  'Cube' - Builds a cube within a frame
+    FLAGS: Experimental
+    INPUTS:
+	[0] Frame	Where? - Where to build the cube
+	[1] Integer	Faces - Which faces to generate?
+	[2] Integer	X Slices - How many slices to subdivide in X direction?
+	[3] Integer	Y Slices - How many slices to subdivide in Y direction?
+	[4] Integer	Z Slices - How many slices to subdivide in Z direction?
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.FCylinder  'Cylinder' - Builds a cylinder within a frame
+    FLAGS: Experimental
+    INPUTS:
+	[0] Frame	Where? - Where to build the cylinder
+	[1] Integer	Segments - Number of segments around the circumferance
+	[2] Integer	Rings - Number of rings on end faces
+	[3] Integer	Slices - Number of slices down the cylinder
+	[4] Integer	Faces - Which faces to generate?
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.Grid  'Grid' - Builds a grid
+    FLAGS: Experimental
+    INPUTS:
+	[0] Vector3	Origin - Corner of the grid
+	[1] Vector3	Horizontal Axis - Extent of first axis
+	[2] Vector3	Vertical Axis - Extent of second axis
+	[3] Integer	Columns - Number of divisions along first axis
+	[4] Integer	Rows - Number of divisions along second axis
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.Line  'Line' - Build a distinct line segment between two points
+    FLAGS: Hidden
+    INPUTS:
+	[0] Vector3	Start - Start of the line
+	[1] Vector3	End - End of the line
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.SegmentedLine  'Line' - Build a multi-segment line between two points
+    FLAGS: Hidden
+    INPUTS:
+	[0] Vector3	Start - Start of the line
+	[1] Vector3	End - End of the line
+	[2] Integer	Segments - Number of segments
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.ColourLine  'ColourLine' - Build a distinct line segment between two points with specific start and end colours
+    FLAGS: Hidden
+    INPUTS:
+	[0] Vector3	Start - Start of the line
+	[1] Vector3	End - End of the line
+	[2] FColour	Start Colour - Colour at start of the line
+	[3] FColour	End Colour - Colour at end of the line
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.FSheet  'Sheet' - Builds a flat rectangular sheet within a frame
+    FLAGS: Experimental
+    INPUTS:
+	[0] Frame	Where? - Where to build the sheet (lower z facing positive z)
+	[1] Integer	X Slices - How many slices to subdivide in X direction?
+	[2] Integer	Y Slices - How many slices to subdivide in Y direction?
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.FColourSheet  'Colour Sheet' - Builds a pre-painted flat rectangular sheet within a frame
+    FLAGS: Experimental
+    INPUTS:
+	[0] Frame	Where? - Where to build the sheet (lower z facing positive z)
+	[1] FColour	BL Colour - Colour for bottom left corner (-X,-Y)
+	[2] FColour	BR Colour - Colour for bottom right corner (+X,-Y)
+	[3] FColour	TL Colour - Colour for top left corner (-X,+Y)
+	[4] FColour	TR Colour - Colour for top right corner (+X,+Y)
+	[5] Integer	X Slices - How many slices to subdivide in X direction?
+	[6] Integer	Y Slices - How many slices to subdivide in Y direction?
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.ColourTriangle  'Colour Triangle' - Builds a pre-painted triangle between three (clockwise) points, optionally with back-face
+    FLAGS: Experimental
+    INPUTS:
+	[0] Vector3	Corner A - Position of first triangle corner
+	[1] Vector3	Corner B - Position of second triangle corner
+	[2] Vector3	Corner C - Position of third triangle corner
+	[3] FColour	Colour A - Colour for first triangle corner
+	[4] FColour	Colour B - Colour for second triangle corner
+	[5] FColour	Colour C - Colour for third triangle corner
+	[6] Bool	Back? - Should it have a back face too?
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.FSphere  'Sphere' - Builds a sphere within a frame
+    FLAGS: Experimental
+    INPUTS:
+	[0] Frame	Where? - Where to build the sphere
+	[1] Integer	Segments - Number of segments around the circumferance
+	[2] Integer	Slices - Number of slices down the sphere
+    OUTPUTS:
+	[0] ModelSegment	Out - Generated geometry
+--------------------------------------------------------------------------
+Primitives.Polygon  'Polygon' - Builds a flat (XY) polygon from a list of vertices
+    FLAGS: Experimental
+    INPUTS:
+	[0] List	Vertices - Listof polygon vertices in XY plane
+	[1] List	Holes - Optional list of holes in the polygon (list of lists of vertices)
+    OUTPUTS:
+	[0] ModelSegment	Polygon - Generated geometry
+--------------------------------------------------------------------------
+Primitives.PolygonExtrude  'Extrude' - Extrude an polygon along the +Z axis creating side and end faces as required
+    FLAGS: Experimental
+    INPUTS:
+	[0] List	Vertices - Listof polygon vertices in XY plane
+	[1] List	Holes - Optional list of holes in the polygon (list of lists of vertices)
+	[2] Float	Amount - Amount to extrude by (units)
+	[3] Integer	Faces - Which faces to generate
+	[4] Integer	Mapping U - Mapping options for U coordinate around polygon
+	[5] Integer	Mapping V - Mapping options for V coordinate along extrusion
+	[6] Float	Smoothing - Surface angle discontinuity below which adjacent faces are considered continuous
+    OUTPUTS:
+	[0] ModelSegment	Polygon - Generated geometry
+--------------------------------------------------------------------------
+Process.Run  'Run' - Runs an external command, collecting console output, until exits
+    FLAGS: Hidden
+    INPUTS:
+	[0] String	Command - Name of, or path to, command to run
+	[1] String	Arguments - Any command line arguments as a string
+	[2] String	Directory - Directory to launch the process in (current directory)
+	[3] Float	Timeout - Time to wait before giving up on external process (seconds).  0 will cause infinite wait (can stall synthesis with no way to resume)
+    OUTPUTS:
+	[0] Bool	Success - Did the command successfully run?
+	[0] String	Output - All lines of console output, as a string
+	[0] Integer	Exit Code - Process exit code, 0 for success
+--------------------------------------------------------------------------
+Resource.Resolve  'Resolve' - Look up resource information (placement identifier and bounds)
+    INPUTS:
+	[0] String	Descriptor - Text descriptor to uniquely identify the resource in a Resource Table
+	[1] Frame	Temp Bounds - Bounds to use if object not found to place (resource centre at origin)
+	[2] Integer	Variant - Variant of resource to lookup (unused when establishing number of variants)
+    OUTPUTS:
+	[0] Integer	ID - Placement ID needed to create instances of this resource
+	[0] Frame	Bounds - Bounding box of the resource (resource centre at origin), can be used to aid positioning
+	[0] Integer	Variants - Number of variants of this resource to choose from
+--------------------------------------------------------------------------
+Resource.Place  'Place' - Place a resource instance within a given bounds
+    INPUTS:
+	[0] Integer	ID - Placement ID identifing the type of resource to place
+	[1] Frame	Where? - Frame within which to place an instance of the resource (will be scaled to fit)
+	[2] Float	Block - Only place object at this block size in the detail hierarchy (0 for all, -1 for none)
+	[3] List	Parameters - Optional list of parameters to pass to the placement process for this object instance
+    OUTPUTS:
+	[0] ModelSegment	Object - Placed object
+--------------------------------------------------------------------------
+Resource.Group  'Group' - Group placed objects together under a new named parent
+    INPUTS:
+	[0] String	Name - Name for the parent group
+	[1] ModelSegment	In - Geometry to be grouped together
+    OUTPUTS:
+	[0] ModelSegment	Out - Geometry with it's parent resource placed above it
+--------------------------------------------------------------------------
+Resource.Parent  'Parent' - Parent placed objects together under a named parent object
+    INPUTS:
+	[0] ModelSegment	Parent - Single placed object to act as parent (additional objects will become children)
+	[1] String	Name - Name for the parent object (default based on object type)
+	[2] ModelSegment	In - Geometry to be grouped together under supplied parent
+    OUTPUTS:
+	[0] ModelSegment	Out - Geometry with it's parent resource placed above it
+--------------------------------------------------------------------------
+Shapes.Line  'Line' - Appends a line segment to a shape vertex list
+    FLAGS: Experimental
+    INPUTS:
+	[0] List	In - List of shape vertices to add line to
+	[1] Frame	Frame - Frame of reference for building new vertices (optional)
+	[2] Integer	Units - Units to create vertices in the frame of reference (absolute, relative, percentage)
+	[3] Integer	Vertices - Rules for generating end vertices (both, no start, both welded)
+	[4] Vector3	Start - Starting point of line segment within frame (not needed for continuation of shape)
+	[5] Vector3	End - End point of line segment within frame
+    OUTPUTS:
+	[0] List	Out - Shape vertex list
+--------------------------------------------------------------------------
+Shapes.Arc  'Arc' - Appends an arc to a shape vertex list
+    FLAGS: Experimental
+    INPUTS:
+	[0] List	In - List of shape vertices to add arc to
+	[1] Frame	Frame - Frame of reference for building new vertices (optional)
+	[2] Integer	Units - Units to create vertices in the frame of reference (absolute, relative, percentage)
+	[3] Integer	Vertices - Rules for generating end vertices (both, no start, both welded)
+	[4] Vector3	Centre - Centre point of arc within frame
+	[5] Vector3	Start - Starting point of line segment within frame from which the angle is measured
+	[6] Float	Angle - How far the arc extends from the starting point around the centre (degrees clockwise)
+	[7] Integer	Steps - Detail level of curves. Use at least this number of steps
+	[8] Float	Curve - Detail level of curves. Use enough steps to keep curvature below this angle
+    OUTPUTS:
+	[0] List	Out - Shape vertex list
+--------------------------------------------------------------------------
+Shapes.Ellipse  'Ellipse' - Generates an ellipse shape
+    FLAGS: Experimental
+    INPUTS:
+	[0] Frame	Frame - Frame of reference for building new vertices (optional)
+	[1] Integer	Units - Units to create vertices in the frame of reference (absolute, relative, percentage)
+	[2] Vector3	Centre - Centre point of ellipse within frame
+	[3] Float	Width - Width of ellipse
+	[4] Float	Height - Height of ellipse
+	[5] Integer	Steps - Detail level of curves. Use at least this number of steps
+	[6] Float	Curve - Detail level of curves. Use enough steps to keep curvature below this angle
+    OUTPUTS:
+	[0] List	Out - Shape vertex list
+--------------------------------------------------------------------------
+Shapes.Rectangle  'Rectangle' - Generates a rectangle shape
+    FLAGS: Experimental
+    INPUTS:
+	[0] Frame	Frame - Frame of reference for building new vertices (optional)
+	[1] Integer	Units - Units to create vertices in the frame of reference (absolute, relative, percentage)
+	[2] Vector3	Centre - Centre point of rectangle within frame
+	[3] Float	Width - Width of rectangle
+	[4] Float	Height - Height of rectangle
+	[5] Integer	Radius Units - Sizing and shape of corner radius (absolute, relative, eliptical, circular, etc)
+	[6] Float	Radius - Radius of corners (if rounding required)
+	[7] Integer	Steps - Detail level of curves. Use at least this number of steps
+	[8] Float	Curve - Detail level of curves. Use enough steps to keep curvature below this angle
+    OUTPUTS:
+	[0] List	Out - Shape vertex list
+--------------------------------------------------------------------------
+Text.IToS  'Convert' - Generate a string representation of a number
+    INPUTS:
+	[0] Integer	Number - Number to convert
+    OUTPUTS:
+	[0] String	String - String representation of the number
+--------------------------------------------------------------------------
+Text.SToI  'Convert' - Parse a string representation of a number back to a numeric value
+    INPUTS:
+	[0] String	String - String to parse
+    OUTPUTS:
+	[0] Integer	Number - Numeric value of the string
+--------------------------------------------------------------------------
+Text.FToS  'Convert' - Generate a string representation of a number
+    INPUTS:
+	[0] Float	Number - Number to convert
+	[1] Integer	Places - Decimal places to include
+    OUTPUTS:
+	[0] String	String - String representation of the number
+--------------------------------------------------------------------------
+Text.SToF  'Convert' - Parse a string representation of a floating-point number back to a numeric value
+    INPUTS:
+	[0] String	String - String to parse
+    OUTPUTS:
+	[0] Float	Number - Numeric floating-point value of the string
+--------------------------------------------------------------------------
+Text.IToHex  'Convert' - Generate a hex string representation of a number
+    INPUTS:
+	[0] Integer	Number - Number to convert
+	[1] Integer	Digits - Number of digits required
+    OUTPUTS:
+	[0] String	Hex - Hexadecimal string representation of the number
+--------------------------------------------------------------------------
+Text.ToUppercase  'Uppercase' - Convert a string to upper-case
+    INPUTS:
+	[0] String	 - String to convert
+    OUTPUTS:
+	[0] String	 - Upper-case version of supplied string
+--------------------------------------------------------------------------
+Text.ToLowercase  'Lowercase' - Convert a string to lower-case
+    INPUTS:
+	[0] String	 - String to convert
+    OUTPUTS:
+	[0] String	 - Lower-case version of supplied string
+--------------------------------------------------------------------------
+Text.Concatenate2  'Concatenate' - Concatenate strings together
+    INPUTS:
+	[0] String	 - A string
+	[1] String	 - A string
+    OUTPUTS:
+	[0] String	 - Concatenated strings
+--------------------------------------------------------------------------
+Text.Concatenate3  'Concatenate' - Concatenate strings together
+    INPUTS:
+	[0] String	 - A string
+	[1] String	 - A string
+	[2] String	 - A string
+    OUTPUTS:
+	[0] String	 - Concatenated strings
+--------------------------------------------------------------------------
+Text.Concatenate4  'Concatenate' - Concatenate strings together
+    INPUTS:
+	[0] String	 - A string
+	[1] String	 - A string
+	[2] String	 - A string
+	[3] String	 - A string
+    OUTPUTS:
+	[0] String	 - Concatenated strings
+--------------------------------------------------------------------------
+Text.Concatenate5  'Concatenate' - Concatenate strings together
+    INPUTS:
+	[0] String	 - A string
+	[1] String	 - A string
+	[2] String	 - A string
+	[3] String	 - A string
+	[4] String	 - A string
+    OUTPUTS:
+	[0] String	 - Concatenated strings
+--------------------------------------------------------------------------
+Text.Concatenate6  'Concatenate' - Concatenate strings together
+    INPUTS:
+	[0] String	 - A string
+	[1] String	 - A string
+	[2] String	 - A string
+	[3] String	 - A string
+	[4] String	 - A string
+	[5] String	 - A string
+    OUTPUTS:
+	[0] String	 - Concatenated strings
+--------------------------------------------------------------------------
+Text.Concatenate7  'Concatenate' - Concatenate strings together
+    INPUTS:
+	[0] String	 - A string
+	[1] String	 - A string
+	[2] String	 - A string
+	[3] String	 - A string
+	[4] String	 - A string
+	[5] String	 - A string
+	[6] String	 - A string
+    OUTPUTS:
+	[0] String	 - Concatenated strings
+--------------------------------------------------------------------------
+Text.Concatenate8  'Concatenate' - Concatenate strings together
+    INPUTS:
+	[0] String	 - A string
+	[1] String	 - A string
+	[2] String	 - A string
+	[3] String	 - A string
+	[4] String	 - A string
+	[5] String	 - A string
+	[6] String	 - A string
+	[7] String	 - A string
+    OUTPUTS:
+	[0] String	 - Concatenated strings
+--------------------------------------------------------------------------
+Text.ConcatenateLines2  'Concatenate Lines' - Concatenate lines together
+    INPUTS:
+	[0] String	 - A line of text
+	[1] String	 - A line of text
+    OUTPUTS:
+	[0] String	 - Concatenated lines, a newline appended after each one
+--------------------------------------------------------------------------
+Text.ConcatenateLines3  'Concatenate Lines' - Concatenate lines together
+    INPUTS:
+	[0] String	 - A line of text
+	[1] String	 - A line of text
+	[2] String	 - A line of text
+    OUTPUTS:
+	[0] String	 - Concatenated lines, a newline appended after each one
+--------------------------------------------------------------------------
+Text.ConcatenateLines4  'Concatenate Lines' - Concatenate lines together
+    INPUTS:
+	[0] String	 - A line of text
+	[1] String	 - A line of text
+	[2] String	 - A line of text
+	[3] String	 - A line of text
+    OUTPUTS:
+	[0] String	 - Concatenated lines, a newline appended after each one
+--------------------------------------------------------------------------
+Text.ConcatenateLines5  'Concatenate Lines' - Concatenate lines together
+    INPUTS:
+	[0] String	 - A line of text
+	[1] String	 - A line of text
+	[2] String	 - A line of text
+	[3] String	 - A line of text
+	[4] String	 - A line of text
+    OUTPUTS:
+	[0] String	 - Concatenated lines, a newline appended after each one
+--------------------------------------------------------------------------
+Text.ConcatenateLines6  'Concatenate Lines' - Concatenate lines together
+    INPUTS:
+	[0] String	 - A line of text
+	[1] String	 - A line of text
+	[2] String	 - A line of text
+	[3] String	 - A line of text
+	[4] String	 - A line of text
+	[5] String	 - A line of text
+    OUTPUTS:
+	[0] String	 - Concatenated lines, a newline appended after each one
+--------------------------------------------------------------------------
+Text.ConcatenateLines7  'Concatenate Lines' - Concatenate lines together
+    INPUTS:
+	[0] String	 - A line of text
+	[1] String	 - A line of text
+	[2] String	 - A line of text
+	[3] String	 - A line of text
+	[4] String	 - A line of text
+	[5] String	 - A line of text
+	[6] String	 - A line of text
+    OUTPUTS:
+	[0] String	 - Concatenated lines, a newline appended after each one
+--------------------------------------------------------------------------
+Text.ConcatenateLines8  'Concatenate Lines' - Concatenate lines together
+    INPUTS:
+	[0] String	 - A line of text
+	[1] String	 - A line of text
+	[2] String	 - A line of text
+	[3] String	 - A line of text
+	[4] String	 - A line of text
+	[5] String	 - A line of text
+	[6] String	 - A line of text
+	[7] String	 - A line of text
+    OUTPUTS:
+	[0] String	 - Concatenated lines, a newline appended after each one
+--------------------------------------------------------------------------
+Text.Length  'Length' - Finds the length of a string
+    INPUTS:
+	[0] String	 - String to obtain length of
+    OUTPUTS:
+	[0] Integer	 - Length of the given string
+--------------------------------------------------------------------------
+Text.IsEmpty  'Is Empty' - Is the string empty?
+    INPUTS:
+	[0] String	String - String to check
+	[1] Bool	Ignore Whitespace? - If there is whitespace in the input string is it still considered empty?
+    OUTPUTS:
+	[0] Bool	Empty - Whether this string is considered empty or not
+--------------------------------------------------------------------------
+Text.At  'At' - Look up the character at a given index
+    INPUTS:
+	[0] String	String - String to get a character from
+	[1] Integer	Index - Index of character to obtain
+    OUTPUTS:
+	[0] Integer	 - Code value of character at specified index. UTF16/ASCII e.g. 'A' = 65
+--------------------------------------------------------------------------
+Text.Split3  'Split' - Splits a string into three parts by positions
+    INPUTS:
+	[0] String	String - Text to split up
+	[1] Integer	Start - Index of start of second part, i.e. the start of the mid section to split out
+	[2] Integer	End - Index of start of final part, i.e. after the end of mid section to split out
+    OUTPUTS:
+	[0] String	Left - Left piece of text split out
+	[0] String	Middle - Middle piece of text split out
+	[0] String	Right - Right piece of text split out
+--------------------------------------------------------------------------
+Text.Find  'Find First' - Search for a string within another string, find it's index
+    INPUTS:
+	[0] String	Text - Text to search within
+	[1] String	Find - Text to search for
+	[2] Bool	Case? - Do we care about case?
+	[3] Integer	Start - Index to start searching at
+    OUTPUTS:
+	[0] Bool	Found? - Did we find the string?
+	[0] Integer	Index - Where does the sub-string start? (end of string if match not found)
+	[0] Integer	Continue - Index to carry on searching from (next one after found string, or end of string if match not found)
+--------------------------------------------------------------------------
+Text.FindR  'Find Last' - Search backwards for a string within another string, find it's index
+    INPUTS:
+	[0] String	Text - Text to search within
+	[1] String	Find - Text to search for
+	[2] Bool	Case? - Do we care about case?
+	[3] Integer	Start - Index after place to start searching at, i.e. num chars from start to look within (0 or Length for end of string). NOTE: match can extend past this point.
+    OUTPUTS:
+	[0] Bool	Found? - Did we find the string?
+	[0] Integer	Index - Where does the sub-string start?  (0 if not found, i.e. start of string)
+	[0] Integer	Continue - Index to carry on searching from (in this case the same as the found Index)
+--------------------------------------------------------------------------
+Text.Replace  'Replace' - Replace all occurances of a string within a string with another
+    INPUTS:
+	[0] String	In - Text to search within
+	[1] String	Find - Text to search for
+	[2] String	Replace - Text to replace with
+	[3] Bool	Case? - Do we care about case?
+    OUTPUTS:
+	[0] String	Out - The new string with replacements made to it
+	[0] Bool	Count - The number of replacements performed
+--------------------------------------------------------------------------
+Text.IfEmpty  'If Empty' - If this string empty, replace it with an alternative. Useful for providing defaults.
+    INPUTS:
+	[0] String	In - String to check
+	[1] Bool	Ignore Whitespace? - If there is whitespace in the input string is it still considered empty?
+	[2] String	Default - String to produce if input is empty
+    OUTPUTS:
+	[0] String	Out - Input string unless it was empty, otherwise alternate string appears here
+--------------------------------------------------------------------------
+Trigonometry.PiF  'Pi' - The trigonometrical constant 'Pi' (Tau/2)
+    OUTPUTS:
+	[0] Float	 - Pi
+--------------------------------------------------------------------------
+Trigonometry.TauF  'Tau' - The trigonometrical constant 'Tau' (2xPi)
+    OUTPUTS:
+	[0] Float	 - Tau
+--------------------------------------------------------------------------
+Trigonometry.RadToDegF  'RadToDeg' - Convert radians to degrees
+    INPUTS:
+	[0] Float	r - Radians
+    OUTPUTS:
+	[0] Float	º - Degrees
+--------------------------------------------------------------------------
+Trigonometry.DegToRadF  'DegToRad' - Convert degrees to radians
+    INPUTS:
+	[0] Float	º - Degrees
+    OUTPUTS:
+	[0] Float	r - Radians
+--------------------------------------------------------------------------
+Trigonometry.SinF  'Sin' - Sine of an angle
+    INPUTS:
+	[0] Float	 - Input angle (radians)
+    OUTPUTS:
+	[0] Float	 - Sine value of given angle
+--------------------------------------------------------------------------
+Trigonometry.CosF  'Cos' - Cosine of an angle
+    INPUTS:
+	[0] Float	 - Input angle (radians)
+    OUTPUTS:
+	[0] Float	 - Cosine value of given angle
+--------------------------------------------------------------------------
+Trigonometry.TanF  'Tan' - Tangent of an angle
+    INPUTS:
+	[0] Float	 - Input angle (radians)
+    OUTPUTS:
+	[0] Float	 - Tangent value (gradient) of given angle
+--------------------------------------------------------------------------
+Trigonometry.ArcSinF  'ArcSin' - Arc-sine of a value
+    INPUTS:
+	[0] Float	 - Input value
+    OUTPUTS:
+	[0] Float	 - Arc-sine angle (radians) of given value
+--------------------------------------------------------------------------
+Trigonometry.ArcCosF  'ArcCos' - Arc-cos of a value
+    INPUTS:
+	[0] Float	 - Input value
+    OUTPUTS:
+	[0] Float	 - Arc-cosine angle (radians) of given value
+--------------------------------------------------------------------------
+Trigonometry.ArcTanF  'ArcTan' - Arc-tangent of a gradient
+    INPUTS:
+	[0] Float	 - Input value
+    OUTPUTS:
+	[0] Float	 - Arc-tangent angle (radians) of given gradient
+--------------------------------------------------------------------------
+Trigonometry.ArcTan2F  'ArcTan2' - Calculate angle between +X axis and a point at X,Y, positive above X axis, negative below
+    INPUTS:
+	[0] Float	X - X coordinate specifying gradient
+	[1] Float	Y - Y coordinate specifying gradient
+    OUTPUTS:
+	[0] Float	 - Angle (radians) of gradient specified by point at X,Y relative to positive X axis
+--------------------------------------------------------------------------
+Trigonometry.DistanceV3  'DistanceV3' - Distance between two points
+    INPUTS:
+	[0] Vector3	A - First point
+	[1] Vector3	B - Second point
+    OUTPUTS:
+	[0] Float	Out - Distance between points
+--------------------------------------------------------------------------
+Trigonometry.RotateV3  'RotateV3' - Rotate a position vector around the origin
+    INPUTS:
+	[0] Vector3	In - Positon vector to rotate
+	[1] Vector3	Rotation - Rotations to apply pitch/roll/yaw in degrees
+    OUTPUTS:
+	[0] Vector3	Out - Rotated position vector
+--------------------------------------------------------------------------

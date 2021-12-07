@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="9451EACE">
+    <Inputs>
+        <Input id="1" type="List" name="Pin" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-2" type="Integer">0</Constant>
+        <Constant id="-4" type="Integer">1</Constant>
+        <Constant id="-6" type="Integer">2</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="20EF33CD">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-2"/>
+        </Operator>
+        <Operator id="2" type="20EF33CD">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-4"/>
+        </Operator>
+        <Operator id="3" type="20EF33CD">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-6"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="String" name="Type" description="" to="1" out="100"/>
+        <Output id="2" type="String" name="Name" description="" to="2" out="100"/>
+        <Output id="3" type="String" name="Description" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

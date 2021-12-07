@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Procedure Version="4" type="10ADDF30">
+<Procedure Version="5" type="10ADDF30">
     <Inputs>
-        <Input id="1" type="ModelSegment" name="In"/>
-        <Input id="2" type="FColour" name="Colour"/>
+        <Input id="1" type="ModelSegment" name="In" description=""/>
+        <Input id="2" type="FColour" name="Colour" description="Colour to apply to surface|Default=[1,1,1,1]"/>
     </Inputs>
     <Constants/>
     <Operators>

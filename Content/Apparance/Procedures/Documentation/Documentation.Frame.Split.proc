@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="09091132">
+    <Inputs>
+        <Input id="2" type="Integer" name="Amount" description="|Default=4|Min=0|Max=10|MinLimit=0|MaxLimit=10"/>
+        <Input id="3" type="Integer" name="Units" description="|Min=0|Max=2|MinLimit=0|MaxLimit=2"/>
+        <Input id="4" type="Integer" name="Axis" description="|Min=0|Max=2|MinLimit=0|MaxLimit=2"/>
+        <Input id="5" type="Integer" name="Invert" description="|Min=0|Max=1|MinLimit=0|MaxLimit=1"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-14" type="String">Frame.Split</Constant>
+        <Constant id="-15" type="Float">0.492752</Constant>
+        <Constant id="-16" type="Float">0.147541</Constant>
+        <Constant id="-23" type="Integer">2</Constant>
+        <Constant id="-25" type="Integer">2</Constant>
+        <Constant id="-30" type="Integer">0</Constant>
+        <Constant id="-31" type="Vector3">0.700000, 1.000000, 1.000000</Constant>
+        <Constant id="-32" type="Integer">2</Constant>
+        <Constant id="-38" type="ModelSegment"></Constant>
+        <Constant id="-39" type="ModelSegment"></Constant>
+        <Constant id="-45" type="ModelSegment"></Constant>
+        <Constant id="-46" type="ModelSegment"></Constant>
+        <Constant id="-52" type="Integer">0</Constant>
+        <Constant id="-53" type="Vector3">0.750000, 0.900000, 1.000000</Constant>
+        <Constant id="-54" type="Integer">0</Constant>
+        <Constant id="-56" type="Integer">1</Constant>
+        <Constant id="-57" type="Vector3">0.750000, 0.900000, 1.000000</Constant>
+        <Constant id="-58" type="Integer">0</Constant>
+        <Constant id="-66" type="ModelSegment"></Constant>
+        <Constant id="-75" type="Integer">3</Constant>
+        <Constant id="-76" type="String">X</Constant>
+        <Constant id="-77" type="Integer">2</Constant>
+        <Constant id="-78" type="ModelSegment"></Constant>
+        <Constant id="-79" type="ModelSegment"></Constant>
+        <Constant id="-84" type="Float">0.574878</Constant>
+        <Constant id="-86" type="Vector3">0.000000, -0.039659, 0.088963</Constant>
+        <Constant id="-87" type="Float">0.000000</Constant>
+        <Constant id="-88" type="Vector3">0.581565, 0.517793, 0.181351</Constant>
+        <Constant id="-90" type="Float">0.000000</Constant>
+        <Constant id="-91" type="Bool">True</Constant>
+        <Constant id="-92" type="Bool">True</Constant>
+        <Constant id="-93" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-94" type="Bool">False</Constant>
+        <Constant id="-95" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-105" type="ModelSegment"></Constant>
+        <Constant id="-107" type="Float">0.000000</Constant>
+        <Constant id="-108" type="Bool">False</Constant>
+        <Constant id="-109" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-110" type="Bool">False</Constant>
+        <Constant id="-111" type="Bool">True</Constant>
+        <Constant id="-114" type="Float">0.000000</Constant>
+        <Constant id="-115" type="Bool">False</Constant>
+        <Constant id="-116" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-117" type="Bool">False</Constant>
+        <Constant id="-118" type="Bool">True</Constant>
+        <Constant id="-121" type="Float">0.001000</Constant>
+        <Constant id="-122" type="String">$0D$0ASpecify amount of split, units to use, $0D$0Adirection of split, and which part$0D$0Aamount applies to.$0D$0A$0D$0A</Constant>
+        <Constant id="-124" type="String">Units$0D$0AProportion$0D$0APercentage</Constant>
+        <Constant id="-126" type="Integer">0</Constant>
+        <Constant id="-131" type="Integer">1</Constant>
+        <Constant id="-132" type="Integer">2</Constant>
+        <Constant id="-137" type="Float">0.100000</Constant>
+        <Constant id="-138" type="Float">10.000000</Constant>
+        <Constant id="-141" type="Integer">3</Constant>
+        <Constant id="-142" type="Integer">1</Constant>
+        <Constant id="-143" type="Integer">0</Constant>
+        <Constant id="-144" type="Integer">0</Constant>
+        <Constant id="-147" type="Float">0.120314</Constant>
+        <Constant id="-148" type="Float">0.000000</Constant>
+        <Constant id="-150" type="Integer">1</Constant>
+        <Constant id="-151" type="Integer">1</Constant>
+        <Constant id="-152" type="Integer">2</Constant>
+        <Constant id="-153" type="Integer">0</Constant>
+        <Constant id="-155" type="Integer">1</Constant>
+        <Constant id="-160" type="Integer">4</Constant>
+        <Constant id="-161" type="Integer">2</Constant>
+        <Constant id="-169" type="Float">0.000000</Constant>
+        <Constant id="-170" type="Float">0.000000</Constant>
+        <Constant id="-171" type="Float">0.000000</Constant>
+        <Constant id="-172" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-173" type="Bool">False</Constant>
+        <Constant id="-174" type="Bool">True</Constant>
+        <Constant id="-175" type="Bool">True</Constant>
+        <Constant id="-176" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
+        <Constant id="-177" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
+        <Constant id="-178" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
+        <Constant id="-179" type="Vector3">1.000000, 0.781351, 2.364415</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="2" type="EB4EAAA4">
+            <Connect in="100" to="23" out="100"/>
+            <Connect in="101" to="5" out="1"/>
+            <Connect in="102" to="10" out="100"/>
+            <Connect in="103" to="11" out="100"/>
+            <Connect in="104" constant="-105"/>
+        </Operator>
+        <Operator id="5" type="94CD2818">
+            <Connect in="2" constant="-14"/>
+            <Connect in="3" constant="-15"/>
+            <Connect in="4" constant="-16"/>
+            <Connect in="5" constant="-84"/>
+            <Connect in="6" constant="-122"/>
+            <Connect in="8" constant="-179"/>
+        </Operator>
+        <Operator id="7" type="94C979F2">
+            <Connect in="1" to="5" out="2"/>
+            <Connect in="2" constant="-23"/>
+            <Connect in="3" to="27" out="1"/>
+            <Connect in="4" constant="-25"/>
+        </Operator>
+        <Operator id="9" type="94D64B9A">
+            <Connect in="2" constant="-31"/>
+            <Connect in="3" constant="-32"/>
+            <Connect in="4" to="5" out="2"/>
+            <Connect in="5" constant="-30"/>
+            <Connect in="6" constant="-178"/>
+        </Operator>
+        <Operator id="10" type="AF799635">
+            <Connect in="100" to="9" out="1"/>
+            <Connect in="101" to="30" out="1"/>
+            <Connect in="102" to="7" out="1"/>
+            <Connect in="103" to="18" out="1"/>
+            <Connect in="104" to="38" out="1"/>
+            <Connect in="105" constant="-38"/>
+            <Connect in="106" constant="-39"/>
+            <Connect in="107" constant="-66"/>
+        </Operator>
+        <Operator id="11" type="AF799635">
+            <Connect in="100" to="12" out="1"/>
+            <Connect in="101" to="15" out="1"/>
+            <Connect in="102" constant="-79"/>
+            <Connect in="103" constant="-78"/>
+            <Connect in="104" constant="-45"/>
+            <Connect in="105" constant="-46"/>
+            <Connect in="106" to="13" out="1"/>
+            <Connect in="107" to="17" out="1"/>
+        </Operator>
+        <Operator id="12" type="94D64B9A">
+            <Connect in="2" constant="-53"/>
+            <Connect in="3" constant="-54"/>
+            <Connect in="4" to="5" out="3"/>
+            <Connect in="5" constant="-52"/>
+            <Connect in="6" constant="-176"/>
+        </Operator>
+        <Operator id="13" type="94D64B9A">
+            <Connect in="2" constant="-57"/>
+            <Connect in="3" constant="-58"/>
+            <Connect in="4" to="5" out="3"/>
+            <Connect in="5" constant="-56"/>
+            <Connect in="6" constant="-177"/>
+        </Operator>
+        <Operator id="14" type="D729EF5D">
+            <Connect in="100" to="12" out="2"/>
+            <Connect in="101" to="29" out="100"/>
+            <Connect in="102" to="35" out="1"/>
+            <Connect in="103" input="4"/>
+            <Connect in="104" to="36" out="100"/>
+        </Operator>
+        <Operator id="15" type="9524C83B">
+            <Connect in="1" to="14" out="100"/>
+            <Connect in="2" to="39" out="1"/>
+        </Operator>
+        <Operator id="16" type="D729EF5D">
+            <Connect in="100" to="13" out="2"/>
+            <Connect in="101" to="29" out="100"/>
+            <Connect in="102" to="35" out="1"/>
+            <Connect in="103" input="4"/>
+            <Connect in="104" to="36" out="100"/>
+        </Operator>
+        <Operator id="17" type="9524C83B">
+            <Connect in="1" to="16" out="101"/>
+            <Connect in="2" to="39" out="2"/>
+        </Operator>
+        <Operator id="18" type="94C979F2">
+            <Connect in="1" to="5" out="2"/>
+            <Connect in="2" constant="-75"/>
+            <Connect in="3" constant="-76"/>
+            <Connect in="4" constant="-77"/>
+        </Operator>
+        <Operator id="20" type="5617928D">
+            <Connect in="1" to="5" out="4"/>
+            <Connect in="2" constant="-86"/>
+            <Connect in="3" constant="-87"/>
+            <Connect in="4" constant="-88"/>
+        </Operator>
+        <Operator id="21" type="90DB6746">
+            <Connect in="1" to="20" out="1"/>
+            <Connect in="2" constant="-90"/>
+            <Connect in="3" constant="-91"/>
+            <Connect in="4" constant="-92"/>
+            <Connect in="5" constant="-93"/>
+            <Connect in="6" constant="-94"/>
+            <Connect in="7" constant="-95"/>
+            <Connect in="8" constant="-173"/>
+        </Operator>
+        <Operator id="22" type="D729EF5D">
+            <Connect in="100" to="26" out="1"/>
+            <Connect in="101" to="29" out="100"/>
+            <Connect in="102" to="35" out="1"/>
+            <Connect in="103" input="4"/>
+            <Connect in="104" to="36" out="100"/>
+        </Operator>
+        <Operator id="23" type="B4A997AD">
+            <Connect in="100" to="21" out="1"/>
+            <Connect in="101" to="24" out="1"/>
+            <Connect in="102" to="25" out="1"/>
+            <Connect in="103" to="41" out="1"/>
+        </Operator>
+        <Operator id="24" type="90DB6746">
+            <Connect in="1" to="22" out="100"/>
+            <Connect in="2" constant="-107"/>
+            <Connect in="3" constant="-108"/>
+            <Connect in="4" constant="-110"/>
+            <Connect in="5" constant="-109"/>
+            <Connect in="6" constant="-111"/>
+            <Connect in="7" to="39" out="1"/>
+            <Connect in="8" constant="-174"/>
+        </Operator>
+        <Operator id="25" type="90DB6746">
+            <Connect in="1" to="22" out="101"/>
+            <Connect in="2" constant="-114"/>
+            <Connect in="3" constant="-115"/>
+            <Connect in="4" constant="-117"/>
+            <Connect in="5" constant="-116"/>
+            <Connect in="6" constant="-118"/>
+            <Connect in="7" to="39" out="2"/>
+            <Connect in="8" constant="-175"/>
+        </Operator>
+        <Operator id="26" type="9064A377">
+            <Connect in="1" to="20" out="1"/>
+            <Connect in="2" constant="-121"/>
+        </Operator>
+        <Operator id="27" type="91BF02E3">
+            <Connect in="1" constant="-126"/>
+            <Connect in="2" constant="-124"/>
+            <Connect in="3" input="3"/>
+        </Operator>
+        <Operator id="28" type="D0A6FC99">
+            <Connect in="100" input="2"/>
+        </Operator>
+        <Operator id="29" type="971515D0">
+            <Connect in="100" to="28" out="100"/>
+            <Connect in="101" to="31" out="1"/>
+        </Operator>
+        <Operator id="30" type="91B028E7">
+            <Connect in="1" to="5" out="2"/>
+            <Connect in="2" constant="-131"/>
+            <Connect in="3" to="29" out="100"/>
+            <Connect in="4" to="32" out="1"/>
+            <Connect in="5" constant="-132"/>
+        </Operator>
+        <Operator id="31" type="9B831F24">
+            <Connect in="1" input="3"/>
+            <Connect in="2" to="34" out="100"/>
+            <Connect in="3" constant="-137"/>
+            <Connect in="4" constant="-138"/>
+            <Connect in="5" constant="-148"/>
+        </Operator>
+        <Operator id="32" type="91A7D4DF">
+            <Connect in="1" input="3"/>
+            <Connect in="2" constant="-141"/>
+            <Connect in="3" constant="-142"/>
+            <Connect in="4" constant="-143"/>
+            <Connect in="5" constant="-144"/>
+        </Operator>
+        <Operator id="33" type="EA5D30C6">
+            <Connect in="100" to="20" out="1"/>
+        </Operator>
+        <Operator id="34" type="971515D0">
+            <Connect in="100" to="33" out="100"/>
+            <Connect in="101" constant="-147"/>
+        </Operator>
+        <Operator id="35" type="91A7D4DF">
+            <Connect in="1" input="3"/>
+            <Connect in="2" constant="-150"/>
+            <Connect in="3" constant="-151"/>
+            <Connect in="4" constant="-152"/>
+            <Connect in="5" constant="-153"/>
+        </Operator>
+        <Operator id="36" type="BB6EAC9D">
+            <Connect in="100" input="5"/>
+            <Connect in="101" constant="-155"/>
+        </Operator>
+        <Operator id="38" type="91AFA5C3">
+            <Connect in="1" to="5" out="2"/>
+            <Connect in="2" constant="-160"/>
+            <Connect in="3" constant="-161"/>
+            <Connect in="4" to="36" out="100"/>
+        </Operator>
+        <Operator id="39" type="906A3ACC"/>
+        <Operator id="41" type="918223B9">
+            <Connect in="1" to="20" out="1"/>
+            <Connect in="2" constant="-169"/>
+            <Connect in="3" constant="-170"/>
+            <Connect in="4" constant="-171"/>
+            <Connect in="5" constant="-172"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

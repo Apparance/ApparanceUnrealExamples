@@ -233,5 +233,13 @@
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>
+    <Input id="2">
+      <Value type="1919697734" value="[0,0,0,1]" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
   </DefaultInputs>
 </ProcedureEditData>

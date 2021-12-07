@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>495.1496,478.2216</Centre>
-    <Zoom>0.564474344</Zoom>
+    <Centre>319.4577,422.5857</Centre>
+    <Zoom>0.683014</Zoom>
   </View>
   <Procedure>
     <Category>Presentation</Category>
@@ -335,7 +335,7 @@
       <Description>Corner radius</Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Control</Name>
+      <Name>Bolts?</Name>
       <Description>
       </Description>
     </Object>
@@ -357,6 +357,14 @@
     </Input>
     <Input id="2">
       <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221856" value="0" />
       <Metadata />
     </Input>
   </DefaultInputs>

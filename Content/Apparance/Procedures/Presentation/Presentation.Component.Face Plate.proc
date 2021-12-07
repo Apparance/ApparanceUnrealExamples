@@ -3,7 +3,7 @@
     <Inputs>
         <Input id="1" type="Frame" name="To" description=""/>
         <Input id="2" type="Float" name="Radius" description="Corner radius"/>
-        <Input id="3" type="Bool" name="Control" description=""/>
+        <Input id="3" type="Bool" name="Bolts?" description=""/>
         <Input id="4" type="Integer" name="#" description=""/>
     </Inputs>
     <Constants>

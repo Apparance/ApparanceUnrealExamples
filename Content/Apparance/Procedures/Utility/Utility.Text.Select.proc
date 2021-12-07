@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="91BF02E3">
+    <Inputs>
+        <Input id="1" type="Integer" name="(Start)" description="Where to index from in string"/>
+        <Input id="2" type="String" name="Text" description=""/>
+        <Input id="3" type="Integer" name="Index" description="Which row?"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-2" type="Integer">0</Constant>
+        <Constant id="-4" type="String">$0D$0A</Constant>
+        <Constant id="-5" type="Bool">False</Constant>
+        <Constant id="-19" type="Integer">1</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="2" type="B596EA66">
+            <Connect in="100" input="3"/>
+            <Connect in="101" constant="-2"/>
+        </Operator>
+        <Operator id="3" type="5B43DF5C">
+            <Connect in="100" input="2"/>
+            <Connect in="101" constant="-4"/>
+            <Connect in="102" constant="-5"/>
+            <Connect in="103" input="1"/>
+        </Operator>
+        <Operator id="4" type="ACF9F191">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" to="5" out="101"/>
+            <Connect in="102" to="6" out="1"/>
+        </Operator>
+        <Operator id="5" type="82E88BFD">
+            <Connect in="100" input="2"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" to="3" out="101"/>
+        </Operator>
+        <Operator id="6" type="91BF02E3">
+            <Connect in="1" to="3" out="102"/>
+            <Connect in="2" input="2"/>
+            <Connect in="3" to="7" out="100"/>
+        </Operator>
+        <Operator id="7" type="A2D1BB58">
+            <Connect in="100" input="3"/>
+            <Connect in="101" constant="-19"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="String" name="Out" description="" to="4" out="100"/>
+    </Outputs>
+</Procedure>

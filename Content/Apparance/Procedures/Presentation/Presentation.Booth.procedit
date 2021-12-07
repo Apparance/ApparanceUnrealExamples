@@ -1,0 +1,595 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>733.3682,879.7809</Centre>
+    <Zoom>0.466507852</Zoom>
+  </View>
+  <Procedure>
+    <Category>Presentation</Category>
+    <DisplayName>Booth</DisplayName>
+    <Description>Booth to show off things</Description>
+    <TopLeft>-529,-56.12036</TopLeft>
+    <BottomRight>1600.882,1386.346</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>107.314,229.3058</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>table top</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>333.752,230.2975</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>1143.927,-6.120359</Location>
+      <Size>74.85333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>313.1165,307.3238</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>back of space</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>1118.87,150.1938</Location>
+      <Size>129.9767,91.08</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>1654.125,449.5801</Location>
+      <Size>46.75667,84.76</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>958.6943,1114.576</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>0.2</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>306.4714,1176.827</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>2</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>801.6147,687.8779</Location>
+      <Size>86.38,104.04</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>1273.526,1075.854</Location>
+      <Size>108.91,91.08</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>947.6147,682.8779</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>694,412</Location>
+      <Size>73.09666,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>600.1044,1101.134</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>456.0567,1248.988</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>612.3017,1288.34</Location>
+      <Size>90.94666,32.92</Size>
+      <NoteID>3</NoteID>
+      <Comment>gradient of panel</Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>1</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>793.8796,1107.253</Location>
+      <Size>73.09666,65.16</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>1117.766,1138.803</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>880.52,909.4703</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>1159.265,848.9133</Location>
+      <Size>161.1167,52.2</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>1018.897,830.1882</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>1502.474,1122.665</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>890.8969,141.4991</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>569.4313,189.0402</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>729.2559,243.6041</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>660,329</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>645.7462,264.8021</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>793.8325,192.2453</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>735.98,896.7791</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>1342.789,464.156</Location>
+      <Size>111.1633,54.28</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>718.0096,407.0363</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>577.3,400.1998</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>10</NoteID>
+      <Comment>screen height</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>835.9,413.0995</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>10</NoteID>
+      <Comment>thickness</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>1229.1,380.1001</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>10</NoteID>
+      <Comment>16:9 aspect</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>1049.1,517.3</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="35">
+      <Location>991.14,468.4202</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="36">
+      <Location>1132.8,432.1998</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="37">
+      <Location>385.2996,464.1002</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>gap</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="38">
+      <Location>1131.54,436.6599</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="39">
+      <Location>648.2747,664.5865</Location>
+      <Size>89.55666,78.12</Size>
+      <NoteID>11</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="40">
+      <Location>244,57</Location>
+      <Size>75.67,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>frame thickess</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="41">
+      <Location>827.7848,651.9265</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>11</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="42">
+      <Location>1015.475,659.0765</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>11</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="43">
+      <Location>1229.795,670.6064</Location>
+      <Size>161.1167,52.2</Size>
+      <NoteID>11</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="44">
+      <Location>1135.955,709.9765</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>11</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="45">
+      <Location>760.5848,641.5465</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>11</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="46">
+      <Location>1147.21,519.4999</Location>
+      <Size>181,52.2</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="47">
+      <Location>416.4999,81.60006</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="48">
+      <Location>-24.70586,440.7111</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="49">
+      <Location>-181.6919,491.6973</Location>
+      <Size>112.8767,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="50">
+      <Location>-329,478</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Title</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Panel Height</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Text</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Screen Height</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Screen Background</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>(Height)</Name>
+      <Description>Optional height override of booth</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Booth</Name>
+      <Description>Booth geometry</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Surface</Name>
+      <Description>space on table to put things</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Panel</Name>
+      <Description>Top information panel</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="4">
+      <Name>Screen</Name>
+      <Description>Display things on the tv screen</Description>
+    </Object>
+    <Object type="ProcedureNote" id="3">
+      <ID>3</ID>
+      <Location>
+        <X>247.746292</X>
+        <Y>1059.22559</Y>
+      </Location>
+      <Size>
+        <Width>1370.67041</Width>
+        <Height>277.119965</Height>
+      </Size>
+      <Title>Info panel</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="8">
+      <ID>8</ID>
+      <Location>
+        <X>544.431335</X>
+        <Y>108.847664</Y>
+      </Location>
+      <Size>
+        <Width>729.4157</Width>
+        <Height>213.8744</Height>
+      </Size>
+      <Title>Back support frame</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="9">
+      <ID>9</ID>
+      <Location>
+        <X>640.703</X>
+        <Y>809.2493</Y>
+      </Location>
+      <Size>
+        <Width>704.679443</Width>
+        <Height>242.4894</Height>
+      </Size>
+      <Title>Info Panel Mount</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="10">
+      <ID>10</ID>
+      <Location>
+        <X>552.300049</X>
+        <Y>327.290039</Y>
+      </Location>
+      <Size>
+        <Width>914.145447</Width>
+        <Height>258.4001</Height>
+      </Size>
+      <Title>Screen</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="11">
+      <ID>11</ID>
+      <Location>
+        <X>623.2748</X>
+        <Y>595.7182</Y>
+      </Location>
+      <Size>
+        <Width>792.636841</Width>
+        <Height>204.418335</Height>
+      </Size>
+      <Title>Screen Mount</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="1" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="2" />
+        </Input>
+      </Metadata>
+    </Input>
+    <Input id="2">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221088" value="0.5" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="1" />
+        </Input>
+      </Metadata>
+    </Input>
+    <Input id="4">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="842221088" value="0" />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

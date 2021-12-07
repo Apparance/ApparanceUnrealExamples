@@ -53,6 +53,9 @@
         <Constant id="-94" type="Float">8.000000</Constant>
         <Constant id="-95" type="Integer">1</Constant>
         <Constant id="-96" type="Integer">1</Constant>
+        <Constant id="-97" type="Bool">False</Constant>
+        <Constant id="-98" type="Bool">False</Constant>
+        <Constant id="-99" type="Bool">False</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="E99E1179">
@@ -118,6 +121,7 @@
             <Connect in="4" constant="-41"/>
             <Connect in="5" constant="-42"/>
             <Connect in="6" constant="-43"/>
+            <Connect in="7" constant="-97"/>
         </Operator>
         <Operator id="12" type="E82F5975">
             <Connect in="100" to="10" out="101"/>
@@ -159,6 +163,7 @@
             <Connect in="4" constant="-76"/>
             <Connect in="5" constant="-77"/>
             <Connect in="6" constant="-78"/>
+            <Connect in="7" constant="-98"/>
         </Operator>
         <Operator id="22" type="E82F5975">
             <Connect in="100" to="10" out="101"/>
@@ -178,6 +183,7 @@
             <Connect in="4" constant="-94"/>
             <Connect in="5" constant="-95"/>
             <Connect in="6" constant="-96"/>
+            <Connect in="7" constant="-99"/>
         </Operator>
     </Operators>
     <Outputs>
