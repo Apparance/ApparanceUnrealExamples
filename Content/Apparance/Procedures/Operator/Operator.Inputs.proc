@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="9454216A">
+    <Inputs>
+        <Input id="1" type="List" name="Inputs" description=""/>
+        <Input id="2" type="Integer" name="i" description=""/>
+        <Input id="3" type="List" name="(spaces)" description=""/>
+        <Input id="4" type="Frame" name="Where?" description=""/>
+        <Input id="5" type="Float" name="Text Size" description=""/>
+        <Input id="6" type="Float" name="Space" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-7" type="ModelSegment"></Constant>
+        <Constant id="-24" type="Integer">1</Constant>
+        <Constant id="-26" type="Vector3">0.000000, -1.000000, 0.000000</Constant>
+        <Constant id="-27" type="Integer">1</Constant>
+        <Constant id="-28" type="Integer">1</Constant>
+        <Constant id="-29" type="Integer">1</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="B3B228AF">
+            <Connect in="100" input="2"/>
+            <Connect in="101" to="3" out="100"/>
+        </Operator>
+        <Operator id="2" type="D56CEA6D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="3" type="5C4E98DC">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="4" type="C01FB46B">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-7"/>
+            <Connect in="102" to="7" out="100"/>
+        </Operator>
+        <Operator id="5" type="DF46C795">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="3"/>
+            <Connect in="102" to="9" out="2"/>
+        </Operator>
+        <Operator id="6" type="5420B650">
+            <Connect in="100" input="3"/>
+            <Connect in="101" to="8" out="2"/>
+        </Operator>
+        <Operator id="7" type="0F77F09B">
+            <Connect in="100" to="8" out="1"/>
+            <Connect in="101" to="9" out="1"/>
+        </Operator>
+        <Operator id="8" type="945124A1">
+            <Connect in="1" input="4"/>
+            <Connect in="2" to="2" out="100"/>
+            <Connect in="3" input="5"/>
+            <Connect in="4" input="6"/>
+        </Operator>
+        <Operator id="9" type="9454216A">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="10" out="100"/>
+            <Connect in="3" to="6" out="100"/>
+            <Connect in="4" to="11" out="100"/>
+            <Connect in="5" input="5"/>
+            <Connect in="6" input="6"/>
+        </Operator>
+        <Operator id="10" type="87F5E2D0">
+            <Connect in="100" input="2"/>
+            <Connect in="101" constant="-24"/>
+        </Operator>
+        <Operator id="11" type="EAE4856E">
+            <Connect in="100" input="4"/>
+            <Connect in="101" constant="-26"/>
+            <Connect in="102" constant="-27"/>
+            <Connect in="103" constant="-28"/>
+            <Connect in="104" constant="-29"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Visuals" description="" to="4" out="100"/>
+        <Output id="2" type="List" name="Spaces" description="" to="5" out="100"/>
+    </Outputs>
+</Procedure>

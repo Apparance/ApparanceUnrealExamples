@@ -1,0 +1,254 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>567.8508,266.3223</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Operator</Category>
+    <DisplayName>Lookup</DisplayName>
+    <Description>Lookup details about a particular operator from the Operators.txt data file</Description>
+    <TopLeft>-186.4133,-32.04125</TopLeft>
+    <BottomRight>1030.013,530.0042</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Descriptor</Name>
+      <Description>Operator descriptor, e.g. Bitwise.OrI</Description>
+    </Object>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>1033.81,136.3471</Location>
+      <Size>90.73,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>1042.519,24.86784</Location>
+      <Size>87.49333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>1040.519,18.91743</Location>
+      <Size>87.49333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>960.4702,36.90915</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>956.4702,17.95875</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>401,275</Location>
+      <Size>87.49333,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>533,204</Location>
+      <Size>87.49333,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>1022.908,29.52898</Location>
+      <Size>87.49333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>1018.949,29.75209</Location>
+      <Size>87.49333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>978.8586,18.5703</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>966.8999,31.79341</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>16.8925,88.23139</Location>
+      <Size>36.96667,39.28</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>105.438,134.0992</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>105.4628,277.7603</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>254.2065,85.90906</Location>
+      <Size>82.99,69.28</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>460.942,52.5537</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>newline</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>681,81</Location>
+      <Size>82.99,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>606.686,61.19833</Location>
+      <Size>82.99,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>734.0411,105.1653</Location>
+      <Size>134.5933,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>466.2479,214.2479</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>inputs</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>653.1322,227.6033</Location>
+      <Size>82.99,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>467.4546,353.7521</Location>
+      <Size>93.36667,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>outputs</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>647.769,377.8513</Location>
+      <Size>82.99,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>473.1984,451.9008</Location>
+      <Size>64.51334,28.10333</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>799.8183,241.8512</Location>
+      <Size>123.2233,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>809.1985,390.7355</Location>
+      <Size>123.2233,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>IO</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="10">
+      <ID>10</ID>
+      <Location>
+        <X>-8.107504</X>
+        <Y>-11.7686081</Y>
+      </Location>
+      <Size>
+        <Width>360.386749</Width>
+        <Height>392.648926</Height>
+      </Size>
+      <Title>Extract section from file</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

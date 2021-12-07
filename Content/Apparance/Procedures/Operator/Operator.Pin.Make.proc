@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="94036AC5">
+    <Inputs>
+        <Input id="1" type="String" name="Type" description="type name, e.g. Integer"/>
+        <Input id="2" type="String" name="Name" description="Name of the pin"/>
+        <Input id="3" type="String" name="Description" description="pin description"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="List"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="BFD43D50">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" input="1"/>
+        </Operator>
+        <Operator id="2" type="BFD43D50">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="3" type="BFD43D50">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" input="3"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="IO" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

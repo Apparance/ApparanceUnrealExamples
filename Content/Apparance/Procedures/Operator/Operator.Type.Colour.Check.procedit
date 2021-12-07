@@ -1,0 +1,75 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>533.1404,279.5455</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Operator</Category>
+    <DisplayName>Type.Colour.Check</DisplayName>
+    <Description>Select colour if name matches</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>426,122</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>264.3223,208.3554</Location>
+      <Size>70.04333,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Prev</Name>
+      <Description>Colour from previous check</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Name</Name>
+      <Description>Name of the type we are checking for</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Type</Name>
+      <Description>Type name being tested</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Colour</Name>
+      <Description>Colour for this type</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Colour</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1919697734" value="[0,0,0,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="1919697734" value="[0,0,0,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

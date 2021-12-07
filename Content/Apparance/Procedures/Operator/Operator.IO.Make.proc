@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="940FE424">
+    <Inputs>
+        <Input id="1" type="String" name="Descriptor" description=""/>
+        <Input id="2" type="String" name="Name" description=""/>
+        <Input id="3" type="String" name="Description" description=""/>
+        <Input id="4" type="List" name="Inputs" description=""/>
+        <Input id="5" type="List" name="Outputs" description=""/>
+        <Input id="6" type="Integer" name="Max Input" description="Longest input name"/>
+        <Input id="7" type="Integer" name="Max Output" description="Longest output name"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-5" type="List"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="B8C05957">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" input="4"/>
+        </Operator>
+        <Operator id="2" type="B8C05957">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="5"/>
+        </Operator>
+        <Operator id="3" type="BFD43D50">
+            <Connect in="100" constant="-5"/>
+            <Connect in="101" input="1"/>
+        </Operator>
+        <Operator id="4" type="BFD43D50">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="5" type="BFD43D50">
+            <Connect in="100" to="4" out="100"/>
+            <Connect in="101" input="3"/>
+        </Operator>
+        <Operator id="6" type="4474330E">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" input="6"/>
+        </Operator>
+        <Operator id="7" type="4474330E">
+            <Connect in="100" to="6" out="100"/>
+            <Connect in="101" input="7"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="IO" description="" to="7" out="100"/>
+    </Outputs>
+</Procedure>

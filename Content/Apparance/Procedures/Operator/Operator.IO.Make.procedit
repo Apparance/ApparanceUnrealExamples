@@ -1,0 +1,136 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>399.2562,282.0248</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Operator</Category>
+    <DisplayName>IO.Make</DisplayName>
+    <Description>Build a full operator io info struct</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>600,642.6625</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>363.6281,294.0992</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[3] Inputs</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>364.0165,373.3554</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[4] Outputs</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>365.0413,60.12396</Location>
+      <Size>71.72667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Descriptor</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>366.9091,134.6777</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Name</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>364.5041,206.7934</Location>
+      <Size>77.25,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[2] Description</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>367.1075,461.1984</Location>
+      <Size>110.4933,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[5] Max Input Length</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>365.5951,540.4625</Location>
+      <Size>120.4133,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[6] Max Output Length</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>IO</Name>
+      <Description>Operator info</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Descriptor</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Name</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Description</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Inputs</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Outputs</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Max Input</Name>
+      <Description>Longest input name</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>Max Output</Name>
+      <Description>Longest output name</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>
