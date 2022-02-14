@@ -14,7 +14,8 @@
 		},
 		{
 			"Name": "ApparanceUnreal",
-			"Enabled": true
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/be30505a25784e118164aee83efb06a3"
 		}
 	]
 }
